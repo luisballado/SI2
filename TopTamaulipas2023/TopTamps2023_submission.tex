@@ -1,0 +1,171 @@
+ 
+%% AVISO IMPORTANTE:
+%% 
+%% Este template es una versión modificada del template de la ACM sample-sigconf.tex.
+
+
+\documentclass[sigconf]{acmart}
+
+
+%% Datos del libro electrónico, a ser incluidos más adelante por los organizadores.
+\setcopyright{rightsretained} %Uncomment this to keep your rights!
+\setcopyright{CCBY} %Uncomment this to publish your work under Creative Commons!
+\copyrightyear{2021}
+\acmYear{2021}
+\acmDOI{}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[]{TopTamaulipas 2022}{Noviembre, 2022}{Ciudad Victoria, TAMPS}
+\acmBooktitle{Título por definir}
+\acmPrice{}
+\acmISBN{XXXXXXXXXXXX}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+%%
+
+%% Inicio del cuerpo del artículo.
+\begin{document}
+
+
+%% "title" tiene un parámetro opcional, que le permite a los autores definir un título corto que aparece en los encabezados.
+\title{T\'itulo}
+
+%%
+%% Los autores se inlcuyen usando el comando "author". El ejemplo muestra distintos casos, cuando hay autores que comparten afiliación o no.
+%% "authornote" y "authornotemark" son usados para denotar contribuciones compartidas en la investigación, por los autores.
+\author{Autor 1}
+\authornote{Nota.}
+\email{username@cinvestav.mx}
+\orcid{orcidxxxxxxxx}
+\author{Autor 2}
+\authornotemark[1]
+\email{username2@cinvestav.mx}
+\affiliation{%
+  \institution{Cinvestav Unidad Tamaulipas}
+  \streetaddress{Parque Cient\'ifico y Tecnol\'ogico de Tamaulipas}
+  \city{Victoria}
+  \state{Tamps}
+  \country{Mexico}
+  \postcode{87138}
+}
+
+\author{Autor 3}
+\affiliation{%
+  \institution{Cinvestav Tamaulipas}
+  \streetaddress{Parque Cient\'ifico y Tecnol\'ogico de Tamaulipas}
+  \city{Victoria}
+  \country{Mexico}
+	}
+\email{username3@cinvestav.mx}
+
+\author{Autor 4}
+\affiliation{%
+  \institution{Cinvestav Tamaulipas}
+  \city{Victoria}
+  \country{Mexico}
+}
+
+\author{Autor 5}
+\affiliation{%
+  \institution{Cinvestav Unidad Tamaulipas}
+  \streetaddress{Parque Cient\'ifico y Tecnol\'ogico de Tamaulipas}
+  \city{Victoria}
+  \state{Tamps}
+  \country{Mexico}
+}
+
+\author{Autor 6}
+\affiliation{%
+  \institution{Cinvestav Unidad Tamaulipas}
+  \streetaddress{Parque Cient\'ifico y Tecnol\'ogico de Tamaulipas}
+  \city{Victoria}
+  \state{Tamps}
+  \country{Mexico}
+	}
+
+%% Título en encabezado
+\renewcommand{\shortauthors}{Autor 1, et al.}
+\renewcommand{\tablename}{Tabla}
+%%
+%% Resumen del trabajo que se está presentando.
+\begin{abstract}
+Si el artículo es de divulgación, describa de manera resumida el proyecto de investigación, de desarrollo tecnológico o de vinculación que se desarrolló o que se está desarrollando. Incluya una descripción breve de los resultados e impacto alcanzado. Use un lenguaje accesible y claro para la mayor audiencia posible.
+	
+Si se trata de un artículo de discusión, describa el tópico central a desarrollar y/o la problemática subyacente junto con la motivación para ser abordada desde la perspectiva de la investigación o el desarrollo tecnológico. Empleando un lenguaje accesible y claro para la mayor audiencia posible, describa de manera breve las principales aplicaciones e impacto que el tópico a tratar representa, desde la perspectiva de la sociedad.
+\end{abstract}
+
+%%
+%% Keywords. Incluir no menos de tres palabas clave que identifiquen el trabajo presentado. Separar las palabras con coma.
+\keywords{kw1, keword2, keyword3, keyword4}
+
+%% Creación de la primera parte del documento formateado, incluyendo título y autores.
+\maketitle
+
+%% Primera sección del artículo
+\section{Introduction}
+Se debe presentar una introducción con el suficiente detalle para enmarcar el alcance del proyecto realizado, o el contexto en el cuál la temática a tratar es relevante para la sociedad. 
+
+La introducción debe proporcinar la información que permita al lector entender que el problema subyacente que resuelve el proyecto, o en el que se enmarca el tópico de interés, es relevante y que su solución o tratamiento tiene un impacto relevante para la ciencia, el desarrollo tecnológico o la innovación.
+
+Incluya referencias representativas y las más relevantes, incluidas tesis o artículos ya publicados y contextualizados en el proyecto o la tématica que se está presentando a la sociedad. Ejemplos: \cite{Smith10}, \cite{VanGundy07}, \cite{Harel78}, \cite{Bornmann2019,AnzarootPBM14}, \cite{Clarkson85}, \cite{anisi03}, \cite{Thornburg01, Ablamowicz07, Poker06}, \cite{Obama08}, \cite{Novak03}, \cite{Lee05}.
+
+%% Cuerpo principal, dividido por secciones.
+\section{Cuerpo principal del artículo}
+
+Dado que el artículo tiene un carácter de acceso universal del conocimiento, el lenguaje y estilo usado debe tener en cuenta que el artículo lo leerán personas con poco, medio o alto grado de especialización. 
+
+Para los artículos de divulgación, se deberá seguir el formato IMRYD (Introducción, Metodología, Resultados y Discusión, cada parte pudiendo ser una sección en el artículo). Deberá describir el enfoque de solución, resaltando las áreas de la computación en las que se enmarca el proyecto, los métodos o algoritmos utilizados para resolver la problemática subyacente. Se pueden integrar diagramas o algoritmos previamente publicados con la correspondiente discusión, citando las fuentes originales.
+Se recomienda presentar los resultados de manera que la audiencia, generalmente no especializada, pueda interpretar el impacto de los mismos. Se pueden reproducir resultados previamente publicados, agregando una discusión en el contexto del artículo que se presenta y citando las fuentes originales.
+
+Se recomienda el uso de tablas (ver Tabla \ref{tab:freq}) y gráficas/figuras (ver Figura \ref{figEjemplo}). 
+En la sección de discusión, se deberá describir y transmitir el mensaje de la relevancia del proyecto abordado, de sus resultados, y el impacto que éste tuvo para la sociedad.
+
+\begin{table}
+  \caption{Frecuencia de caracteres especiales}
+  \label{tab:freq}
+  \begin{tabular}{ccl}
+    \toprule
+    Ejemplo&Frecuencia&Comentarios\\
+    \midrule
+    \O & 1 en 1,000& aparece en algunos nombres\\
+    $\pi$ & 1 en 5& común en matemáticas\\
+    \$ & 4 en 5 & usado en finanzas\\
+    $\Psi^2_1$ & 1 en 40,000& desconocido\\
+  \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}
+  \includegraphics[width=.45\textwidth]{sample}
+  \caption{Agregar descripción de la figura, de forma clara y concisa. Todas las figuras deben ser referenciadas en el documento y contener el suficiente detalle para ser autocontenido, en la medida de lo posible.}
+  \label{figEjemplo}
+\end{figure}
+
+Fórmulas o ecuaciones también pueden ser incluidas.
+\begin{equation}
+  \sum_{i=0}^{\infty}x_i=\int_{0}^{\pi+2} f
+\end{equation}
+
+En el caso de artículos de discusión, la organización del artículo es a criterio de los autores. Se sugiere que sea de acuerdo a una secuencia que permita entender el contexto del tópico, los principales retos, descripción de algoritmos o técnicas relevantes, preguntas de investigación, posibles líneas de trabajos o hipótesis a ser abordadas, de manera que todo ello motive en la sociedad el interés por el tópico, por la ciencia, la tecnología o el desarrollo tecnológico.
+
+
+\section{Conclusiones}
+
+Incluir un párrafo donde se indiquen las conclusiones del trabajo realizado y el trabajo actual o futuro en relación con el mismo.
+
+
+\section*{Agradecimientos}
+Incluir fuentes de financiamiento u otro apoyo para la realización del proyecto (No. proyecto, Fondo, becas, etc). Se pueden incluir agradecimientos a personas o grupos estrechamente relacionados con el trabajo presentado en el artículo.
+
+
+
+%% incluya la bibliografía en un archivo separado .bib
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{samplebib}
+
+
+\end{document}
+\endinput
+%%
+%%
