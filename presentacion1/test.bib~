@@ -1,0 +1,20 @@
+@INPROCEEDINGS{james,
+  author={Zahroof, Rahul and Liu, Jiazhen and Zhou, Lifeng and Kumar, Vijay},
+  booktitle={2023 American Control Conference (ACC)}, 
+  title={Multi-Robot Localization and Target Tracking with Connectivity Maintenance and Collision Avoidance}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1331-1338},
+  doi={10.23919/ACC55779.2023.10155978}}
+
+
+@ARTICLE{8478368,
+  author={Xiao, Zhiqiang and Zhu, Bingcheng and Wang, Yongjin and Miao, Pu},
+  journal={IEEE Access}, 
+  title={Low-Complexity Path Planning Algorithm for Unmanned Aerial Vehicles in Complicated Scenarios}, 
+  year={2018},
+  volume={6},
+  number={},
+  pages={57049-57055},
+  doi={10.1109/ACCESS.2018.2873084}}
