@@ -395,36 +395,63 @@
 \section{Planteamiento del problema}
 \begin{frame}
   \frametitle{Planteamiento del problema}
-  \begin{columns}
-    \column{0.5\textwidth}
-    \justifying
-    \small Desarrollar una arquitectura de software para la tarea de exploración multi-VANT que reduzca el tiempo total de exploración dado un conjunto $\mathcal{V}$ de vehículos aéreos no tripulados. Las capacidades limitadas de energía y sensores abordo de los VANTS les permiten navegar de forma autónoma. Teniendo en cuenta sus limitaciones de energía y la necesidad de una exploración eficiente, el objetivo es determinar trayectorias buscando que la asignación de tareas sean óptimas ó sub-óptimas.
-    \column{0.5\textwidth}\\
-    \pause
-    \centering
-    \small Retos multi-VANT
-    \begin{itemize}
-    \small \item Coordinación - Establecer comunicación efectiva entre los múltiples VANTs. Intercambiar información relevante. Tener baja latencia en su comunicación.
-    \small \item Planificación - Los VANTs deben coordinar sus movimientos para evitar colisiones y lograr una cobertura eficiente del área objetivo.
-    \small \item Asignación de tareas - Se busca evitar la duplicación de esfuerzos optimizando el uso de recursos disponibles.
-    \end{itemize}
-  \end{columns}
+  %\begin{columns}
+  %  \column{0.5\textwidth}
+  \justifying
+  \begin{itemize}
+    \item \scriptsize Dada un área de interés desconocida en un espacio cerrado que se desea explorar denotada como $\mathcal{A}$, tal que $\mathcal{A} \subseteq \mathbb{R}^{3}$.\\
+    \item \scriptsize Un voxel \textit{v} que representa el espacio contenido en $\mathcal{A}$ que es obtenido dividiendo recursivamente el área de interés $\mathcal{A}$ en ocho partes de igual tamaño, el voxel puede tomar los valores de libre o ocupado denotados como $v_{libre}$, $v_{occ}$.\\
+    \item \scriptsize Un conjunto de VANTS autónomos denotado como $\mathcal{V}=\{V_1,V_2,V_3,...,V_n\}$, siendo $n$ el número total de VANTS disponibles, así como una configuración inicial q cuya cardinalidad es el número de VANTS disponibles denotado como $q=\{q_{1},q_{2},q_{3},...,q_{n}\}$.\\
+  \end{itemize}
+  
+  \scriptsize La región ocupada son obtenidas mediante un sensor basado en un modelo de ocupación probabilístico.\\
+  \bigskip % Vertical whitespace
+  \scriptsize Determinar el conjunto de tareas para cada VANT, así como el conjunto de rutas que maximize el área explorada minimizando el tiempo y la energía consumida.\\
+  \bigskip % Vertical whitespace
 \end{frame}
 
-\section{Objetivos generales y específicos del proyecto}
-\begin{frame}
-  \frametitle{Objetivos generales y específicos del proyecto}
+\begin{frame}{Preguntas de investigación}
+  Con base en lo anterior, surgen las siguiente preguntas de investigación:
+  \begin{itemize}
+  \item ¿Qué estrategias pueden emplearse para optimizar la asignación de tareas y coordinación entre los múltiples VANTS para el problema de exploración de un ambiente desconocido en interiores sin señal GPS?
+  \item ¿Cómo se pueden diseñar algoritmos rápidos para la planificación de rutas que guie de forma efectiva los múltiples VANTS, considerando la evasión de obstáculos, optimizando la cobertura del área a explorar?
+  \item ¿Qué mecanismos de coordinación y comunicación pueden facilitar la colaboracion y el intercambio rápido de información entre múltiples VANTS durante las misiones de exploración?
+  \item ¿Cómo asegurar que la información que aporte cada uno de los VANTS se integre correctamente a la información ya conocida para generar mapas precisos y completos del entorno explorado?
+  \end{itemize}
+  
+   % \column{0.5\textwidth}\\
+   % \pause
+   % \centering
+   % \small Retos multi-VANT
+   % \begin{itemize}
+   % \small \item Coordinación% - Establecer comunicación efectiva entre los múltiples VANTs. Intercambiar información relevante. Tener baja latencia en su comunicación.
+   % \small \item Planificación% - Los VANTs deben coordinar sus movimientos para evitar colisiones y lograr una cobertura eficiente del área objetivo.
+   % \small \item Asignación de tareas% - Se busca evitar la duplicación de esfuerzos optimizando el uso de recursos disponibles.
+   % \end{itemize}
+   %\end{columns}
+\end{frame}
+
+\section{Hipótesis y Objetivos}
+
+\begin{frame}{Hipótesis}
+  
+  La implementación de una arquitectura descentralizada integrada de algoritmos para la detección y evasión de obstáculos, toma de decisiones, navegación e inteligencia colectiva para los múltiples VANTS. Así como un enfoque de fusión de datos que integre la información de los sensores de los múltiples VANTS, mejorará la efectividad y conducirá a mejores resultados de exploración en entornos dinámicos e inciertos, incluida una mayor cobertura del área explorada, una mejor recopilación de datos en comparación con un enfoque de un solo VANT.
+  
+\end{frame}
+
+\begin{frame}{Objetivos generales y específicos del proyecto}
+  %\frametitle
   \begin{enumerate}
   \item<1-> General \\
-    Diseñar una arquitectura de software descentralizada para implementar una estrategia multi-VANT capaz de resolver los problemas de localización y coordinación en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
+    Proponer una arquitectura de software descentralizada capaz de resolver los problemas de localización, mapeo, navegación y coordinación multi-VANT en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
     \pause
   \item<2-> Particulares\\
     \begin{itemize}
-    \item Diseño de solución en base a los algoritmos reportados en la literatura.
+    \item Desarrollo de un algoritmo para la asignación de tareas. %Diseñar e implementar un algoritmo de asignación de tareas que maximice la eficiencia de la exploración, minimice la redundancia y garantice una distribución equilibrada de la carga de trabajo entre los múltiples VANTS. 
       \pause
-    \item Valoración propuesta (simulación de propuesta).
+    \item Desarrollo de un algoritmo de planificación de rutas. %Diseñar e implementar un algoritmo para la planificación de rutas en tiempo real que permita a los múltiples VANTS navegar a través de entornos desconocidos, evitando obstáculos. La ruta generada deberá adaptarse a los cambios dinámicos en el entorno contando con la habilidad de volver a calcular su ruta de manera eficiente cuando sea necesario.
       \pause
-    \item Comparación y análisis (escalabilidad, robustez y recursos computacionales).
+    \item Construcción de mapas. %Diseñar un algoritmo de mapeo y fusión de datos que combine datos proveniente de los múltiples VANTS para crear un mapa completo del entorno explorado. El algoritmo debe manejar la localización y la fusión de mapas individuales para producir una representación consistente del mapa global.
     \end{itemize}
   \end{enumerate}
 \end{frame}
