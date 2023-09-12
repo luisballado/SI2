@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  11 SEP 2023 16:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  11 SEP 2023 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1720,15 +1720,16 @@ LaTeX Info: Redefining \% on input line 1.
 
 ]
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 411.
+(Font)              scaled to size 8.0pt on input line 422.
  [16
-
-] [17
 
 ] (./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [18
+)
+[17
+
+] [18
 
 ] [19
 
@@ -1740,52 +1741,54 @@ LaTeX Info: Redefining \% on input line 1.
 
 ] [23
 
+] [24
+
 ] (./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [24
+) [25
 
 ]
-<Images//cronograma.png, id=296, 817.0525pt x 709.65125pt>
+<Images//cronograma.png, id=298, 817.0525pt x 709.65125pt>
 File: Images//cronograma.png Graphic file (type png)
 <use Images//cronograma.png>
-Package pdftex.def Info: Images//cronograma.png  used on input line 466.
+Package pdftex.def Info: Images//cronograma.png  used on input line 459.
 (pdftex.def)             Requested size: 312.97662pt x 227.62363pt.
 
-Overfull \vbox (11.7014pt too high) detected at line 466
+Overfull \vbox (11.7014pt too high) detected at line 459
  []
 
-[25
+[26
 
  <./Images//cronograma.png>] (./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [26
+) [27
 
 ]
-Underfull \hbox (badness 2111) in paragraph at lines 516--516
+Underfull \hbox (badness 2111) in paragraph at lines 509--509
 []|\OT1/opensans-TLF/m/n/8 mapa 3D-Local y 2D-
- []
-
-[27
-
-]
-Underfull \hbox (badness 4266) in paragraph at lines 579--579
-[]|\OT1/opensans-TLF/m/n/8 Busqueda ba-sa-da en
  []
 
 [28
 
+]
+Underfull \hbox (badness 4266) in paragraph at lines 572--572
+[]|\OT1/opensans-TLF/m/n/8 Busqueda ba-sa-da en
+ []
+
+[29
+
 ] (./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [29
-
-] [30
+) [30
 
 ] [31
 
 ] [32
+
+] [33
 
 ] (./template.bbl
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
@@ -1795,9 +1798,9 @@ LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)) [33
+)) [34
 
-] [34
+] [35
 
 
 ]
@@ -1819,11 +1822,11 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: FB8C3E348B754189E1245F1329A6AFCE;1417.
  ) 
 Here is how much of TeX's memory you used:
- 33728 strings out of 478268
- 668166 string characters out of 5846348
+ 33720 strings out of 478268
+ 668083 string characters out of 5846348
  1028508 words of memory out of 5000000
- 51086 multiletter control sequences out of 15000+600000
- 499930 words of font info for 109 fonts, out of 8000000 for 9000
+ 51079 multiletter control sequences out of 15000+600000
+ 496342 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,131p,577b,895s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
@@ -1831,19 +1834,15 @@ exlive/2022/texmf-dist/fonts/enc/dvips/opensans/a_iz27ck.enc}{/usr/local/texliv
 e/2022/texmf-dist/fonts/enc/dvips/opensans/a_n3lhbv.enc}</usr/local/texlive/202
 2/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Italic.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr/lo
-cal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
-l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/
-texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
-/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive
-/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-d
-ist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on template.pdf (34 pages, 3252661 bytes).
+cal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
+022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on template.pdf (35 pages, 3233248 bytes).
 PDF statistics:
- 496 PDF objects out of 1000 (max. 8388607)
- 407 compressed objects within 5 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 481 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
  185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

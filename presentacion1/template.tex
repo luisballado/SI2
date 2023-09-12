@@ -398,25 +398,15 @@
   %\begin{columns}
   %  \column{0.5\textwidth}
   \justifying
-  \begin{itemize}
-    \item \scriptsize Dada un área de interés desconocida en un espacio cerrado que se desea explorar denotada como $\mathcal{A}$, tal que $\mathcal{A} \subseteq \mathbb{R}^{3}$.\\
-    \item \scriptsize Un voxel \textit{v} que representa el espacio contenido en $\mathcal{A}$ que es obtenido dividiendo recursivamente el área de interés $\mathcal{A}$ en ocho partes de igual tamaño, el voxel puede tomar los valores de libre o ocupado denotados como $v_{libre}$, $v_{occ}$.\\
-    \item \scriptsize Un conjunto de VANTS autónomos denotado como $\mathcal{V}=\{V_1,V_2,V_3,...,V_n\}$, siendo $n$ el número total de VANTS disponibles, así como una configuración inicial q cuya cardinalidad es el número de VANTS disponibles denotado como $q=\{q_{1},q_{2},q_{3},...,q_{n}\}$.\\
-  \end{itemize}
-  
-  \scriptsize La región ocupada son obtenidas mediante un sensor basado en un modelo de ocupación probabilístico.\\
+  \scriptsize Dada una región tridimensional desconocida y \textit{n} VANTS, el propósito es la propuesta de puntos de interés que implique una asignación de trayectoria para cada VANT. En el camino se descubrirán nuevos puntos de interés, haciendo de esta una lista de tareas dinámicas.\\
+  El problema consite en asignar las tareas de exploración (puntos de visión) para conocer la región de interés garantizando que toda la región sea explorada, así como la evasión de obstáculos.\\
   \bigskip % Vertical whitespace
-  \scriptsize Determinar el conjunto de tareas para cada VANT, así como el conjunto de rutas que maximize el área explorada minimizando el tiempo y la energía consumida.\\
-  \bigskip % Vertical whitespace
-\end{frame}
-
-\begin{frame}{Preguntas de investigación}
-  Con base en lo anterior, surgen las siguiente preguntas de investigación:
+  \scriptsize Con base en lo anterior, surgen las siguiente preguntas de investigación:
   \begin{itemize}
-  \item ¿Qué estrategias pueden emplearse para optimizar la asignación de tareas y coordinación entre los múltiples VANTS para el problema de exploración de un ambiente desconocido en interiores sin señal GPS?
-  \item ¿Cómo se pueden diseñar algoritmos rápidos para la planificación de rutas que guie de forma efectiva los múltiples VANTS, considerando la evasión de obstáculos, optimizando la cobertura del área a explorar?
-  \item ¿Qué mecanismos de coordinación y comunicación pueden facilitar la colaboracion y el intercambio rápido de información entre múltiples VANTS durante las misiones de exploración?
-  \item ¿Cómo asegurar que la información que aporte cada uno de los VANTS se integre correctamente a la información ya conocida para generar mapas precisos y completos del entorno explorado?
+  \item \scriptsize ¿Qué estrategias pueden emplearse para optimizar la asignación de tareas y coordinación entre los múltiples VANTS para el problema de exploración de un ambiente desconocido sin señal GPS?
+  \item \scriptsize ¿Cuál es la mejor representación del medio ambiente más conveniente para realizar la planificación de trayectorias eficientes y seguras para los múltiples VANTS?%¿Cómo se pueden diseñar algoritmos rápidos para la planificación de rutas que guie de forma efectiva los múltiples VANTS, considerando la evasión de obstáculos, optimizando la cobertura del área a explorar?
+  \item \scriptsize ¿Qué mecanismos de coordinación y comunicación pueden facilitar la colaboración y el intercambio rápido de información entre múltiples VANTS durante las misiones de exploración?
+  \item \scriptsize ¿Cómo asegurar que la información que aporte cada uno de los VANTS se integre correctamente a la información ya conocida para generar mapas precisos y completos del entorno explorado?
   \end{itemize}
   
    % \column{0.5\textwidth}\\
@@ -447,11 +437,14 @@
     \pause
   \item<2-> Particulares\\
     \begin{itemize}
+    \item Exploración con un solo VANT
+      \pause
     \item Desarrollo de un algoritmo para la asignación de tareas. %Diseñar e implementar un algoritmo de asignación de tareas que maximice la eficiencia de la exploración, minimice la redundancia y garantice una distribución equilibrada de la carga de trabajo entre los múltiples VANTS. 
       \pause
     \item Desarrollo de un algoritmo de planificación de rutas. %Diseñar e implementar un algoritmo para la planificación de rutas en tiempo real que permita a los múltiples VANTS navegar a través de entornos desconocidos, evitando obstáculos. La ruta generada deberá adaptarse a los cambios dinámicos en el entorno contando con la habilidad de volver a calcular su ruta de manera eficiente cuando sea necesario.
       \pause
-    \item Construcción de mapas. %Diseñar un algoritmo de mapeo y fusión de datos que combine datos proveniente de los múltiples VANTS para crear un mapa completo del entorno explorado. El algoritmo debe manejar la localización y la fusión de mapas individuales para producir una representación consistente del mapa global.
+    \item Construcción de la representación del mundo (mapas). %Diseñar un algoritmo de mapeo y fusión de datos que combine datos proveniente de los múltiples VANTS para crear un mapa completo del entorno explorado. El algoritmo debe manejar la localización y la fusión de mapas individuales para producir una representación consistente del mapa global.
+      \pause
     \end{itemize}
   \end{enumerate}
 \end{frame}
