@@ -1,0 +1,210 @@
+%\documentclass[11pt,epsf,times,twocolumn]{article}
+\documentclass[11pt,epsf,times]{article}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{shadows,arrows.meta}
+
+\tikzset{parent/.style={align=center,text width=2cm,fill=green!20,rounded corners=2pt},
+    child/.style={align=center,text width=2.8cm,fill=green!50,rounded corners=6pt},
+    grandchild/.style={fill=pink!50,text width=2.3cm}
+}
+
+\usepackage{epsf,latexsym}
+\usepackage[spanish,mexico]{babel}
+\usepackage[latin1]{inputenc}
+
+\hoffset=-9pt %-19pt
+\voffset=-36pt
+\textwidth=505pt
+\marginparsep=30pt
+\columnsep=9.9mm
+
+\def\figurename{Figura}
+
+\textwidth 6.5in
+\textheight 8.5in %ancho en footer
+\oddsidemargin 0in
+\evensidemargin 0in
+\topmargin -0.5in
+
+%-----------------------
+
+\title{ Centro de Investigaci\'{o}n y Estudios Avanzados del IPN\\
+  Unidad Tamaulipas\\
+  \textbf{Propuesta TopTamaulipas 2023}
+}
+
+\author{
+T\'{i}tulo: Estrategias para la exploraci\'{o}n coordinada multi-VANT \\
+Alumno: Luis Alberto Ballado Aradias \\
+Asesor: Dr. Jos\'{e} Gabriel Ram\'{i}rez Torres \\
+Co-Asesor: Dr. Eduardo Arturo Rodr\'{i}guez Tello
+}
+
+
+\date{\today}
+
+\usepackage{dirtree}
+\usepackage{amssymb}
+
+\usepackage{hyperref}
+\usepackage{dirtree}
+\usepackage{xcolor,colortbl}
+\usepackage{multirow}
+
+\usepackage{bbding} %palomitas checkmark
+\usepackage{pifont}
+
+% A package which allows simple repetition counts, and some useful commands
+
+\usepackage{graphicx}
+\usepackage{tabularx,booktabs}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\setlength{\extrarowheight}{1pt}
+
+\usepackage{multicol}
+
+\usepackage[scaled]{helvet}
+\usepackage[authoryear]{natbib}
+
+\usepackage[ruled,vlined]{algorithm2e}
+
+\usepackage{array} % needed for \arraybackslash
+\usepackage{adjustbox} % for \adjincludegraphics
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\usepackage{forloop}
+\usepackage{pdflscape}
+\newcounter{loopcntr}
+
+\let\oldfootnote\footnote
+
+\renewcommand{\footnote}[1]{%
+    \oldfootnote{\rlap{\parbox{\dimexpr\paperwidth-72pt\relax}{#1}}}%
+}
+
+\newcommand{\rpt}[2][1]{%
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{#2}%
+}
+\newcommand{\on}[1][1]{
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&\cellcolor{gray}}
+}
+\newcommand{\off}[1][1]{
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&}
+}
+
+\addtolength{\textheight}{90pt}
+
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+%---------------COSAS DEL TIMELINE --------
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+\usepackage{charter}
+\usepackage{environ}
+\usetikzlibrary{calc,matrix}
+\usepackage{soul}
+
+\makeatletter
+\let\matamp=&
+\catcode`\&=13
+\makeatletter
+\def&{\iftikz@is@matrix
+  \pgfmatrixnextcell
+  \else
+  \matamp
+  \fi}
+\makeatother
+
+\newcounter{lines}
+\def\endlr{\stepcounter{lines}\\}
+
+\newcounter{vtml}
+\setcounter{vtml}{0}
+
+\newif\ifvtimelinetitle
+\newif\ifvtimebottomline
+\tikzset{description/.style={
+  column 2/.append style={#1}
+ },
+ timeline color/.store in=\vtmlcolor,
+ timeline color=red!80!black,
+ timeline color st/.style={fill=\vtmlcolor,draw=\vtmlcolor},
+ use timeline header/.is if=vtimelinetitle,
+ use timeline header=false,
+ add bottom line/.is if=vtimebottomline,
+ add bottom line=false,
+ timeline title/.store in=\vtimelinetitle,
+ timeline title={},
+ line offset/.store in=\lineoffset,
+ line offset=4pt,
+}
+
+\NewEnviron{vtimeline}[1][]{%
+\setcounter{lines}{1}%
+\stepcounter{vtml}%
+\begin{tikzpicture}[column 1/.style={anchor=east},
+ column 2/.style={anchor=west},
+ text depth=0pt,text height=1ex,
+ row sep=1ex,
+ column sep=1em,
+ #1
+]
+\matrix(vtimeline\thevtml)[matrix of nodes]{\BODY};
+\pgfmathtruncatemacro\endmtx{\thelines-1}
+\path[timeline color st] 
+($(vtimeline\thevtml-1-1.north east)!0.5!(vtimeline\thevtml-1-2.north west)$)--
+($(vtimeline\thevtml-\endmtx-1.south east)!0.5!(vtimeline\thevtml-\endmtx-2.south west)$);
+\foreach \x in {1,...,\endmtx}{
+ \node[circle,timeline color st, inner sep=0.15pt, draw=white, thick] 
+ (vtimeline\thevtml-c-\x) at 
+ ($(vtimeline\thevtml-\x-1.east)!0.5!(vtimeline\thevtml-\x-2.west)$){};
+ \draw[timeline color st](vtimeline\thevtml-c-\x.west)--++(-3pt,0);
+ }
+ \ifvtimelinetitle%
+  \draw[timeline color st]([yshift=\lineoffset]vtimeline\thevtml.north west)--
+  ([yshift=\lineoffset]vtimeline\thevtml.north east);
+  \node[anchor=west,yshift=16pt,font=\large]
+   at (vtimeline\thevtml-1-1.north west) 
+   {\textsc{Linea de tiempo}: \textit{\vtimelinetitle}};
+ \else%
+  \relax%
+ \fi%
+ \ifvtimebottomline%
+   \draw[timeline color st]([yshift=-\lineoffset]vtimeline\thevtml.south west)--
+  ([yshift=-\lineoffset]vtimeline\thevtml.south east);
+ \else%
+   \relax%
+ \fi%
+\end{tikzpicture}
+}
+%---------------COSAS DEL TIMELINE --------
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+
+  Los vehículos aéreos no tripulados (VANTS) o drones se han vuelto más frecuentes en el mundo actual, la versatilidad y adaptabilidad, los hacen indispensables en las operaciones modernas en numerosos sectores, ofreciendo soluciones eficientes, rentables e innovadoras. Al combinar tecnologías avanzadas y capacidades de toma de decisiones inteligentes con su capacidad para navegar de forma autónoma, evitar obstáculos y llevar a cabo misiones complejas, los VANTS autónomos ofrecen mayor eficiencia, reducción de costos y mayor seguridad en una amplia gama de aplicaciones.\\
+
+  No se puede subestimar la importancia de utilizar múltiples VANTS en actividades de exploración, los sistemas multi-VANT permiten la ejecución paralela de tareas, lo que reduce el tiempo de exploración. Los drones pueden colaborar, intercambiar información y optimizar sus rutas para minimizar la redundancia y agilizar el proceso de exploración. Si un dron encuentra dificultades, otros drones pueden continuar la exploración sin problemas, asegurando la continuidad de la misión y reduciendo el riesgo de fracaso de la misión. La colaboración y coordinación entre robots permite tiempos de respuesta más rápidos, una cobertura más amplia de las áreas afectadas, lo que en última instancia salva vidas.\\
+  
+  Las exploraciones con múltiples robots traen consigo complejidades inherentes que deben abordarse cuidadosamente. La coordinación y colaboración entre múltiples robots presenta desafíos en términos de comunicación, asignación de tareas y sincronización. Establecer canales de comunicación efectivos entre los robots es crucial para compartir información, coordinar acciones y evitar conflictos. Se requieren algoritmos de asignación de tareas para distribuir diferentes tareas de exploración entre los robots, considerando factores como la ubicación, las capacidades y los niveles de energía para optimizar la división del trabajo. Además, es vital garantizar la sincronización y evitar colisiones entre los robots en entornos dinámicos.\\
+
+  Los drones del mañana deberán navegar en áreas urbanas de la mejor manera posible y tener la habilidad de trabajar con múltiples agentes.\\  
+
+  \noindent \textbf{Palabras claves:} estrategias multi-VANT, exploraci\'{o}n multi-VANT, planificaci\'{o}n de rutas multi-VANT, arquitectura de software multi-VANT.
+  
+\end{abstract}
+
+\end{document}
