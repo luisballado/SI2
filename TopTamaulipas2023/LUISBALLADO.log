@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  14 SEP 2023 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  14 SEP 2023 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1168,7 +1168,7 @@ Package rerunfilecheck Info: File `LUISBALLADO.out' has not changed.
 Here is how much of TeX's memory you used:
  35678 strings out of 478268
  773920 string characters out of 5846348
- 1164698 words of memory out of 5000000
+ 1164699 words of memory out of 5000000
  53305 multiletter control sequences out of 15000+600000
  493796 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1176,7 +1176,7 @@ Here is how much of TeX's memory you used:
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb>
-Output written on LUISBALLADO.pdf (1 page, 33855 bytes).
+Output written on LUISBALLADO.pdf (1 page, 33869 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
