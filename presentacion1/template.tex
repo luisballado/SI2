@@ -298,9 +298,9 @@
 \begin{frame}{Descripción del proyecto}
   \begin{minipage}{0.47\textwidth}
     \begin{itemize}
-    \item<1-> Coordinación eficiente para la exploración multi-VANT 
-    \item<2-> Optimizar la cobertura en entornos complejos
-    \item<3-> Toma de decisiones colaborativa y asignación de tareas
+    \item<1-> Coordinación para la exploración multi-VANT 
+    \item<2-> Optimización de rutas multi-VANT % la cobertura en entornos complejos
+    \item<3-> Toma de decisiones colaborativa
     \item<4-> Evasión de obstáculos y coordinación en tiempo real
     \item<5-> Fusión de información (sensores y navegación)
     \end{itemize}
@@ -399,19 +399,20 @@
   %  \column{0.5\textwidth}
   \justifying
   \scriptsize Dada una región tridimensional desconocida y n VANTS, el propósito es encontrar puntos de interés que implique una asignación de trayectoria para cada VANT. En el camino se descubrirán nuevos puntos de interés, haciendo de esta una lista de tareas dinámicas.\\
-  El problema consite en la asignación de las tareas de exploración (puntos de visión) para conocer la región de interés, garantizando que toda la región sea explorada, así como la evasión de obstáculos a su paso.\\
+  El problema consiste en la asignación de tareas de exploración (puntos de visión) para conocer la región de interés, garantizando que toda la región sea explorada, así como la evasión de obstáculos a su paso.\\
   \bigskip % Vertical whitespace
   \pause
-  \scriptsize Con base en lo anterior, surgen las siguiente preguntas de investigación:
+  \scriptsize Con base en lo anterior, surgen las siguientes preguntas de investigación:
   \pause
   \begin{itemize}
+
   \item \scriptsize ¿Cómo se podrá crear una estrategia para optimizar la asignación de tareas y coordinación entre los múltiples VANTS para el problema de exploración de un ambiente desconocido sin señal GPS?
     \pause
   \item \scriptsize ¿Cuál es la representación del medio ambiente de menor complejidad computacional? (para realizar la planificación de trayectorias para los múltiples VANTS)%¿Cómo se pueden diseñar algoritmos rápidos para la planificación de rutas que guie de forma efectiva los múltiples VANTS, considerando la evasión de obstáculos, optimizando la cobertura del área a explorar?
     \pause
   \item \scriptsize ¿Qué mecanismos de coordinación y comunicación pueden facilitar la colaboración y el intercambio rápido de información entre múltiples VANTS durante las misiones de exploración?
-    \pause
-  \item \scriptsize ¿Cómo asegurar que la información que aporte cada uno de los VANTS se integre correctamente a la información ya conocida para generar mapas precisos y completos del entorno explorado?
+    %\pause
+  %\item \scriptsize ¿Cómo asegurar que la información que aporte cada uno de los VANTS se integre correctamente a la información ya conocida para generar mapas precisos y completos del entorno explorado?
   \end{itemize}
   
    % \column{0.5\textwidth}\\
@@ -429,8 +430,11 @@
 \section{Hipótesis y Objetivos}
 
 \begin{frame}{Hipótesis}
+
+  La implementación de una estrategia de exploración coordinada utilizando múltiples vehículos aéreos no tripulados (multi-VANT) en entornos complejos, permitirá obtener mejores resultados en comparación con la exploración individual (mono-VANT). Esta coordinación eficiente se traducirá en una reducción del tiempo y los recursos necesarios para completar la exploración, así como en una mayor cobertura del área de interés. Además, se espera que la exploración coordinada multi-VANT mejore la calidad de los datos recopilados, lo que permitirá tomar decisiones más informadas y eficaces en diversos campos, como la cartografía, la vigilancia, el monitoreo y la respuesta a desastres naturales.
+
   
-  La implementación de una arquitectura descentralizada integrada de algoritmos para la detección y evasión de obstáculos, toma de decisiones, navegación e inteligencia colectiva para los múltiples VANTS. Así como un enfoque de fusión de datos que integre la información de los sensores de los múltiples VANTS, mejorará la efectividad y conducirá a mejores resultados de exploración en entornos dinámicos e inciertos, incluida una mayor cobertura del área explorada, una mejor recopilación de datos en comparación con un enfoque de un solo VANT.
+  %La implementación de una arquitectura descentralizada integrada de algoritmos para la detección y evasión de obstáculos, toma de decisiones, navegación e inteligencia colectiva para los múltiples VANTS. Así como un enfoque de fusión de datos que integre la información de los sensores de los múltiples VANTS, mejorará la efectividad y conducirá a mejores resultados de exploración en entornos dinámicos e inciertos, incluida una mayor cobertura del área explorada, una mejor recopilación de datos en comparación con un enfoque de un solo VANT.
   
 \end{frame}
 
@@ -438,18 +442,16 @@
   %\frametitle
   \begin{enumerate}
   \item<1-> General \\
-    Proponer una arquitectura de software descentralizada capaz de resolver los problemas de localización, mapeo, navegación y coordinación multi-VANT en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
+    \bigskip
+    Desarrollar una arquitectura de software descentralizada capaz de resolver los problemas de localización, mapeo, navegación y coordinación multi-VANT en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
     \pause
   \item<2-> Particulares\\
+    \bigskip
     \begin{itemize}
-    \item Exploración con un solo VANT
+    \item Evaluar y comparar diferentes algoritmos de coordinación y planificación de vuelo para la exploración coordinada multi-VANT.
       \pause
-    \item Desarrollo de un algoritmo para la asignación de tareas. %Diseñar e implementar un algoritmo de asignación de tareas que maximice la eficiencia de la exploración, minimice la redundancia y garantice una distribución equilibrada de la carga de trabajo entre los múltiples VANTS. 
-      \pause
-    \item Desarrollo de un algoritmo de planificación de rutas. %Diseñar e implementar un algoritmo para la planificación de rutas en tiempo real que permita a los múltiples VANTS navegar a través de entornos desconocidos, evitando obstáculos. La ruta generada deberá adaptarse a los cambios dinámicos en el entorno contando con la habilidad de volver a calcular su ruta de manera eficiente cuando sea necesario.
-      \pause
-    \item Construcción de la representación del mundo (mapas). %Diseñar un algoritmo de mapeo y fusión de datos que combine datos proveniente de los múltiples VANTS para crear un mapa completo del entorno explorado. El algoritmo debe manejar la localización y la fusión de mapas individuales para producir una representación consistente del mapa global.
-      \pause
+    \item Realizar pruebas y simulaciones de la solución propuesta en entornos complejos, analizando métricas como tiempo de exploración, cobertura del área de interés y calidad de los datos recopilados.
+      
     \end{itemize}
   \end{enumerate}
 \end{frame}
@@ -472,7 +474,7 @@
     \scriptsize REFERENCIA&
     \scriptsize REPRESENTACION&
     \scriptsize BUSQUEDA&
-    \scriptsize Control de trayectoria\\
+    \scriptsize TRAYECTORIA\\
     \hline
     \hline
     %--------------------------
@@ -519,25 +521,25 @@
   \begin{tabular}{ | p{4cm} | p{3cm} | p{2.5cm} | p{3.5cm}|}
     \hline
     \scriptsize REFERENCIA&
-    \scriptsize MAPA&
-    \scriptsize Planificador de rutas&
-    \scriptsize Control trayectoria\\
+    \scriptsize REPRESENTACION&
+    \scriptsize BUSQUEDA&
+    \scriptsize TRAYECTORIA\\
     \hline
     \hline
     %--------------------------
     \scriptsize \cite{FLORENCE2018}[\citenum{FLORENCE2018}]&
     \scriptsize Busqueda basada en visibilidad&
     \scriptsize 2D A*&
-    \scriptsize Control MPC \\ \hline
+    \scriptsize Control predictivo por modelo (MPC) \\ \hline
     %--------------------------
     \scriptsize \cite{SELIN2019}[\citenum{SELIN2019}]&
     \scriptsize Octomap&
-    \scriptsize NBVP&
+    \scriptsize Next Best View Planner (NBVP)&
     \scriptsize Control directo de velocidad \\ \hline
     %--------------------------
     \scriptsize \cite{BUG2019}[\citenum{BUG2019}]&
     \scriptsize NA&
-    \scriptsize SGBA&
+    \scriptsize Swarm Gradient Bug Algorithm (SGBA)&
     \scriptsize Control directo de velocidad \\ \hline
     %--------------------------
     \scriptsize \cite{COLLINS2019}[\citenum{COLLINS2019}]&
@@ -547,7 +549,7 @@
     %--------------------------
     \scriptsize \cite{CINVES2021}[\citenum{CINVES2021}]&
     \scriptsize Octree&
-    \scriptsize RRT&
+    \scriptsize Rapidly Exploring Random Trees (RRT)&
     \scriptsize Basado en contornos \\ \hline
     %--------------------------
     \scriptsize \cite{RACER2022}[\citenum{RACER2022}]&
@@ -555,17 +557,16 @@
     \scriptsize NBVP&
     \scriptsize Control directo de velocidad \\ \hline
     %--------------------------
-    %\cite{WESTHEIDER2023}&
-    %Mapa de cuadr\'{i}cula&
-    %Deep Learning&
-    %Control directo de velocidad&
-    %\ding{51}\\ \hline
+    \scriptsize \cite{WESTHEIDER2023}[\citenum{WESTHEIDER2023}]&
+    \scriptsize Mapa de cuadrícula&
+    \scriptsize Deep Reinforcement Learning&
+    \scriptsize Control directo de velocidad \\ \hline
     %--------------------------
-    %\cite{BARTOLOMEI2023}&
-    %Mapa de cuadr\'{i}cula&
-    %NBVP&
-    %Control directo de velocidad&
-    %\ding{51}\\ \hline
+    \scriptsize \cite{BARTOLOMEI2023}[\citenum{BARTOLOMEI2023}]&
+    \scriptsize Mapa de cuadrícula&
+    \scriptsize NBVP&
+    \scriptsize Control directo de velocidad \\ \hline
+    %--------------------------
   \end{tabular}
   
   

@@ -1,9 +1,16 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bartolomei et~al.(2023)Bartolomei, Teixeira, and Chli]{BARTOLOMEI2023}
+L.~Bartolomei, L.~Teixeira, and M.~Chli.
+\newblock Fast multi-uav decentralized exploration of forests.
+\newblock \emph{IEEE Robotics and Automation Letters}, 8\penalty0 (9):\penalty0
+  5576--5583, 2023.
+\newblock \doi{10.1109/LRA.2023.3296037}.
 
 \bibitem[Campos-Mac\'{i}as et~al.(2020)Campos-Mac\'{i}as, Aldana-L\'{o}pez,
   Guardia, Parra-Vilchis, and G\'{o}mez-Guti\'{e}rrez]{CINVES2021}
@@ -135,6 +142,12 @@ V.~Usenko, L.~von Stumberg, A.~Pangercic, and D.~Cremers.
   Robots and Systems ({IROS})}. {IEEE}, sep 2017.
 \newblock \doi{10.1109/iros.2017.8202160}.
 \newblock URL \url{https://doi.org/10.1109/iros.2017.8202160}.
+
+\bibitem[Westheider et~al.(2023)Westheider, R{\"u}ckin, and
+  Popovi{\.c}]{WESTHEIDER2023}
+J.~Westheider, J.~R{\"u}ckin, and M.~Popovi{\.c}.
+\newblock Multi-uav adaptive path planning using deep reinforcement learning,
+  2023.
 
 \bibitem[Zhou et~al.(2023)Zhou, Xu, and Shen]{RACER2022}
 B.~Zhou, H.~Xu, and S.~Shen.
