@@ -1,11 +1,8 @@
- 
 %% AVISO IMPORTANTE:
 %% 
 %% Este template es una versión modificada del template de la ACM sample-sigconf.tex.
 
-
 \documentclass[sigconf]{acmart}
-
 
 %% Datos del libro electrónico, a ser incluidos más adelante por los organizadores.
 \setcopyright{rightsretained} %Uncomment this to keep your rights!
@@ -48,7 +45,7 @@
   \postcode{87138}
 }
 
-\author{Dr. José Gabriel Ramirez Torres}
+\author{Dr. José Gabriel Ramírez Torres}
 \email{grtorres@cinvestav.mx}
 \affiliation{%
   \institution{Cinvestav Tamaulipas}
@@ -58,10 +55,11 @@
 }
 
 
-\author{Dr. Eduardo Rodriguez Tello}
+\author{Dr. Eduardo Arturo Rodriguez Tello}
 \email{ertello@cinvestav.mx}
 \affiliation{%
   \institution{Cinvestav Tamaulipas}
+  \streetaddress{Parque Cient\'ifico y Tecnol\'ogico de Tamaulipas}
   \city{Victoria}
   \country{Mexico}
 }
@@ -72,12 +70,17 @@
 %%
 %% Resumen del trabajo que se está presentando.
 \begin{abstract}
-  The integration of Unmanned Aerial Vehicles (UAVs) in exploration tasks has ushered in a new era of efficiency and adaptability. Multi-UAV systems, equipped with advanced coordination algorithms, are poised to revolutionize exploration missions across diverse domains, including environmental monitoring, disaster response, and search and rescue operations. This paper presents a comprehensive exploration of strategies for multi-UAV coordination, spanning from decentralized task allocation to adaptive risk-aware path planning. The proposed coordination algorithms draw from principles in decentralized control, sensor fusion, machine learning, and efficient communication protocols. We delve into the theoretical framework, methodology, and experimental setups used to develop and evaluate these strategies.
+  
+  La integración de los Vehículos Aéreos No Tripulados (UAV) en tareas de exploración ha dado paso a una nueva era de eficiencia y adaptabilidad. Los sistemas multi-UAV, equipados con algoritmos de coordinación avanzados, están preparados para revolucionar las misiones de exploración en diversos dominios, incluido el monitoreo ambiental, la respuesta a desastres y las operaciones de búsqueda y rescate. Una exploración multi-robot tiene un enfoque prometedor para la generación eficiente del mapa de un medio ambiente desconocido. El enfoque colaborativo ofrece mejores resultados de exploración con una rápida obtención de información, logrando sus objetivos con un alto grado de consistencia y resilencia a fallos en comparación con una implementación donde se emplea un único robot. Sin embargo, la exploración multi-robot plantea diversos desafíos que deben abordarse para su correcta implementación, como la comunicación, la colaboración y la fusión de datos.\\
 
-The objectives of this research include enhancing exploration coverage, optimizing resource utilization, and ensuring adaptability to dynamic and unpredictable environmental conditions. Through a rigorous analysis of expected results, we provide insights into the potential benefits of these strategies, including increased mission success, improved data quality, and reduced resource consumption. However, it is essential to address the associated challenges and limitations, from scalability issues to ethical and regulatory constraints.
+  El enfoque de este trabajo es la propuesta de una arquitectura descentralizada de software capaz de coordinar múltiples vehículos aéreos no tripulados con habilidades para la exploración, generación de mapas y planificación de rutas para explorar eficientemente un área de interés. Este problema implica la toma de decisiones complejas, como asignar tareas de exploración a los robots, evitar colisiones y planificar rutas óptimas. Factores como la comunicación entre robots, la incertidumbre del entorno y las limitaciones de recursos de energía forman parte de los criterios considerados.
+  
+  %Este artículo presenta una exploración integral de estrategias para la coordinación de múltiples UAV, que abarca desde la asignación descentralizada de tareas hasta la planificación adaptativa de rutas conscientes de los riesgos. Los algoritmos de coordinación propuestos se basan en principios de control descentralizado, fusión de sensores, aprendizaje automático y protocolos de comunicación eficientes. Profundizamos en el marco teórico, la metodología y los montajes experimentales utilizados para desarrollar y evaluar estas estrategias.\\
 
-The future work section outlines directions for advancing multi-UAV coordination, such as real-world validation, adaptive learning, and standardization. As the field continues to evolve, these strategies hold the promise of optimizing exploration missions and contributing to a wide range of applications that demand efficient and adaptable data collection and decision-making capabilities. This paper serves as a roadmap for researchers, practitioners, and stakeholders in the exploration community, guiding the development and implementation of advanced coordination algorithms for multi-UAV systems.
+  %Los objetivos de esta investigación incluyen mejorar la cobertura de exploración, optimizar la utilización de recursos y garantizar la adaptabilidad a condiciones ambientales dinámicas e impredecibles. A través de un análisis riguroso de los resultados esperados, brindamos información sobre los beneficios potenciales de estas estrategias, incluido un mayor éxito de la misión, una mejor calidad de los datos y un menor consumo de recursos. Sin embargo, es esencial abordar los desafíos y limitaciones asociados, desde cuestiones de escalabilidad hasta limitaciones éticas y regulatorias.\\
 
+  %La sección de trabajo futuro describe direcciones para avanzar en la coordinación de múltiples UAV, como la validación en el mundo real, el aprendizaje adaptativo y la estandarización. A medida que el campo continúa evolucionando, estas estrategias prometen optimizar las misiones de exploración y contribuir a una amplia gama de aplicaciones que exigen capacidades de toma de decisiones y recopilación de datos eficientes y adaptables. Este documento sirve como hoja de ruta para investigadores, profesionales y partes interesadas de la comunidad de exploración, guiando el desarrollo y la implementación de algoritmos de coordinación avanzados para sistemas multi-UAV.
+  
 %Si el artículo es de divulgación, describa de manera resumida el proyecto de investigación, de desarrollo tecnológico o de vinculación que se desarrolló o que se está desarrollando. Incluya una descripción breve de los resultados e impacto alcanzado. Use un lenguaje accesible y claro para la mayor audiencia posible.
 	
 %Si se trata de un artículo de discusión, describa el tópico central a desarrollar y/o la problemática subyacente junto con la motivación para ser abordada desde la perspectiva de la investigación o el desarrollo tecnológico. Empleando un lenguaje accesible y claro para la mayor audiencia posible, describa de manera breve las principales aplicaciones e impacto que el tópico a tratar representa, desde la perspectiva de la sociedad.
@@ -85,7 +88,7 @@ The future work section outlines directions for advancing multi-UAV coordination
 
 %%
 %% Keywords. Incluir no menos de tres palabas clave que identifiquen el trabajo presentado. Separar las palabras con coma.
-\keywords{kw1, keword2, keyword3, keyword4}
+\keywords{estrategias multi-VANT, exploración multi-VANT, planificación de rutas multi-VANT}
 
 %% Creación de la primera parte del documento formateado, incluyendo título y autores.
 \maketitle
@@ -93,38 +96,52 @@ The future work section outlines directions for advancing multi-UAV coordination
 %% Primera sección del artículo
 \section{Introducción}
 
-Unmanned Aerial Vehicles (UAVs) have rapidly evolved from specialized tools to versatile platforms capable of a wide range of applications, from surveillance to search and rescue missions. Among these, exploration tasks in complex and dynamic environments represent a crucial and challenging domain, where the effective coordination of multiple UAVs becomes paramount. This is a topic of increasing importance as UAVs continue to transform industries, including agriculture, environmental monitoring, disaster response, and scientific research.
+Los vehículos aéreos no tripulados (UAV) han evolucionado rápidamente desde herramientas especializadas hasta plataformas versátiles capaces de una amplia gama de aplicaciones, desde vigilancia hasta misiones de búsqueda y rescate. Entre ellas, las tareas de exploración en entornos complejos y dinámicos representan un dominio crucial y desafiante, donde la coordinación efectiva de múltiples UAV se vuelve primordial. Este es un tema de creciente importancia a medida que los vehículos aéreos no tripulados continúan transformando industrias, incluida la agricultura, el monitoreo ambiental, la respuesta a desastres y la investigación científica.\\
 
-The need for multi-UAV coordination in exploration tasks arises from the inherent limitations of single UAVs in terms of coverage, efficiency, and robustness. Exploration of expansive or hazardous areas often demands a collaborative approach, where UAVs work together to optimize resource allocation, minimize redundancy, and enhance data collection and analysis. Multi-UAV systems promise to revolutionize our capacity to explore remote and intricate terrains, whether for mapping uncharted regions, inspecting critical infrastructure, or conducting scientific fieldwork.
+Un sistema autónomo de un Vehículo Aéreo no Tripulado (VANT), consta de tres algoritmos:
 
-However, the journey toward seamless multi-UAV coordination is fraught with challenges. The intricacies of managing a swarm of UAVs, navigating dynamic environments, and distributing tasks intelligently are but a few of the issues that demand our attention. As such, this paper delves into the heart of this challenge, aiming to explore and propose strategies for enhanced multi-UAV coordination in the context of exploration tasks.
-
-In this introduction, we provide an overview of the significance of the topic, highlighting the ever-growing relevance of multi-UAV exploration missions and the shortcomings of existing coordination methods. We also lay the groundwork for our subsequent discussions, which will include a comprehensive review of the current state-of-the-art, a discussion of the research objectives, and an outline of the structure of this paper.
-
-The exploration of uncharted domains, from wild terrains to intricate urban structures, stands on the precipice of transformation through the synergy of multi-UAV systems. By understanding and refining the strategies for multi-UAV coordination in exploration tasks, we hope to unravel new possibilities, break existing boundaries, and ultimately advance the fields of robotics, remote sensing, and scientific exploration.
-
-To embark on this journey, we must address several fundamental questions:
 \begin{itemize}
-  \item What are the key technical and operational challenges that impede the effective coordination of multiple UAVs in exploration tasks?
-  \item How can cutting-edge technologies, from advanced sensor suites to artificial intelligence algorithms, be harnessed to overcome these challenges?
-  \item What are the implications of improved multi-UAV coordination for various sectors, including environmental monitoring, disaster management, and scientific research?
+\item Generación de una representación del entorno
+\item Evasión de obstáculos
+\item Planificación de trayectorias
 \end{itemize}
 
-In the pages that follow, we will explore these questions in depth. We will analyze the current state of research in the field, delving into the latest advancements and identifying gaps that warrant further investigation. Our research aims to offer insights into the most promising strategies and algorithms for multi-UAV coordination in exploration tasks, drawing from a wealth of knowledge in robotics, control systems, and artificial intelligence.
+Los VANTS capaces de realizar tareas con autonomía generalmente cuentan con mayores capacidades de carga y procesamiento computacional, así como sensores capaces de percibir grandes volumenes de datos en un tiempo reducido. Estos VANTS se centran en realizar tareas en áreas abiertas. Sin embargo en donde los espacios son estrechos, se optan por el uso de VANTS reducidos, comunmente llamados Micro-Vehículos Aéreos no tripulados (MAVs).\\
 
-While this paper does not present empirical results at this stage, it serves as a foundational exploration into a critical and evolving research domain. It is our aspiration that the knowledge, theoretical frameworks, and research proposals presented here will not only contribute to the academic discourse but also inspire and guide future endeavors in the field.
+La computadora embebida para un sistema de navegación usados en Micro-Vehículos Aéreos son de bajo rendimiento, pero su necesidad de autonomia sigue siendo la misma que un VANT de mayor tamaño. Es necesario equiparlos con algoritmos de baja complejidad computacional para los sistemas de navegación.\\
 
-The challenges that lie ahead are both formidable and exciting, as they offer the potential to redefine the way we explore, understand, and interact with the world around us. The strategies for multi-UAV coordination in exploration tasks discussed in this paper are but a stepping stone towards that horizon. By addressing these challenges and pushing the boundaries of UAV technology, we endeavor to unlock new possibilities for scientific discovery, environmental stewardship, and humanitarian efforts.
+La necesidad de coordinación entre varios UAV en tareas de exploración surge de las limitaciones inherentes de los UAV individuales en términos de cobertura, eficiencia y robustez. La exploración de áreas extensas o peligrosas a menudo exige un enfoque colaborativo, donde los UAV trabajan juntos para optimizar la asignación de recursos, minimizar la redundancia y mejorar la recopilación y el análisis de datos. Los sistemas multi-UAV prometen revolucionar nuestra capacidad para explorar terrenos remotos e intrincados, ya sea para mapear regiones inexploradas, inspeccionar infraestructura crítica o realizar trabajo de campo científico.\\
 
-In the sections that follow, we will delve deeper into the state of the art in multi-UAV coordination, outline the objectives and methodologies for our proposed research, and discuss the anticipated impacts and future directions of this dynamic field.
+Sin embargo, el camino hacia una coordinación perfecta entre varios vehículos aéreos no tripulados está plagado de desafíos. Las complejidades de gestionar un enjambre de vehículos aéreos no tripulados, navegar en entornos dinámicos y distribuir tareas de forma inteligente son sólo algunas de las cuestiones que exigen nuestra atención. Como tal, este artículo profundiza en el corazón de este desafío, con el objetivo de explorar y proponer estrategias para mejorar la coordinación de múltiples UAV en el contexto de las tareas de exploración.\\
 
-As we continue our exploration of multi-UAV coordination for exploration tasks, we must acknowledge the collaborative nature of this endeavor. The progress in this field depends on the collective efforts of researchers, engineers, and innovators across the globe. The challenges we aim to address require interdisciplinary collaboration, combining expertise in robotics, artificial intelligence, aerospace engineering, and domain-specific knowledge.
+En esta introducción, brindamos una descripción general de la importancia del tema, destacando la relevancia cada vez mayor de las misiones de exploración con múltiples vehículos aéreos no tripulados y las deficiencias de los métodos de coordinación existentes. También sentamos las bases para nuestras discusiones posteriores, que incluirán una revisión exhaustiva del estado actual del arte, una discusión de los objetivos de la investigación y un resumen de la estructura de este artículo.\\
 
-In conclusion, the relentless expansion of UAV technology is affording humanity with unparalleled opportunities for exploration and discovery. Our paper seeks to add to the growing body of knowledge by investigating strategies for multi-UAV coordination in exploration tasks. Through theoretical frameworks, algorithm design, and proposed methodologies, we aspire to pave the way for groundbreaking advancements in this field. By fostering innovation in multi-UAV coordination, we hope to contribute to the transformation of industries, the protection of the environment, and the advancement of scientific understanding.
+La exploración de dominios inexplorados, desde terrenos salvajes hasta intrincadas estructuras urbanas, se encuentra al borde de la transformación a través de la sinergia de sistemas multi-UAV. Al comprender y perfeccionar las estrategias para la coordinación de múltiples vehículos aéreos no tripulados en tareas de exploración, esperamos descubrir nuevas posibilidades, romper los límites existentes y, en última instancia, avanzar en los campos de la robótica, la teledetección y la exploración científica.\\
 
-This scientific endeavor is but a glimpse of the vast terrain we aim to explore and navigate. The challenges are substantial, but so are the rewards. It is our hope that the strategies and insights discussed in this paper will inspire further research and development, leading to practical implementations and pioneering breakthroughs in the coordination of UAVs for exploration tasks.
+Para embarcarnos en este viaje, debemos abordar varias cuestiones fundamentales:
 
-In the pages that follow, we will delve into the existing literature, clarify our research objectives, detail our proposed methodologies, and outline the anticipated impacts of our work. As we embark on this academic journey, we invite readers and fellow researchers to join us in shaping the future of multi-UAV coordination for exploration, ultimately unlocking the hidden potentials of this transformative technology.
+\begin{itemize}
+  \item ¿Cuáles son los principales desafíos técnicos y operativos que impiden la coordinación eficaz de múltiples vehículos aéreos no tripulados en tareas de exploración?
+  \item ¿Cómo se pueden aprovechar las tecnologías de vanguardia, desde conjuntos de sensores avanzados hasta algoritmos de inteligencia artificial, para superar estos desafíos?
+  \item ¿Cuáles son las implicaciones de una mejor coordinación de múltiples vehículos aéreos no tripulados para diversos sectores, incluido el monitoreo ambiental, la gestión de desastres y la investigación científica?
+\end{itemize}
+
+En las páginas que siguen, exploraremos estas preguntas en profundidad. Analizaremos el estado actual de la investigación en el campo, profundizando en los últimos avances e identificando brechas que ameritan una mayor investigación. Nuestra investigación tiene como objetivo ofrecer información sobre las estrategias y algoritmos más prometedores para la coordinación de múltiples UAV en tareas de exploración, aprovechando una gran cantidad de conocimientos en robótica, sistemas de control e inteligencia artificial.\\
+
+Si bien este artículo no presenta resultados empíricos en esta etapa, sirve como una exploración fundamental de un dominio de investigación crítico y en evolución. Nuestra aspiración es que el conocimiento, los marcos teóricos y las propuestas de investigación presentados aquí no solo contribuyan al discurso académico sino que también inspiren y guíen esfuerzos futuros en este campo.\\
+
+Los desafíos que tenemos por delante son formidables y apasionantes, ya que ofrecen el potencial de redefinir la forma en que exploramos, entendemos e interactuamos con el mundo que nos rodea. Las estrategias para la coordinación de múltiples vehículos aéreos no tripulados en las tareas de exploración analizadas en este documento no son más que un paso hacia ese horizonte. Al abordar estos desafíos y ampliar los límites de la tecnología UAV, nos esforzamos por desbloquear nuevas posibilidades para el descubrimiento científico, la gestión ambiental y los esfuerzos humanitarios.\\
+
+En las secciones siguientes, profundizaremos en el estado del arte en la coordinación de múltiples UAV, delinearemos los objetivos y metodologías para nuestra investigación propuesta y discutiremos los impactos anticipados y las direcciones futuras de este campo dinámico.\\
+
+A medida que continuamos nuestra exploración de la coordinación de múltiples UAV para tareas de exploración, debemos reconocer la naturaleza colaborativa de este esfuerzo. El progreso en este campo depende de los esfuerzos colectivos de investigadores, ingenieros e innovadores de todo el mundo. Los desafíos que pretendemos abordar requieren una colaboración interdisciplinaria, combinando experiencia en robótica, inteligencia artificial, ingeniería aeroespacial y conocimientos de dominios específicos.\\
+
+En conclusión, la incesante expansión de la tecnología UAV está brindando a la humanidad oportunidades incomparables de exploración y descubrimiento. Nuestro artículo busca ampliar el creciente cuerpo de conocimientos mediante la investigación de estrategias para la coordinación de múltiples UAV en tareas de exploración. A través de marcos teóricos, diseño de algoritmos y metodologías propuestas, aspiramos a allanar el camino para avances innovadores en este campo. Al fomentar la innovación en la coordinación de múltiples UAV, esperamos contribuir a la transformación de las industrias, la protección del medio ambiente y el avance de la comprensión científica.\\
+
+Este esfuerzo científico es sólo un vistazo del vasto terreno que pretendemos explorar y navegar. Los desafíos son sustanciales, pero también lo son las recompensas. Esperamos que las estrategias y los conocimientos analizados en este documento inspiren más investigación y desarrollo, lo que conducirá a implementaciones prácticas y avances pioneros en la coordinación de vehículos aéreos no tripulados para tareas de exploración.\\
+
+En las páginas siguientes, profundizaremos en la literatura existente, aclararemos nuestros objetivos de investigación, detallaremos nuestras metodologías propuestas y delinearemos los impactos anticipados de nuestro trabajo. A medida que nos embarcamos en este viaje académico, invitamos a lectores y colegas investigadores a unirse a nosotros para dar forma al futuro de la coordinación de múltiples vehículos aéreos no tripulados para la exploración y, en última instancia, desbloquear los potenciales ocultos de esta tecnología transformadora.
+
 
 %Se debe presentar una introducción con el suficiente detalle para enmarcar el alcance del proyecto realizado, o el contexto en el cuál la temática a tratar es relevante para la sociedad. 
 
@@ -135,32 +152,48 @@ In the pages that follow, we will delve into the existing literature, clarify ou
 %% Cuerpo principal, dividido por secciones.
 \section{Estado del Arte}
 
-Dado que el artículo tiene un carácter de acceso universal del conocimiento, el lenguaje y estilo usado debe tener en cuenta que el artículo lo leerán personas con poco, medio o alto grado de especialización. 
+Las aplicaciones de la robótica industrial se han centrado en realizar tareas simples y repetitivas. La necesidad de robots con capacidad de identificar cambios en su entorno y reaccionar sin la intervención humana, da origen a los robots inteligentes. Aunado a ello si deseamos que el robot se mueva libremente, los cambios en su entorno pueden aumentar rápidamente y complicar el problema de un comportamiento inteligente.\\
 
-Para los artículos de divulgación, se deberá seguir el formato IMRYD (Introducción, Metodología, Resultados y Discusión, cada parte pudiendo ser una sección en el artículo). Deberá describir el enfoque de solución, resaltando las áreas de la computación en las que se enmarca el proyecto, los métodos o algoritmos utilizados para resolver la problemática subyacente. Se pueden integrar diagramas o algoritmos previamente publicados con la correspondiente discusión, citando las fuentes originales.
-Se recomienda presentar los resultados de manera que la audiencia, generalmente no especializada, pueda interpretar el impacto de los mismos. Se pueden reproducir resultados previamente publicados, agregando una discusión en el contexto del artículo que se presenta y citando las fuentes originales.
+El despliegue rápido de robots en situaciones de riesgo, búsqueda y rescate ha sido un área ampliamente estudiada en la robótica móvil. Donde existen concursos como el DARPA CHALLENGE, donde los factores como la exploración, planeación y coordinación son clave para lograr los objetivos del reto ((CITAR)), donde se han aplicado teorías de grafos para la obtención de la mejor ruta.\\
 
-Se recomienda el uso de tablas (ver Tabla \ref{tab:freq}) y gráficas/figuras (ver Figura \ref{figEjemplo}). 
-En la sección de discusión, se deberá describir y transmitir el mensaje de la relevancia del proyecto abordado, de sus resultados, y el impacto que éste tuvo para la sociedad.
+La exploración de un ambiente desconocido empleando multi-VANT es un área relativamente nueva y con mucho crecimiento en los últimos años. Se han abordado una variedad de temas para lograr la exploración autónoma, desde la planificación de rutas para múltiples robots terrestres en tareas de exploración ((citar)), estrategias para la coordinación y protocolos de comunicación ((citar)). Diversos estudios multi-VANT se han realizado para tareas como el monitoreo ambiental ((citar)), agricultura de precisión ((citar)) y operaciones de búsqueda y rescate ((citar))\\
 
-\begin{table}
-  \caption{Frecuencia de caracteres especiales}
-  \label{tab:freq}
-  \begin{tabular}{ccl}
-    \toprule
-    Ejemplo&Frecuencia&Comentarios\\
-    \midrule
-    \O & 1 en 1,000& aparece en algunos nombres\\
-    $\pi$ & 1 en 5& común en matemáticas\\
-    \$ & 4 en 5 & usado en finanzas\\
-    $\Psi^2_1$ & 1 en 40,000& desconocido\\
-  \bottomrule
-\end{tabular}
-\end{table}
+La dirección en que apunta el estado del arte, se puede atribuir a los avances en tecnología en la última década. Investigadores de diversas áreas, que incluyen las ciencias computacionales y la ingeniería, han contribuido al crecimiento de este campo.\\
 
+Sin embargo, la necesidad de una arquitectura de software descentralizada que englobe todos estos componentes y que sea capaz de coordinar múltiples VANTS, surge como una área de investigación prometedora que garantice el funcionamiento correcto de los componentes necesarios para realizar tareas de exploración.
 
+\subsection*{Planificación de trayectorias}
 
-\section{Objetivos e Hipotesis}
+Uno de los desafíos clave en la colaboración de múltiples VANTS es la planificación de rutas. Se han desarrollado diversos algoritmos para optimizar la planificación de rutas dentro de la robótica móvil, minimizando los riesgos de colisión y mejorando la eficiencia en sus misiones. Estos algoritmos tienen en cuenta varios factores como las restricciones del robot y la ubicacion del objetivo, para generar trayectorias seguras.\\
+
+El objetivo principal de los algoritmos de navegación es el de guiar al robot desde el punto de inicio al punto destino. Los trabajos por Lumelsky and Stepanov[23], dieron respuesta a proble- máticas de navegación eficiente, que no requieren de una representación del medio ambiente y emplean, por lo tanto, pocos recursos computacionales y de memoria (algoritmos tipo bug).\\
+
+Matemáticamente, el problema de planificación de rutas es resuelto a través del modelado del medio ambiente utilizando grafos, siendo un grafo una representación matemática de vértices y aristas. Hart et al.[24], al mejorar el algoritmo de Dijkstra para el robot Shakey, logró navegar en una habitación que contenía obstáculos fijos. El objetivo principal del algoritmo A* es la eficiencia en la planificación de rutas. A su vez, el algoritmo D*, propuesto por Stentz[25], ha demostrado operar de manera eficiente ante obstáculos dinámicos; en comparación con el algoritmo A* que vuelve a ejecutarse al encontrarse con un obstáculo no previsto inicialmente, el algoritmo D* usa la información previa para buscar una nueva ruta hacia el objetivo.
+
+%Dado que el artículo tiene un carácter de acceso universal del conocimiento, el lenguaje y estilo usado debe tener en cuenta que el artículo lo leerán personas con poco, medio o alto grado de especialización. 
+
+%Para los artículos de divulgación, se deberá seguir el formato IMRYD (Introducción, Metodología, Resultados y Discusión, cada parte pudiendo ser una sección en el artículo). Deberá describir el enfoque de solución, resaltando las áreas de la computación en las que se enmarca el proyecto, los métodos o algoritmos utilizados para resolver la problemática subyacente. Se pueden integrar diagramas o algoritmos previamente publicados con la correspondiente discusión, citando las fuentes originales.
+%Se recomienda presentar los resultados de manera que la audiencia, generalmente no especializada, pueda interpretar el impacto de los mismos. Se pueden reproducir resultados previamente publicados, agregando una discusión en el contexto del artículo que se presenta y citando las fuentes originales.
+
+%Se recomienda el uso de tablas (ver Tabla \ref{tab:freq}) y gráficas/figuras (ver Figura \ref{figEjemplo}). 
+%En la sección de discusión, se deberá describir y transmitir el mensaje de la relevancia del proyecto abordado, de sus resultados, y el impacto que éste tuvo para la sociedad.
+
+%\begin{table}
+%  \caption{Frecuencia de caracteres especiales}
+%  \label{tab:freq}
+%  \begin{tabular}{ccl}
+%    \toprule
+%    Ejemplo&Frecuencia&Comentarios\\
+%    \midrule
+%    \O & 1 en 1,000& aparece en algunos nombres\\
+%    $\pi$ & 1 en 5& común en matemáticas\\
+%    \$ & 4 en 5 & usado en finanzas\\
+%    $\Psi^2_1$ & 1 en 40,000& desconocido\\
+%  \bottomrule
+%\end{tabular}
+%\end{table}
+
+\section{Objetivos e Hipótesis}
 
 Research Objectives:
 
