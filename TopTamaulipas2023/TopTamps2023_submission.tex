@@ -27,7 +27,7 @@
 
 
 %% "title" tiene un parámetro opcional, que le permite a los autores definir un título corto que aparece en los encabezados.
-\title{Estrategias para la coordinación multi-VANT}
+\title{Estrategias para la exploración coordinada multi-VANT}
 
 %%
 %% Los autores se inlcuyen usando el comando "author". El ejemplo muestra distintos casos, cuando hay autores que comparten afiliación o no.
@@ -123,23 +123,23 @@ Sin embargo, el camino hacia una coordinación entre múltiples vehículos aére
 
 %En esta introducción, brindamos una descripción general de la importancia del tema, destacando la relevancia cada vez mayor de las misiones de exploración con múltiples vehículos aéreos no tripulados y las deficiencias de los métodos de coordinación existentes. También sentamos las bases para nuestras discusiones posteriores, que incluirán una revisión exhaustiva del estado actual del arte, una discusión de los objetivos de la investigación y un resumen de la estructura de este artículo.\\
 
-La exploración de áreas inexploradas, desde terrenos con árboles hasta estructuras urbanas, se encuentra al borde de la transformación a través de la sinergia de sistemas multi-VANT. Al comprender y perfeccionar las estrategias para la coordinación de múltiples vehículos aéreos no tripulados en tareas de exploración, esperamos descubrir nuevas posibilidades, romper los límites existentes y, en última instancia, avanzar en los campos de la robótica y la exploración científica.\\
+La exploración de áreas desconocidas, a través de la sinergia de sistemas multi-VANT promete ser una solución innovadora. Al comprender y perfeccionar las estrategias para la coordinación de múltiples vehículos aéreos no tripulados en tareas de exploración, esperamos descubrir nuevas posibilidades, replicar o romper los límites existentes y, en última instancia, avanzar en los campos de la robótica y la exploración.\\
 
 El presente trabajo de investigación busca resolver las siguientes preguntas de investigación:
 
 \begin{itemize}
   \item ¿Cuáles son los principales desafíos técnicos y operativos que impiden la coordinación eficaz de múltiples vehículos aéreos no tripulados en tareas de exploración?
   \item ¿Cómo se pueden aprovechar las tecnologías de vanguardia, desde conjuntos de sensores avanzados hasta algoritmos de inteligencia artificial, para superar estos desafíos?
-  \item ¿Cuáles son las implicaciones de una mejor coordinación de múltiples vehículos aéreos no tripulados para diversos sectores, incluido el monitoreo ambiental, la gestión de desastres y la investigación científica?
+  \item ¿Cuáles son las implicaciones de una mejor coordinación de múltiples vehículos aéreos no tripulados para diversos sectores, incluido el monitoreo ambiental y la gestión de desastres?
 \end{itemize}
 
 %En las páginas que siguen, exploraremos estas preguntas en profundidad. Analizaremos el estado actual de la investigación en el campo, profundizando en los últimos avances e identificando brechas que ameritan una mayor investigación. Nuestra investigación tiene como objetivo ofrecer información sobre las estrategias y algoritmos más prometedores para la coordinación de múltiples UAV en tareas de exploración, aprovechando una gran cantidad de conocimientos en robótica, sistemas de control e inteligencia artificial.\\
 
-Si bien este artículo no presenta resultados en esta etapa, sirve como una exploración de un dominio de investigación en evolución y guíen esfuerzos futuros en este campo. Al abordar estos desafíos y ampliar los límites de la tecnología UAV, nos esforzamos por desbloquear nuevas posibilidades para el descubrimiento científico, la gestión ambiental y los esfuerzos humanitarios.\\
+Si bien este artículo no presenta resultados en esta etapa, sirve como una exploración de un dominio de investigación en evolución y guíen esfuerzos futuros en este campo. Al abordar estos desafíos y ampliar los límites de la tecnología de los vehículos aéreos no tripulados, nos esforzamos por desbloquear nuevas posibilidades para el descubrimiento científico, la gestión ambiental y los esfuerzos humanitarios.\\
 
 %En las secciones siguientes, profundizaremos en el estado del arte en la coordinación de múltiples UAV, delinearemos los objetivos y metodologías para nuestra investigación propuesta y discutiremos los impactos anticipados y las direcciones futuras de este campo dinámico.\\
 
-En conclusión, la incesante expansión de la tecnología UAV está brindando a la humanidad oportunidades incomparables de exploración y descubrimiento. Nuestro artículo busca ampliar el creciente cuerpo de conocimientos mediante la investigación de estrategias para la coordinación de múltiples UAV en tareas de exploración. A través de marcos teóricos, diseño de algoritmos y metodologías propuestas, aspiramos a allanar el camino para avances innovadores en este campo. Al fomentar la innovación en la coordinación de múltiples UAV, esperamos contribuir a la transformación de las industrias, la protección del medio ambiente y el avance de la comprensión científica.\\
+
 
 %Este esfuerzo científico es sólo un vistazo del vasto terreno que pretendemos explorar y navegar. Los desafíos son sustanciales, pero también lo son las recompensas. Esperamos que las estrategias y los conocimientos analizados en este documento inspiren más investigación y desarrollo, lo que conducirá a implementaciones prácticas y avances pioneros en la coordinación de vehículos aéreos no tripulados para tareas de exploración.\\
 
@@ -157,30 +157,32 @@ En conclusión, la incesante expansión de la tecnología UAV está brindando a 
 
 %Las aplicaciones de la robótica industrial se han centrado en realizar tareas simples y repetitivas. La necesidad de robots con capacidad de identificar cambios en su entorno y reaccionar sin la intervención humana, da origen a los robots inteligentes. Aunado a ello si deseamos que el robot se mueva libremente, los cambios en su entorno pueden aumentar rápidamente y complicar el problema de un comportamiento inteligente.\\
 
-El despliegue rápido de robots en situaciones de riesgo, búsqueda y rescate ha sido un área ampliamente estudiada en la robótica móvil. Donde existen concursos como el DARPA CHALLENGE, donde los factores como la exploración, planeación y coordinación son clave para lograr los objetivos del reto ((CITAR)), donde se han aplicado teorías de grafos para la obtención de la mejor ruta.\\
+El despliegue rápido de robots en situaciones de riesgo, búsqueda y rescate ha sido un área ampliamente estudiada en la robótica móvil. Donde existen concursos como el DARPA CHALLENGE, donde los factores como la exploración, planeación y coordinación son clave para lograr los objetivos del reto \cite{DARPA2022}, donde se han aplicado teorías de grafos para la obtención de la mejor ruta.\\
 
 %La exploración de un ambiente desconocido empleando multi-VANT es un área relativamente nueva y con mucho crecimiento en los últimos años. Se han abordado una variedad de temas para lograr la exploración autónoma, desde la planificación de rutas para múltiples robots terrestres en tareas de exploración ((citar)), estrategias para la coordinación y protocolos de comunicación ((citar)). Diversos estudios multi-VANT se han realizado para tareas como el monitoreo ambiental ((citar)), agricultura de precisión ((citar)) y operaciones de búsqueda y rescate ((citar))\\
 
 La dirección en que apunta el estado del arte, se puede atribuir a los avances en tecnología en la última década. Investigadores de diversas áreas, que incluyen las ciencias computacionales y la ingeniería, han contribuido al crecimiento de este campo.\\
 
 %La exploración independiente de terrenos desconocidos utilizando vehículos aéreos no tripulados ha sido un área de investigación dinámica en las últimas décadas.
-Un enfoque ampliamente adoptado para estudiar regiones específicas implica la utilización de "fronteras", que delinean los límites entre espacios conocidos y desconocidos. Estas fronteras sirven para identificar áreas potencialmente informativas, guiando así eficientemente el proceso de exploración hasta que no se detecten más fronteras, lo que indica la conclusión de la exploración.\\
+Un enfoque ampliamente adoptado para estudiar regiones específicas implica la utilización de \textbf{fronteras}, que delinean los límites entre espacios conocidos y desconocidos. Estas fronteras sirven para identificar áreas potencialmente informativas, guiando así eficientemente el proceso de exploración hasta que no se detecten más fronteras, lo que indica la conclusión de la exploración.\\
 
 Sin embargo, si bien las metodologías basadas en fronteras han demostrado ser efectivas en términos de cobertura de área, a menudo dan como resultado movimientos subóptimos, particularmente cuando se aplican a vehículos aéreos no tripulados. La causa fundamental de esta ineficiencia puede atribuirse principalmente a las limitaciones de las tecnologías sensoriales utilizadas para construir mapas del medio ambiente con fines de exploración. Los sensores comunes equipados en vehículos aéreos no tripulados, como las cámaras RGB-D y estéreo, tienen rangos de detección limitados. En consecuencia, los vehículos aéreos no tripulados se ven obligados a adoptar patrones de vuelo cautelosos para garantizar la seguridad.\\
 
-Para abordar esta limitación, Cieslewski y su equipo proponen una estrategia de exploración que genera directivas de velocidad basadas en fronteras recientemente identificadas, con el objetivo de maximizar la velocidad del UAV. Este enfoque demuestra un rendimiento superior en comparación con los métodos tradicionales, pero se centra exclusivamente en las fronteras locales.\\
+Para abordar esta limitación, \citeauthor{CIESLEWSKI2017} \cite{CIESLEWSKI2017}, proponen una estrategia de exploración que genera directivas de velocidad basadas en fronteras recientemente identificadas, con el objetivo de maximizar la velocidad del VANT. Este enfoque demuestra un rendimiento superior en comparación con los métodos tradicionales, pero se centra exclusivamente en las fronteras locales.\\
 
-Por el contrario, Zhou y sus colaboradores de investigación introducen un enfoque de planificación jerárquica que produce rutas globales eficientes al tiempo que promueve maniobras locales seguras y ágiles para la exploración. Sin embargo, esta estrategia requiere el mantenimiento de un historial de fronteras activas.\\ %Gestionar este conjunto de datos adicional puede ser un desafío, especialmente en entornos desordenados como los bosques, donde el número de fronteras se multiplica rápidamente debido a las obstrucciones creadas por troncos, ramas y arbustos de árboles.
+Por el contrario, \citeauthor{FUEL} \cite{FUEL}, introducen un enfoque de planificación jerárquica que produce rutas globales eficientes al tiempo que promueve maniobras locales seguras y ágiles para la exploración. Sin embargo, esta estrategia requiere el mantenimiento de un historial de fronteras activas.\\ %Gestionar este conjunto de datos adicional puede ser un desafío, especialmente en entornos desordenados como los bosques, donde el número de fronteras se multiplica rápidamente debido a las obstrucciones creadas por troncos, ramas y arbustos de árboles.
 
-En el ámbito de la mejora de la eficiencia de la exploración, se han introducido en la literatura científica varios métodos que implican la cooperación entre múltiples robots, presentados tanto en forma centralizada como descentralizada. Los métodos centralizados suelen incorporar una estación terrestre central responsable de calcular inicialmente un plan integral para múltiples robots, que luego se difunde a los agentes, suponiendo una comunicación fluida. En este sentido, Burgard y sus colegas se esfuerzan por reducir la superposición en áreas exploradas disminuyendo la ganancia de información de una frontera potencial si se asigna otro robot a una frontera separada en su proximidad. Por el contrario, Tian y su equipo abordan el desafío de la asignación utilizando un problema de vendedores ambulantes múltiples (mTSP) para asignar a cada agente a una frontera candidata. Mientras tanto, el enfoque propuesto en [una referencia] sobresale en generar caminos eficientes para la reconstrucción 3D. Sin embargo, es importante señalar que este método requiere un sobrevuelo previo del área de interés, lo que la hace inadecuada para la exploración forestal. Por otro lado, el método descrito en [otra referencia] pone un mayor énfasis en la navegación a través de los bosques, con un enfoque particular en la estimación y el mapeo colaborativos del estado, en lugar de la planificación de rutas.\\
+En el ámbito de la mejora de la eficiencia de la exploración, se han introducido en la literatura científica varios métodos que implican la cooperación entre múltiples robots, presentados tanto en forma centralizada como descentralizada. Los métodos centralizados suelen incorporar una estación terrestre central responsable de calcular inicialmente un plan integral para múltiples robots, que luego se difunde a los agentes, suponiendo una comunicación fluida. En este sentido, \citeauthor{1435481} \cite{1435481}, se esfuerzan por reducir la superposición en áreas exploradas disminuyendo la ganancia de información de una frontera potencial si se asigna otro robot a una frontera separada en su proximidad. Por el contrario, \citeauthor{Tian} \cite{Tian}, abordan el desafío de la asignación utilizando un problema de vendedores ambulantes múltiples (mTSP) para asignar a cada agente a una frontera candidata. Mientras tanto, el enfoque propuesto en [una referencia] sobresale en generar caminos eficientes para la reconstrucción 3D. Sin embargo, es importante señalar que este método requiere un sobrevuelo previo del área de interés, lo que la hace inadecuada para la exploración forestal. Por otro lado, el método descrito en [otra referencia] pone un mayor énfasis en la navegación a través de los bosques, con un enfoque particular en la estimación y el mapeo colaborativos del estado, en lugar de la planificación de rutas.\\
 
 No obstante, los sistemas centralizados, por diseño, operan bajo el supuesto de una comunicación confiable a larga distancia. Además, enfrentan desafíos relacionados con la escalabilidad, ya que la carga de trabajo de la unidad central de procesamiento aumenta con el creciente número de agentes. Por otro lado, los enfoques descentralizados son intrínsecamente más sólidos debido a su dependencia de la comunicación directa entre pares. En estos métodos, cada robot puede funcionar independientemente de los demás, lo que ofrece una mayor resiliencia. Sin embargo, esta ventaja tiene el costo de una mayor complejidad en la coordinación de las acciones de los agentes, ya que se limitan a utilizar información local exclusivamente.\\
 
-Yamauchi presenta una estrategia en la que los robots se mueven hacia la frontera más cercana e intercambian datos de mapas con otros agentes. Sin embargo, este enfoque resulta ineficiente porque puede dar lugar a que varios robots converjan en la misma frontera. Kabir y Lee abordan esta limitación basando su enfoque en la teoría del transporte óptimo, mientras que Yu y su equipo emplean un campo potencial de múltiples objetivos y múltiples robots para la asignación de robots a diferentes fronteras. De manera similar, este trabajo y otro coordinan a los agentes mediante una asignación distribuida de objetivos individuales, mientras que Corah y Michael asignan robots a grupos de fronteras. Sin embargo, estos métodos se basan en el supuesto de una comunicación estable entre agentes.\\
+\citeauthor{YAMAUCHI1997} \cite{YAMAUCHI1997} presenta una estrategia en la que los robots se mueven hacia la frontera más cercana e intercambian datos de mapas con otros agentes. Sin embargo, este enfoque resulta ineficiente porque puede dar lugar a que varios robots converjan en la misma frontera. \citeauthor{9483227} \cite{9483227}, abordan esta limitación basando su enfoque en la teoría del transporte óptimo, mientras que \citeauthor{9561328} \cite{9561328}, emplean un campo potencial de múltiples objetivos y múltiples robots para la asignación de robots a diferentes fronteras. De manera similar, este trabajo y otro coordinan a los agentes mediante una asignación distribuida de objetivos individuales, mientras que \citeauthor{9561226} \cite{9561226}, asignan robots a grupos de fronteras. Sin embargo, estos métodos se basan en el supuesto de una comunicación estable entre agentes.\\
 
-El enfoque introducido por Zhou y sus colaboradores, conocido como RACER, tiene como objetivo mitigar estos problemas dividiendo el área de exploración en una cuadrícula y garantizando que los agentes exploren distintas regiones mientras siguen rutas de cobertura. RACER es resistente ante rangos de comunicación limitados, ya que depende de la interacción directa por pares entre robots. Sin embargo, enfrenta desafíos en términos de coordinación subóptima en entornos muy concurridos, como los bosques, ya que supone una distribución uniforme de los obstáculos.\\
+El enfoque introducido por \citeauthor{RACER2022} \cite{RACER2022}, conocido como RACER, tiene como objetivo mitigar estos problemas dividiendo el área de exploración en una cuadrícula y garantizando que los agentes exploren distintas regiones mientras siguen rutas de cobertura. RACER es resistente ante rangos de comunicación limitados, ya que depende de la interacción directa por pares entre robots. Sin embargo, enfrenta desafíos en términos de coordinación subóptima en entornos muy concurridos, ya que supone una distribución uniforme de los obstáculos.\\
 
-Motivados por estas limitaciones, nuestra investigación introduce una estrategia descentralizada para sistemas de múltiples robots, que permite a un grupo de robots navegar en entornos complejos que se asemejan a bosques a altas velocidades. Esto es posible gracias a la libertad y adaptabilidad que ofrece nuestro enfoque de planificación, que permite a cada UAV cambiar sin problemas entre varios modos de navegación durante la misión. La coordinación se logra mediante la comunicación directa entre pares de robots y una división del área de exploración menos restrictiva en comparación con el enfoque anterior.\\
+Motivados por estas limitaciones, nuestra investigación introduce una estrategia descentralizada para sistemas de múltiples VANTS, que englobe los componentes necesarios para realizar tareas de exploración en interiores.
+
+%Esto es posible gracias a la libertad y adaptabilidad que ofrece nuestro enfoque de planificación, que permite a cada UAV cambiar sin problemas entre varios modos de navegación durante la misión. La coordinación se logra mediante la comunicación directa entre pares de robots y una división del área de exploración menos restrictiva en comparación con el enfoque anterior.\\
 
 
 %Sin embargo, la necesidad de una arquitectura de software descentralizada que englobe todos estos componentes y que sea capaz de coordinar múltiples VANTS, surge como una área de investigación prometedora que garantice el funcionamiento correcto de los componentes necesarios para realizar tareas de exploración.
@@ -216,322 +218,450 @@ Motivados por estas limitaciones, nuestra investigación introduce una estrategi
 %\end{tabular}
 %\end{table}
 
+
+\section{Planteamiento del problema}
+
+Dada un área de interés desconocida en un espacio cerrado que se desea explorar denotada como $\mathcal{A}$, tal que $\mathcal{A} \subset \mathbb{R}^{3}$.\\
+
+Un voxel $v$ que representa el espacio contenido en $\mathcal{A}$ que es obtenido dividiendo recursivamente el área de interés $\mathcal{A}$ en ocho partes de igual tamaño, el voxel puede tomar los valores de libre o ocupado de notados como $v_{libre}$, $v_{occ}$. La región ocupada son obtenidas mediante un sensor basado en un modelo de ocupación probabilístico.\\
+
+Un conjunto de VANTS denotado como $\mathcal{V} = \{\mathcal{V}_{1},\mathcal{V}_{2},\mathcal{V}_{3},...,\mathcal{V}_{n}\}$ siendo $n$ el número total de VANTS disponibles y una configuración inicial $q$ cuya cardinalidad es el número de VANTS disponibles denotado como $q = \{q_{1},q_{2},q_{3},...,q_{n}\}$.\\
+
+Determinar el conjunto de tareas para cada VANT, así como el conjunto de rutas que maximize el área explorada minimizando el tiempo y la energía consumida.\\
+
+%Desarrollar una arquitectura descentralizada de control, implementada en cada uno de los miembros de un conjunto de $\mathcal{V}$ veh\'{i}culos a\'{e}reos no tripulados, que refleje una estrategia de exploraci\'{o}n multi-VANT de un medio ambiente dado. El propósito de esta arquitectura de control es que cada uno de los VANT participe de manera independiente pero coordinada para reducir el tiempo total de exploración, colaborando y compartiendo información eficazmente con los demás miembros del equipo.\\
+
+La estrategia propuesta debe tomar en cuenta las limitaciones de comunicación, sensores y energía, para distribuir las tareas de exploración entre todos los miembros del equipo de VANTS, así como establecer trayectorias seguras y libres de obstáculos para cada uno de los VANTS.\\
+
+% que reduzca el tiempo total de exploraci\'{o}n dado un conjunto de . Las capacidades limitadas de energ\'{i}a y sensores abordo de los VANT les permiten navegar de forma aut\'{o}noma. Teniendo en cuenta sus limitaciones de energ\'{i}a y la necesidad de una exploraci\'{o}n eficiente, el objetivo es determinar la trayectoria, las rutas y la asignaci\'{o}n de tareas \'{o}ptimas.\\
+
+%El espacio de todas las posibles configuraciones, est\'{a} compuesto por los espacios libres ($C_{free}$) y espacios ocupado (con obst\'{a}culos) $C_{obs}$.\\
+%
+%Sea $\mathcal{W} = \mathbb{R}^{3}$ el mundo, $\mathcal{O} \in \mathcal{W}$ el conjunto de obst\'{a}culos,\\
+%$\mathcal{A}(q)$ las configuraciones del robot $q \in \mathcal{C}$
+%
+%\begin{itemize}
+%  \item $C_{free} = \{q \in \mathcal{C} | \mathcal{A}(q)\cap\mathcal{O} = \emptyset\}$
+%  \item $C_{obs} = C \setminus C_{free}$
+%\end{itemize}
+%
+%donde $\mathcal{W} = \mathbb{R}^{3}$ es el espacio de trabajo del robot, $\mathcal{O} \in \mathcal{W}$ es el conjunto de obst\'{a}culos, y $\mathcal{A}(q)$ son las configuraciones del robot $q \in \mathcal{C}$ .\\
+
+%Com\'{u}nmente se relaciona al problema de planificaci\'{o}n de rutas con el problema del mover un piano (\textbf{piano movement problem}). Es un problema dif\'{i}cil ya que el piano es un objeto en $\mathbb{R}^{3}$ que puede rotar y trasladarse. La \textbf{planificaci\'{o}n de rutas}, es similar. Ya que queremos mover al robot a un punto especifico.\\
+
+%\textquestiondown Qu\'{e} acciones deber\'{a} realizar el VANT para explorar el espacio completo lo m\'{a}s r\'{a}pido posible?.\\
+
+%La soluci\'{o}n debe tener en cuenta los obst\'{a}culos, los entornos din\'{a}micos, las limitaciones de comunicaci\'{o}n y la coordinaci\'{o}n entre los VANTS para evitar colisiones.
+Para lograr una exploraci\'{o}n eficiente y completa con un tiempo y recursos m\'{i}nimos, el problema requiere la creaci\'{o}n de algoritmos y t\'{e}cnicas de optimizaci\'{o}n.\\
+
+%Completar la exploraci\'{o}n significa que el robot pueda crear un mapa $\mathcal{M}$ que cubre el volumen $\mathcal{V}$ y los puntos en el mapa. Por la naturaleza del problema, esto se debe resolver de forma r\'{a}pida sin tiempos de espera.\\
+
+%La coordinaci\'{o}n de m\'{u}ltiples-VANT (Veh\'{i}culos A\'{e}reos No Tripulados) es un desaf\'{i}o complejo en el campo de la rob\'{o}tica y la exploraci\'{o}n de \'{a}reas desconocidas. A medida que la tecnolog\'{i}a de los Veh\'{i}culos A\'{e}reos No Tripulados contin\'{u}a avanzando y se vuelven m\'{a}s accesibles, se presenta la oportunidad de utilizar equipos de m\'{u}ltiples VANT para realizar tareas de manera colaborativa y eficiente. Sin embargo, esta coordinaci\'{o}n planea diversas problem\'{a}ticas que deben abordarse.\\
+
+%\st{La coordinaci\'{o}n de m\'{u}ltiples VANT implica la necesidad de establecer una comunicaci\'{o}n efectiva entre ellos. Los VANT deben intercambiar informaci\'{o}n relevante sobre su posici\'{o}n, estado, objetivos y otros datos importantes. La comunicaci\'{o}n debe ser confiable, de baja latencia y capaz de manejar m\'{u}ltiples enlaces de manera simult\'{a}nea.}\\
+
+%Otro desaf\'{i}o es la planificaci\'{o}n de rutas y la toma de decisiones distribuida. Los VANT deben coordinar sus movimientos para evitar colisiones y lograr una cobertura eficiente del \'{a}rea objetivo. Esto implica la necesidad de desarrollar algoritmos y estrategias que permitan la planificaci\'{o}n de rutas din\'{a}micas, considerando los obst\'{a}culos y las restricciones del entorno. Adem\'{a}s, los VANT deben tomar decisiones colaborativas para adaptarse a situaciones imprevistas o cambios en el entorno.\\
+
+%La asignaci\'{o}n de tareas tambi\'{e}n es un aspecto cr\'{i}tico en la coordinaci\'{o}n de m\'{u}ltiples VANT. Cada VANT puede tener diferentes capacidades y sensores especializados, por lo que es importante asignar tareas de acuerdo con las fortalezas individuales de cada robot. Adem\'{a}s, los VANT deben colaborar en la recolecci\'{o}n y procesamiento de datos, evitanto la duplicaci\'{o}n de esfuerzos optimizando el uso de los recursos disponibles.\\
+
+%\st{Dada un \'{a}rea de inter\'{e}s $A$ desconocida que se desea explorar,}
+
+%\begin{itemize}
+%\item \st{Un conjunto de Veh\'{i}culos A\'{e}reos No Tripulados (VANT) denotados como $V = \{V_{1},V_{2},V_{3},...,V_{n}\}$, donde $n$ es el n\'{u}mero total de VANT's disponibles}
+%\item \st{Un conjunto de tareas de exploraci\'{o}n denotados como $T = \{T_{1}, T_{2}, T_{3}, T_{m}\}$, donde $m$ es el n\'{u}mero total de tareas a realizar.}
+%\end{itemize}
+
+%\st{restricciones y requisitos espec\'{i}ficos del problema, como l\'{i}mites de tiempo, obst\'{a}culos a evitar. Para cada tarea de exploraci\'{o}n $T_{m}$, se definen las siguientes variables:}
+
+%\begin{itemize}
+%\item \st{Posici\'{o}n inicial: $p_{i}(x,y,z)$, representa la posici\'{o}n inicial del VANT o los m\'{u}ltiples-VANTs asignados a la tarea $T_{m}$}
+%\item \st{Trayectoria: $\alpha_{i}$, describe la trayectoria seguida por el/los VANT asignado(s) a la tarea $T_{m}$ en funci\'{o}n del tiempo $t$}
+%\item \st{Informaci\'{o}n recolectada: $C_{i}$, representa la informaci\'{o}n recolectada por el/los VANT asignado(s) durante la exploraci\'{o}n}
+%\end{itemize}
+
+La funci\'{o}n objetivo tomar\'{a} en cuenta distintos objetivos espec\'{i}ficos del problema:
+\begin{itemize}
+\item Maximizar la cobertura del \'{a}rea explorada 
+\item Minimizar el tiempo total requerido para cubrir el \'{a}rea de inter\'{e}s
+%\item Maximizar la cantidad de informaci\'{o}n recolectada
+\item Asegurar la consistencia de la información recolectada y fusionada en un único mapa, compartido entre todos los VANTS
+\end{itemize}
+
 \section{Objetivos e Hipótesis}
 
-Research Objectives:
+\subsection*{Objetivo general}
 
-    To Investigate the State of the Art: To conduct a comprehensive review of existing multi-UAV coordination strategies and technologies used in exploration tasks and identify their strengths and limitations.
+Desarrollar una arquitectura de software descentralizada capaz de resolver los problemas de localización, mapeo, navegación y coordinación multi-VANT en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
 
-    To Develop Advanced Coordination Algorithms: To design and develop novel coordination algorithms that enhance the efficiency, adaptability, and robustness of multi-UAV systems operating in complex exploration environments.
+\subsection*{Objetivos Particulares}
 
-    To Analyze the Impact of Advanced Sensors: To explore the integration of advanced sensors, including LiDAR, computer vision, and environmental sensors, to improve situational awareness and decision-making within multi-UAV systems.
+\begin{itemize}
+\item Evaluar y comparar diferentes algoritmos de coordinación y planiﬁcación de vuelo para la exploración coordinada multi-VANT.
+\item Elegir la representación del ambiente con menor complejidad computacional.
+\item Realizar pruebas y simulaciones de la solución propuesta en entornos complejos, analizando métricas como tiempo de exploración, cobertura del área de interés y calidad de los datos recopilados.
+\end{itemize}
 
-    To Evaluate Real-World Applicability: To assess the practical feasibility of proposed strategies through simulations and, eventually, field experiments in relevant exploration scenarios.
+\subsection*{Hipótesis}
 
-    To Examine Scalability and Resource Optimization: To investigate the scalability of the developed strategies concerning the number of UAVs and resource allocation, aiming for optimal resource utilization.
+La implementación de una estrategia de exploración coordinada utilizando múltiples vehículos aéreos no tripulados (multi-VANT) en entornos complejos, permitirá obtener mejores resultados en comparación con la exploración individual (mono-VANT). Esta coordinación eﬁciente se traducirá en una reducción del tiempo y los recursos necesarios para completar la exploración, así como en una mayor cobertura del área de interés. Además, se espera que la exploración coordinada multi-VANT mejore la calidad de los datos recopilados, lo que permitirá tomar decisiones más informadas y eﬁcaces en diversos campos, como la cartografía, la vigilancia, el monitoreo y la respuesta a desastres naturales.
 
-Hypotheses:
+%\begin{figure}
+%  \includegraphics[width=.45\textwidth]{sample}
+%  \caption{Agregar descripción de la figura, de forma clara y concisa. Todas las figuras deben ser referenciadas en el documento y contener el suficiente detalle para ser autocontenido, en la medida de lo posible.}
+%  \label{figEjemplo}
+%\end{figure}
 
-    Hypothesis 1: Advanced multi-UAV coordination algorithms, utilizing swarm intelligence and decentralized control, will outperform traditional approaches in terms of coverage, exploration efficiency, and adaptability in complex and dynamic exploration environments.
+%Fórmulas o ecuaciones también pueden ser incluidas.
+%\begin{equation}
+%  \sum_{i=0}^{\infty}x_i=\int_{0}^{\pi+2} f
+%\end{equation}
 
-    Hypothesis 2: The integration of advanced sensors, such as LiDAR and computer vision, will significantly enhance the situational awareness and obstacle avoidance capabilities of multi-UAV systems, leading to improved exploration outcomes.
+%\section{Marco de trabajo}
 
-    Hypothesis 3: Proposed strategies will exhibit scalability in terms of accommodating a larger number of UAVs while maintaining efficient resource allocation, making them suitable for a wide range of exploration tasks.
+%The theoretical framework of this research is founded upon the integration of key concepts from the fields of robotics, control systems, artificial intelligence, and exploration science. It encompasses a synthesis of established theories and emerging technologies, aimed at addressing the challenges and opportunities of multi-UAV coordination in exploration tasks.
 
-    Hypothesis 4: The application of the developed strategies will lead to measurable improvements in exploration missions, including faster area coverage, reduced redundancy, and enhanced data collection capabilities when compared to conventional single-UAV operations.
+%1. Multi-Agent Systems (MAS): Multi-UAV systems are inherently multi-agent systems where each UAV acts as an autonomous agent capable of perceiving its environment, making decisions, and interacting with other agents to achieve collective goals. Theoretical foundations from MAS research, including swarm intelligence and decentralized control, serve as the basis for enabling autonomous, self-organizing behavior among UAVs in exploration missions.
 
-    These research objectives and hypotheses set the direction for your study, outlining the specific goals you aim to achieve and the assumptions you'll test throughout your research. They provide a clear framework for your paper and help focus your investigation into strategies for multi-UAV coordination in exploration tasks.
+%2. Decentralized Decision-Making: The theoretical framework leverages the principles of decentralized decision-making, wherein each UAV operates with limited information but collaborates with other UAVs through communication and local interactions. The use of decentralized algorithms allows for scalability and adaptability, essential in complex and dynamic exploration environments.
+
+%3. Sensor Fusion: The framework incorporates the concept of sensor fusion, where data from a diverse set of sensors, such as LiDAR, cameras, environmental sensors, and GPS, are integrated to enhance situational awareness. Sensor fusion principles, drawn from computer vision and sensor networks, enable UAVs to collectively build a comprehensive and accurate model of the exploration area.
+
+%4. Machine Learning and Artificial Intelligence (AI): Machine learning techniques, such as reinforcement learning and deep reinforcement learning, are integrated into the framework to enable UAVs to learn from past exploration experiences and adapt to new challenges. AI algorithms are used for decision-making, path planning, and obstacle avoidance, enhancing the intelligence of the multi-UAV system.
+
+%5. Communication Protocols: The theoretical framework addresses the design and implementation of communication protocols that ensure reliable and low-latency data exchange among UAVs. Concepts from network theory and communication systems guide the development of robust communication mechanisms, critical for coordination and information sharing.
+
+%6. Exploration Science Principles: In the context of exploration tasks, the framework considers principles from exploration science, including spatial coverage optimization, information gain, and uncertainty reduction. These principles guide the development of exploration strategies that prioritize areas of interest, minimize redundancy, and maximize data collection efficiency.
+
+%7. Scalability and Resource Optimization: The framework includes models for scalability and resource optimization, allowing for the adaptation of strategies to accommodate varying numbers of UAVs and dynamically allocate resources, such as battery power, sensor time, and data storage, to maximize exploration efficiency.
+
+%8. Environmental Adaptation: The theoretical framework acknowledges the dynamic and often hostile nature of exploration environments. It incorporates adaptability and resilience principles, drawing from ecological theories, to enable the multi-UAV system to respond to environmental variability, such as weather changes and unexpected obstacles.
+
+%9. Cost-Benefit Analysis: Economic theories related to cost-benefit analysis are considered in evaluating the practical feasibility and return on investment of implementing the proposed strategies, incorporating factors like hardware and software costs, maintenance expenses, and the benefits of improved exploration outcomes.
+
+%This theoretical framework provides a solid foundation for the subsequent development and evaluation of multi-UAV coordination strategies. By combining principles from various domains and embracing interdisciplinary perspectives, the framework equips this research with a holistic approach to tackle the multifaceted challenges posed by exploration tasks in diverse and evolving environments.
+
+%10. Mission Success Criteria: The framework incorporates mission success criteria based on exploration objectives and domain-specific requirements. These criteria, borrowed from operations research and project management, provide quantitative measures for assessing the effectiveness of the proposed strategies.
+
+%11. Interdisciplinary Collaboration: To address the complexities of exploration tasks and to ensure practical applicability, the framework encourages interdisciplinary collaboration between UAV technologists, environmental scientists, and domain experts. Insights from various fields are essential for aligning strategies with the specific needs and objectives of exploration missions.
+
+%12. Ethical and Legal Considerations: In alignment with the framework, ethical and legal considerations are critical components of the research. The framework embraces principles of responsible AI and drone ethics, taking into account privacy, safety, and regulatory compliance in the design and operation of multi-UAV systems.
+
+%13. Technological Advancements: The framework recognizes the continuous evolution of UAV technology, AI, and sensing equipment. It accommodates the potential for rapid technological advancements and the incorporation of emerging technologies, such as 5G communication, edge computing, and energy-efficient UAV designs, in enhancing multi-UAV coordination for exploration tasks.
+
+%14. Human-Machine Interaction: The framework acknowledges the interaction between humans and the multi-UAV system. The principles of human-computer interaction (HCI) and usability engineering guide the design of user interfaces and control mechanisms to facilitate human oversight, intervention, and collaboration in exploration missions.
+
+%This comprehensive theoretical framework provides a roadmap for developing, testing, and implementing strategies for multi-UAV coordination in exploration tasks. By drawing from a wide range of theoretical concepts and integrating them into a cohesive structure, this framework equips researchers and practitioners with the tools and guidance needed to advance the state of the art in this dynamic and cross-disciplinary field. It underscores the importance of addressing not only technical challenges but also ethical, legal, and human-centric considerations in the development and deployment of multi-UAV systems for exploration.
+
+\section{Metodología}
+
+Siguiendo los objetivos anteriores, la metodolog\'{i}a propuesta se divide en tres etapas, que comenzarón en septiembre del 2023 y terminarán en agosto de 2024. A continuaci\'{o}n se detallan cada una de las actividades que se plantean realizar en cada etapa.
+
+\subsection*{Etapa 1. An\'{a}lisis y dise\~{n}o de la soluci\'{o}n propuesta}
+
+Esta etapa comprende la revisi\'{o}n de la literatura de manera m\'{a}s completa, que permita contar con la informaci\'{o}n necesaria para la elecci\'{o}n de los mejores algoritmos para abordar cada una de las problem\'{a}ticas asociadas con la coordinaci\'{o}n de múltiples robots en tareas de exploración, detectando áreas de oportunidad para el desarrollo de una estrategia descentralizada de coordinación. Una vez realizada la elecci\'{o}n de los algoritmos que se usar\'{a}n para la propuesta de arquitectura de software, se proceder\'{a} a conocer y estudiar las arquitecturas de software empleadas en robots colaborativos. Finalmente, se realizar\'{a} el dise\~{n}o de la arquitectura.\\
+
+Las actividades espec\'{i}ficas a realizarse en la etapa 1, son:
+  
+  \begin{enumerate}
+  \item[] \textbf{E1.A1.} \textbf{Revisi\'{o}n estado del arte}. Ampliar la revisi\'{o}n de la literatura sobre coordinaci\'{o}n y exploraci\'{o}n multi-VANT.
+  \item[] \textbf{E1.A2.} \textbf{Evaluaci\'{o}n de aptitudes}. Revisar y documentar los aspectos relevantes (así como sus limitantes) que permiten la colaboraci\'{o}n, coordinaci\'{o}n y balanceo de la carga de trabajo multi-VANT.
+  %\item \textbf{E1.A3.} \textbf{Selecci\'{o}n de algoritmos} Estudiar las limitantes de las soluciones relevantes en la literatura en base a autonomia e inteligencia computacional.
+  \item[] \textbf{E1.A3.} \textbf{Selecci\'{o}n de algoritmos}. Seleccionar los algoritmos para planificaci\'{o}n de trayectorias y exploraci\'{o}n en ambientes desconocidos de baja complejidad computacional.
+  \item[] \textbf{E1.A4.} \textbf{Desarrollo de soluci\'{o}n}. Definir la arquitectura de software para escenarios en aplicaciones multi-VANT apegadas a las especificaciones de computadora de placa reducida (Raspberry Pi, Esp32 ... etc.).
+  
+  \end{enumerate}
+  
+  \subsection*{Etapa 2. Implementaci\'{o}n y validaci\'{o}n}
+  
+  Esta etapa se centra en el desarrollo e implementaci\'{o}n del dise\~{n}o de la arquitectura de software para la coordinaci\'{o}n multi-VANT, utilizando una herramienta de simulación de robots de libre acceso, cumpliendo estándares de modularidad de diseño.\\
+  
+  Las actividades espec\'{i}ficas a realizarse en la etapa 2, son:
+
+  \begin{enumerate}
+  \item[] \textbf{E2.A1.} \textbf{Selecci\'{o}n del simulador}. Al tener definida la arquitectura de software y conocer las estructuras de datos que se utilizarán, evaluar los diversos simuladores para rob\'{o}tica de libre uso. (Revisar temas de modelos 3D, din\'{a}mica del robot, representaci\'{o}n del ambiente 3D, simulaci\'{o}n de sensores). 
+  \item[] \textbf{E2.A2.} \textbf{Visualizaci\'{o}n de datos}. Conocer las herramientas para la visualizaci\'{o}n y telemetr\'{i}a y creaci\'{o}n de un modelo 3D de acuerdo al simulador seleccionado.
+  \item[] \textbf{E2.A3.} \textbf{Control de desplazamientos}. Crear movimientos y control de un VANT y m\'{u}ltiples VANTS, algoritmos que forman parte de la capa reactiva del VANT.
+  %\item[] \textbf{E2.A4.} \textbf{Desarrollo de visualizaci\'{o}n de datos} A partir de la selecci\'{o}n del sensor, se desarrollar\'{a} la forma de representar el entorno 3D dentro del simulador elegido.
+  \item[] \textbf{E2.A4.} \textbf{Desarrollo de algoritmos de exploraci\'{o}n}. De acuerdo con la revisi\'{o}n del estado del arte, se implementar\'{a} el algoritmo propuesto para la exploraci\'{o}n con un VANT.
+  \item[] \textbf{E2.A5.} \textbf{Implementaci\'{o}n un solo VANT}. Realizar pruebas y corregir errores con base a los desarrollos realizados.
+  \item[] \textbf{E2.A6.} \textbf{Simulaci\'{o}n un solo VANT}. Realizar pruebas de simulaci\'{o}n con un solo VANT, de la soluci\'{o}n propuesta.
+  \item[] \textbf{E2.A7.} \textbf{Desarrollo de mecanismo de coordinaci\'{o}n}. Al contar con la exploraci\'{o}n y navegaci\'{o}n exitosa de un solo VANT, se procede al desarrollo de un mecanismo de coordinaci\'{o}n multi-VANT.
+  \item[] \textbf{E2.A8.} \textbf{Implementaci\'{o}n multi-VANT}. Realizar pruebas y correcci\'{o}n de errores con base a los desarrollos realizados para la coordinaci\'{o}n multi-VANT.
+  \item[] \textbf{E2.A9.} \textbf{Simulaci\'{o}n multi-VANT}. Realizar pruebas de simulaci\'{o}n multi-VANT de la soluci\'{o}n propuesta.
+  \end{enumerate}
+  
+
+  \subsection*{Etapa 3. Evaluaci\'{o}n experimental, resultados y conclusiones}
+  
+  Partiendo del prototipo y las simulaciones desarrolladas en la etapa anterior, en esta etapa se realizan todas las actividades relacionadas con la evaluación, compilación y análisis de resultados y la escritura de los capítulos restantes de la tesis. \\
+
+  Las actividades espec\'{i}ficas a realizarse en la etapa 3 son:
+  
+  \begin{enumerate}
+  \item[] \textbf{E3.A1.} \textbf{Análisis comparativo de la soluci\'{o}n}. Experimentos para evaluar el desempe\~{n}o de la solución propuesta creada en la etapa anterior.  
+  \item[] \textbf{E3.A2.} \textbf{Recopilaci\'{o}n y análisis de resultados}. Recabar la información de los resultados, realizar su análisis y generar la documentación correspondiente.
+  
+  \end{enumerate}
+
+%This section outlines the methodology used to investigate and develop strategies for multi-UAV coordination in exploration tasks. The research methodology encompasses several key phases, from literature review and algorithm design to simulation and experimentation.
+
+%1. Literature Review
+
+%In this initial phase, a comprehensive literature review is conducted to assess the state of the art in multi-UAV coordination and exploration tasks. This review encompasses academic papers, conference proceedings, research reports, and relevant technical publications. The goals of the literature review are as follows:
+
+%    Identify existing multi-UAV coordination strategies, technologies, and algorithms.
+%    Evaluate the strengths and limitations of current approaches.
+%    Identify gaps in the literature that warrant further investigation.
+
+%2. Algorithm Design and Development
+
+%Building upon the insights gained from the literature review, the research focuses on the design and development of advanced multi-UAV coordination algorithms. This phase involves the following steps:
+
+%    Formulating mathematical models and algorithms that facilitate decentralized decision-making, dynamic task allocation, and obstacle avoidance.
+%    Integrating machine learning and AI techniques for adaptive exploration and real-time decision-making.
+%    Designing communication protocols to enable information exchange and coordination among UAVs.
+%    Incorporating principles of sensor fusion to enhance situational awareness.
+
+%3. Simulation Environment
+
+%A robust simulation environment is established for testing and validating the developed coordination strategies. The simulation setup encompasses the following elements:
+
+%    Selection of simulation software and tools (e.g., ROS, Gazebo, or custom-built simulators) suitable for modeling multi-UAV systems.
+%    Generation of virtual exploration environments that mimic real-world scenarios, including terrain, obstacles, and environmental factors.
+%    Integration of sensor models, communication models, and environmental dynamics into the simulation platform.
+
+%4. Experimental Setup
+
+%Once the coordination algorithms are designed and tested in a simulated environment, a real-world experimental setup is considered. This phase is initiated when access to UAV hardware and suitable exploration scenarios is available. The experimental setup includes the following steps:
+
+%    Selection of UAV platforms equipped with the necessary sensors, communication systems, and onboard computers.
+%    Configuration of the UAVs for multi-agent coordination and integration of the developed algorithms.
+%    Deployment in controlled exploration scenarios, considering factors such as terrain complexity, environmental conditions, and mission objectives.
+
+%5. Data Collection and Analysis
+
+%In both simulation and real-world experiments, extensive data collection is performed to evaluate the effectiveness of the developed coordination strategies. The following aspects are addressed:
+
+%    Data collection mechanisms, including onboard sensor data, communication logs, and mission logs.
+%    Quantitative and qualitative analysis of the data to measure exploration coverage, resource optimization, obstacle avoidance, and decision-making efficiency.
+%    Statistical analysis to compare the performance of the developed strategies with baseline approaches.
+
+%6. Ethical and Safety Considerations
+
+%Throughout the research, ethical and safety considerations are paramount. The following principles are adhered to:
+
+%    Adherence to regulatory guidelines and safety protocols for UAV operations.
+%    Privacy protection and data security in data collection and communication.
+%    Minimization of environmental impact and risk mitigation during field experiments.
+
+%7. Reporting and Documentation
+
+%The results of the research, including algorithm designs, simulation outcomes, and experimental findings, are documented in a rigorous and transparent manner. The research findings are reported in a technical scientific paper format, adhering to appropriate citation and referencing standards.
+
+%8. Iteration and Validation
+
+%The methodology includes provisions for iteration and validation, where insights from simulations and experiments inform refinements and adjustments to the coordination strategies and algorithms. This iterative process aims to enhance the robustness and real-world applicability of the developed strategies.
+
+%The outlined methodology provides a structured approach to the investigation and development of multi-UAV coordination strategies for exploration tasks. It combines theoretical research, simulation, and real-world experimentation to rigorously assess the capabilities and limitations of the proposed strategies in diverse and dynamic exploration environments.
+
+
+\section{Algoritmos}
+
+\subsection*{Planificación de trayectorias}
+
+\subsection*{Mapeo}
+
+\subsection*{Evasión de obstáculos}
+
+\subsection*{Coordinación}
+
+%The success of multi-UAV coordination in exploration tasks hinges on the development and implementation of effective coordination algorithms. This section presents a selection of proposed coordination algorithms designed to optimize exploration outcomes, enhance efficiency, and adapt to dynamic environmental conditions. The algorithms are based on the theoretical framework outlined earlier, drawing from principles in multi-agent systems, decentralized control, machine learning, sensor fusion, and communication protocols.
+
+%1. Decentralized Task Allocation (DTA) Algorithm
+
+%The Decentralized Task Allocation (DTA) Algorithm is designed to enable UAVs to autonomously allocate exploration tasks while minimizing overlap and redundancy. Key features of the DTA Algorithm include:
+
+%    Localized Decision-Making: Each UAV independently assesses its surroundings, identifies exploration targets, and communicates with neighboring UAVs to distribute tasks.
+%    Dynamic Task Prioritization: The algorithm adapts to changing mission objectives, prioritizing high-value exploration areas based on sensor inputs and mission goals.
+%    Resource Awareness: UAVs consider their energy levels and data storage capacity, optimizing task assignments to conserve resources and maximize coverage.
+
+%2. Multi-Sensor Information Fusion (MSIF) Algorithm
+
+%The Multi-Sensor Information Fusion (MSIF) Algorithm leverages sensor fusion principles to enhance situational awareness and decision-making. Key components of the MSIF Algorithm include:
+
+%    Sensor Data Integration: UAVs integrate data from various sensors, including LiDAR, cameras, environmental sensors, and GPS, to create a comprehensive environmental model.
+%    Obstacle Avoidance: The algorithm provides obstacle detection and avoidance mechanisms, utilizing sensor data to navigate UAVs around obstacles in real-time.
+%    Environmental Mapping: UAVs collaboratively build detailed maps of the exploration area, utilizing sensor data fusion to reduce uncertainties.
+
+%3. Reinforcement Learning-Based Exploration (RLE) Algorithm
+
+%The Reinforcement Learning-Based Exploration (RLE) Algorithm employs machine learning techniques to facilitate adaptive exploration and decision-making. Key attributes of the RLE Algorithm include:
+
+%    Learning from Experience: UAVs continuously learn from exploration experiences, improving their decision-making capabilities over time.
+%    Adaptive Exploration Policies: The algorithm defines exploration policies that balance the trade-off between exploration of unknown regions and exploitation of known information.
+%    Real-Time Adaptation: RLE allows UAVs to adapt to unforeseen obstacles and dynamic environmental conditions through reinforcement learning mechanisms.
+
+%4. Communication-Efficient Coordination Protocol (CECP)
+
+%The Communication-Efficient Coordination Protocol (CECP) focuses on efficient communication among UAVs to facilitate coordination. Key elements of CECP include:
+
+%    Localized Data Sharing: UAVs selectively exchange mission-critical data, such as exploration progress and obstacle information, to reduce communication overhead.
+%    Decentralized Decision Relay: CECP allows UAVs to relay critical information to other nearby UAVs, fostering collaboration without centralized control.
+%    Adaptive Data Rate: The protocol dynamically adjusts data transfer rates based on the importance of shared information, conserving bandwidth and power resources.
+
+%5. Swarm Resilience and Adaptability (SRA) Algorithm
+
+%The Swarm Resilience and Adaptability (SRA) Algorithm focuses on the adaptability and resilience of the multi-UAV system in dynamic environments. Key features of the SRA Algorithm include:
+
+%    Swarm Resilience Mechanisms: UAVs collaborate to recover from failures or recover from unexpected obstacles using swarm intelligence.
+%    Dynamic Task Reassignment: SRA enables the real-time reassignment of exploration tasks in response to environmental changes or UAV failures.
+%    Path Planning with Uncertainty: The algorithm integrates probabilistic path planning to navigate in environments with limited data or high uncertainty.
+
+%These proposed coordination algorithms collectively contribute to the enhancement of multi-UAV coordination for exploration tasks. By combining principles from various disciplines, including decentralized control, sensor fusion, machine learning, and efficient communication, they address the complex challenges of exploring dynamic and unstructured environments. The effectiveness of these algorithms will be rigorously evaluated through simulation and field experiments, as described in the following sections of this paper.
+
+\section{Resultados Esperados y Análisis}
+
+La implementación y evaluación exitosa de la propuesta. Se espera que los algoritmos de coordinación en tareas de exploración de múltiples VANTS produzcan mejoras significativas en la eficiencia, cobertura y adaptabilidad de la exploración. El siguiente análisis proporciona una visión general de los resultados esperados y sus implicaciones.
+
+\subsection*{Porcentaje de cobertura de exploración}
+
+Una de las principales métricas de desempeño es el porcentaje de cobertura de exploración, que representa la proporción del área de exploración cubierta con éxito por el sistema multi-UAV. Se prevé que la aplicación de algoritmos de coordinación avanzados, conducirá a un aumento notable en el porcentaje de cobertura.
+
+\begin{itemize}
+\item Análisis comparativo de la cobertura alcanzada por los algoritmos de coordinación propuestos frente a los enfoques en el estado del arte.
+\item Prueba de la adaptabilidad a terrenos variables y dinámicos.
+\item Identificación de áreas con mejor cobertura debido a los mecanismos de priorización.
+\end{itemize}
+  
+\subsection*{Utilización y eficiencia de recursos}
+
+La utilización eficiente de los recursos es crucial en las tareas de exploración de múltiples UAV para extender la duración de la misión y optimizar la recopilación de datos. Los resultados esperados se centrarán en la utilización de recursos, incluida la energía, el tiempo de los sensores y el almacenamiento de datos.
+
+\begin{itemize}
+\item Evaluación comparativa del consumo de recursos entre algoritmos de coordinación avanzados y métodos tradicionales.
+  
+\item Evaluación de la adaptabilidad de algoritmos a diferentes limitaciones de recursos y objetivos de misión.
+  
+\item Identificación de la estrategia eficiente en el uso de recursos que prolonguen la duración de la misión y la calidad de los datos al mismo tiempo que conservan la energía y el almacenamiento.
+  
+\end{itemize}
+
+\subsection*{Adaptabilidad a condiciones dinámicas}
+
+Los entornos de exploración a menudo se caracterizan por condiciones dinámicas, como obstáculos imprevistos. Se espera que los algoritmos de coordinación propuestos, demuestren una adaptabilidad.
+
+\begin{itemize}
+\item Evaluación de la solución para asignar tareas dinámicamente y ajustar rutas en respuesta a cambios en su entorno.
+\item Evaluación de la eficacia de los mecanismos de respuesta, incluida la reasignación de tareas.
+\end{itemize}
+
+\subsection*{Toma de decisiones en tiempo real y evitación de obstáculos}
+
+Los sistemas multi-VANT a menudo enfrentan desafíos a la hora de tomar decisiones en tiempo real, como evitar obstáculos y planificar rutas. Se espera que las solución propuesta muestre capacidades de toma de decisiones.
+
+\begin{itemize}
+\item Análisis comparativo de la velocidad y eficiencia en la toma de decisiones entre algoritmos avanzados y enfoques tradicionales.
+\item Evaluación de mecanismos de evitación de obstáculos en tiempo real, especialmente en entornos no estructurados e impredecibles.
+\end{itemize}
+
+%\subsection*{Human-Machine Interaction and User Satisfaction}
+
+%The user-centered design principles embedded in the proposed algorithms, as exemplified by the Adaptive Mission Planner and Dynamic Task Scheduler (AMP-DTS) Algorithm, are expected to enhance the interaction between human operators and the multi-UAV system. The analysis will encompass:
+
+%\begin{itemize}
+%\item Assessment of user satisfaction and workload when operating multi-UAV systems with advanced coordination algorithms.
+%\item Evaluation of the usability and intuitiveness of user interfaces and control mechanisms.
+%\item Identification of design improvements based on user feedback and observations.
+%\end{itemize}
+
+El examen de los resultados esperados permitirá evaluar la efectividad y la viabilidad práctica de los algoritmos de coordinación propuestos en las tareas de exploración de múltiples VANTs. Los descubrimientos proporcionarán fundamentos para mejoras y usos adicionales en contextos de exploración con múltiples VANTS.
+
     
+%\section{Retos y limitantes}
 
-\begin{figure}
-  \includegraphics[width=.45\textwidth]{sample}
-  \caption{Agregar descripción de la figura, de forma clara y concisa. Todas las figuras deben ser referenciadas en el documento y contener el suficiente detalle para ser autocontenido, en la medida de lo posible.}
-  \label{figEjemplo}
-\end{figure}
+%While the proposed coordination algorithms hold promise for advancing multi-UAV coordination in exploration tasks, several challenges and limitations should be considered. Acknowledging these challenges is critical for a comprehensive understanding of the practical applicability of the strategies.
 
-Fórmulas o ecuaciones también pueden ser incluidas.
-\begin{equation}
-  \sum_{i=0}^{\infty}x_i=\int_{0}^{\pi+2} f
-\end{equation}
+%1. Scalability and Computational Complexity
 
-\section{Marco de trabajo}
+%    Challenge: As the number of UAVs in a mission increases, the computational complexity of decentralized coordination algorithms, such as the Decentralized Task Allocation (DTA) Algorithm, can become a limiting factor. Real-time decision-making and task allocation may face scalability challenges.
 
-The theoretical framework of this research is founded upon the integration of key concepts from the fields of robotics, control systems, artificial intelligence, and exploration science. It encompasses a synthesis of established theories and emerging technologies, aimed at addressing the challenges and opportunities of multi-UAV coordination in exploration tasks.
+%    Limitation: While efforts have been made to optimize these algorithms, there may still be limitations in handling extremely large-scale missions or scenarios where computational resources are constrained.
 
-1. Multi-Agent Systems (MAS): Multi-UAV systems are inherently multi-agent systems where each UAV acts as an autonomous agent capable of perceiving its environment, making decisions, and interacting with other agents to achieve collective goals. Theoretical foundations from MAS research, including swarm intelligence and decentralized control, serve as the basis for enabling autonomous, self-organizing behavior among UAVs in exploration missions.
+%2. Real-World Environmental Variability
 
-2. Decentralized Decision-Making: The theoretical framework leverages the principles of decentralized decision-making, wherein each UAV operates with limited information but collaborates with other UAVs through communication and local interactions. The use of decentralized algorithms allows for scalability and adaptability, essential in complex and dynamic exploration environments.
+%    Challenge: Exploration tasks often occur in unpredictable and dynamic environments, such as dense forests, mountainous terrains, or disaster-stricken areas. Algorithms like the Adaptive Risk-Aware Path Planning (ARAPP) Algorithm may face difficulties in adapting to rapidly changing conditions.
 
-3. Sensor Fusion: The framework incorporates the concept of sensor fusion, where data from a diverse set of sensors, such as LiDAR, cameras, environmental sensors, and GPS, are integrated to enhance situational awareness. Sensor fusion principles, drawn from computer vision and sensor networks, enable UAVs to collectively build a comprehensive and accurate model of the exploration area.
+%    Limitation: While these algorithms offer adaptability, there may be limitations in situations where environmental changes occur too quickly for effective response, necessitating further research into real-time adaptation mechanisms.
 
-4. Machine Learning and Artificial Intelligence (AI): Machine learning techniques, such as reinforcement learning and deep reinforcement learning, are integrated into the framework to enable UAVs to learn from past exploration experiences and adapt to new challenges. AI algorithms are used for decision-making, path planning, and obstacle avoidance, enhancing the intelligence of the multi-UAV system.
+%3. Communication and Bandwidth Constraints
 
-5. Communication Protocols: The theoretical framework addresses the design and implementation of communication protocols that ensure reliable and low-latency data exchange among UAVs. Concepts from network theory and communication systems guide the development of robust communication mechanisms, critical for coordination and information sharing.
+%    Challenge: In remote or communication-constrained exploration scenarios, communication-efficient coordination algorithms like the Communication-Efficient Coordination Protocol (CECP) may face challenges in maintaining effective information exchange.
 
-6. Exploration Science Principles: In the context of exploration tasks, the framework considers principles from exploration science, including spatial coverage optimization, information gain, and uncertainty reduction. These principles guide the development of exploration strategies that prioritize areas of interest, minimize redundancy, and maximize data collection efficiency.
+%    Limitation: The limitation of bandwidth and communication range may impact the speed and efficiency of real-time collaboration among UAVs, particularly in scenarios with limited connectivity.
 
-7. Scalability and Resource Optimization: The framework includes models for scalability and resource optimization, allowing for the adaptation of strategies to accommodate varying numbers of UAVs and dynamically allocate resources, such as battery power, sensor time, and data storage, to maximize exploration efficiency.
+%4. Hardware and Sensor Limitations
 
-8. Environmental Adaptation: The theoretical framework acknowledges the dynamic and often hostile nature of exploration environments. It incorporates adaptability and resilience principles, drawing from ecological theories, to enable the multi-UAV system to respond to environmental variability, such as weather changes and unexpected obstacles.
+%    Challenge: The effectiveness of multi-UAV coordination is highly dependent on the hardware and sensors available on UAV platforms. While the Sensor-Adaptive Exploration (SAE) Algorithm adapts to sensor data quality, there may be challenges in integrating high-quality sensors on certain UAVs.
 
-9. Cost-Benefit Analysis: Economic theories related to cost-benefit analysis are considered in evaluating the practical feasibility and return on investment of implementing the proposed strategies, incorporating factors like hardware and software costs, maintenance expenses, and the benefits of improved exploration outcomes.
+%    Limitation: UAVs with limited sensor capabilities may not fully leverage the strategies, potentially resulting in reduced data quality and coverage.
 
-This theoretical framework provides a solid foundation for the subsequent development and evaluation of multi-UAV coordination strategies. By combining principles from various domains and embracing interdisciplinary perspectives, the framework equips this research with a holistic approach to tackle the multifaceted challenges posed by exploration tasks in diverse and evolving environments.
+%5. Ethical and Legal Constraints
 
-10. Mission Success Criteria: The framework incorporates mission success criteria based on exploration objectives and domain-specific requirements. These criteria, borrowed from operations research and project management, provide quantitative measures for assessing the effectiveness of the proposed strategies.
+%    Challenge: Ensuring ethical and legal compliance is a complex challenge, particularly in exploration tasks involving sensitive or protected areas. Adherence to privacy, data protection, and UAV regulations is essential, but these can be challenging to implement in practice.
 
-11. Interdisciplinary Collaboration: To address the complexities of exploration tasks and to ensure practical applicability, the framework encourages interdisciplinary collaboration between UAV technologists, environmental scientists, and domain experts. Insights from various fields are essential for aligning strategies with the specific needs and objectives of exploration missions.
+%    Limitation: Legal and ethical considerations may limit the deployment of multi-UAV systems in certain environments or necessitate additional oversight, potentially impacting the efficiency of exploration missions.
 
-12. Ethical and Legal Considerations: In alignment with the framework, ethical and legal considerations are critical components of the research. The framework embraces principles of responsible AI and drone ethics, taking into account privacy, safety, and regulatory compliance in the design and operation of multi-UAV systems.
+%6. Human-Machine Interaction
 
-13. Technological Advancements: The framework recognizes the continuous evolution of UAV technology, AI, and sensing equipment. It accommodates the potential for rapid technological advancements and the incorporation of emerging technologies, such as 5G communication, edge computing, and energy-efficient UAV designs, in enhancing multi-UAV coordination for exploration tasks.
+%    Challenge: Achieving seamless human-machine interaction, despite user-centered designs such as the Adaptive Mission Planner and Dynamic Task Scheduler (AMP-DTS) Algorithm, remains a challenge in practice. Operators may face challenges in adapting to the user interfaces or may require extensive training.
 
-14. Human-Machine Interaction: The framework acknowledges the interaction between humans and the multi-UAV system. The principles of human-computer interaction (HCI) and usability engineering guide the design of user interfaces and control mechanisms to facilitate human oversight, intervention, and collaboration in exploration missions.
+%    Limitation: While efforts are made to optimize the user experience, there may be limitations in achieving universal user-friendliness across different operators and mission scenarios.
 
-This comprehensive theoretical framework provides a roadmap for developing, testing, and implementing strategies for multi-UAV coordination in exploration tasks. By drawing from a wide range of theoretical concepts and integrating them into a cohesive structure, this framework equips researchers and practitioners with the tools and guidance needed to advance the state of the art in this dynamic and cross-disciplinary field. It underscores the importance of addressing not only technical challenges but also ethical, legal, and human-centric considerations in the development and deployment of multi-UAV systems for exploration.
+%7. Cost and Resource Constraints
 
+%    Challenge: Economic constraints can be a significant challenge in the deployment of multi-UAV systems for exploration. The economic analysis may reveal that the initial investment costs, including hardware, software, and development, are prohibitive for some organizations or missions.
 
+%    Limitation: Limited budgets may restrict the accessibility of these advanced coordination strategies, potentially limiting their adoption in resource-constrained scenarios.
 
-\section{Metodologia}
+%8. Future-Readiness
 
-This section outlines the methodology used to investigate and develop strategies for multi-UAV coordination in exploration tasks. The research methodology encompasses several key phases, from literature review and algorithm design to simulation and experimentation.
+%    Challenge: While efforts are made to ensure the strategies are adaptable to emerging technologies, the fast-paced nature of technological evolution can present challenges in keeping the algorithms up-to-date.
 
-1. Literature Review
+%    Limitation: The strategies may face limitations in remaining technologically current, potentially requiring continuous research and adaptation to stay competitive.
 
-In this initial phase, a comprehensive literature review is conducted to assess the state of the art in multi-UAV coordination and exploration tasks. This review encompasses academic papers, conference proceedings, research reports, and relevant technical publications. The goals of the literature review are as follows:
+%9. Data Quality and Uncertainty
 
-    Identify existing multi-UAV coordination strategies, technologies, and algorithms.
-    Evaluate the strengths and limitations of current approaches.
-    Identify gaps in the literature that warrant further investigation.
+%    Challenge: Exploration environments often feature data uncertainty and inconsistency. The effectiveness of algorithms such as the Predictive Exploration Control (PEC) Algorithm may be limited by the quality of the data they receive.
 
-2. Algorithm Design and Development
+%    Limitation: In situations with high data uncertainty, there may be limitations in the predictive capabilities of algorithms, potentially affecting exploration efficiency.
 
-Building upon the insights gained from the literature review, the research focuses on the design and development of advanced multi-UAV coordination algorithms. This phase involves the following steps:
+%10. Stakeholder Involvement and Collaboration
 
-    Formulating mathematical models and algorithms that facilitate decentralized decision-making, dynamic task allocation, and obstacle avoidance.
-    Integrating machine learning and AI techniques for adaptive exploration and real-time decision-making.
-    Designing communication protocols to enable information exchange and coordination among UAVs.
-    Incorporating principles of sensor fusion to enhance situational awareness.
+%    Challenge: Collaborating with domain experts and stakeholders is essential for aligning coordination strategies with specific exploration objectives and constraints. However, stakeholder engagement can be challenging, particularly in highly regulated or sensitive environments.
 
-3. Simulation Environment
+%    Limitation: Limited stakeholder involvement may hinder the development and customization of strategies to meet the unique needs of certain exploration missions, potentially resulting in suboptimal outcomes.
 
-A robust simulation environment is established for testing and validating the developed coordination strategies. The simulation setup encompasses the following elements:
-
-    Selection of simulation software and tools (e.g., ROS, Gazebo, or custom-built simulators) suitable for modeling multi-UAV systems.
-    Generation of virtual exploration environments that mimic real-world scenarios, including terrain, obstacles, and environmental factors.
-    Integration of sensor models, communication models, and environmental dynamics into the simulation platform.
-
-4. Experimental Setup
-
-Once the coordination algorithms are designed and tested in a simulated environment, a real-world experimental setup is considered. This phase is initiated when access to UAV hardware and suitable exploration scenarios is available. The experimental setup includes the following steps:
-
-    Selection of UAV platforms equipped with the necessary sensors, communication systems, and onboard computers.
-    Configuration of the UAVs for multi-agent coordination and integration of the developed algorithms.
-    Deployment in controlled exploration scenarios, considering factors such as terrain complexity, environmental conditions, and mission objectives.
-
-5. Data Collection and Analysis
-
-In both simulation and real-world experiments, extensive data collection is performed to evaluate the effectiveness of the developed coordination strategies. The following aspects are addressed:
-
-    Data collection mechanisms, including onboard sensor data, communication logs, and mission logs.
-    Quantitative and qualitative analysis of the data to measure exploration coverage, resource optimization, obstacle avoidance, and decision-making efficiency.
-    Statistical analysis to compare the performance of the developed strategies with baseline approaches.
-
-6. Ethical and Safety Considerations
-
-Throughout the research, ethical and safety considerations are paramount. The following principles are adhered to:
-
-    Adherence to regulatory guidelines and safety protocols for UAV operations.
-    Privacy protection and data security in data collection and communication.
-    Minimization of environmental impact and risk mitigation during field experiments.
-
-7. Reporting and Documentation
-
-The results of the research, including algorithm designs, simulation outcomes, and experimental findings, are documented in a rigorous and transparent manner. The research findings are reported in a technical scientific paper format, adhering to appropriate citation and referencing standards.
-
-8. Iteration and Validation
-
-The methodology includes provisions for iteration and validation, where insights from simulations and experiments inform refinements and adjustments to the coordination strategies and algorithms. This iterative process aims to enhance the robustness and real-world applicability of the developed strategies.
-
-The outlined methodology provides a structured approach to the investigation and development of multi-UAV coordination strategies for exploration tasks. It combines theoretical research, simulation, and real-world experimentation to rigorously assess the capabilities and limitations of the proposed strategies in diverse and dynamic exploration environments.
-
-
-\section{Proposed Coordination Algorithms}
-The success of multi-UAV coordination in exploration tasks hinges on the development and implementation of effective coordination algorithms. This section presents a selection of proposed coordination algorithms designed to optimize exploration outcomes, enhance efficiency, and adapt to dynamic environmental conditions. The algorithms are based on the theoretical framework outlined earlier, drawing from principles in multi-agent systems, decentralized control, machine learning, sensor fusion, and communication protocols.
-
-1. Decentralized Task Allocation (DTA) Algorithm
-
-The Decentralized Task Allocation (DTA) Algorithm is designed to enable UAVs to autonomously allocate exploration tasks while minimizing overlap and redundancy. Key features of the DTA Algorithm include:
-
-    Localized Decision-Making: Each UAV independently assesses its surroundings, identifies exploration targets, and communicates with neighboring UAVs to distribute tasks.
-    Dynamic Task Prioritization: The algorithm adapts to changing mission objectives, prioritizing high-value exploration areas based on sensor inputs and mission goals.
-    Resource Awareness: UAVs consider their energy levels and data storage capacity, optimizing task assignments to conserve resources and maximize coverage.
-
-2. Multi-Sensor Information Fusion (MSIF) Algorithm
-
-The Multi-Sensor Information Fusion (MSIF) Algorithm leverages sensor fusion principles to enhance situational awareness and decision-making. Key components of the MSIF Algorithm include:
-
-    Sensor Data Integration: UAVs integrate data from various sensors, including LiDAR, cameras, environmental sensors, and GPS, to create a comprehensive environmental model.
-    Obstacle Avoidance: The algorithm provides obstacle detection and avoidance mechanisms, utilizing sensor data to navigate UAVs around obstacles in real-time.
-    Environmental Mapping: UAVs collaboratively build detailed maps of the exploration area, utilizing sensor data fusion to reduce uncertainties.
-
-3. Reinforcement Learning-Based Exploration (RLE) Algorithm
-
-The Reinforcement Learning-Based Exploration (RLE) Algorithm employs machine learning techniques to facilitate adaptive exploration and decision-making. Key attributes of the RLE Algorithm include:
-
-    Learning from Experience: UAVs continuously learn from exploration experiences, improving their decision-making capabilities over time.
-    Adaptive Exploration Policies: The algorithm defines exploration policies that balance the trade-off between exploration of unknown regions and exploitation of known information.
-    Real-Time Adaptation: RLE allows UAVs to adapt to unforeseen obstacles and dynamic environmental conditions through reinforcement learning mechanisms.
-
-4. Communication-Efficient Coordination Protocol (CECP)
-
-The Communication-Efficient Coordination Protocol (CECP) focuses on efficient communication among UAVs to facilitate coordination. Key elements of CECP include:
-
-    Localized Data Sharing: UAVs selectively exchange mission-critical data, such as exploration progress and obstacle information, to reduce communication overhead.
-    Decentralized Decision Relay: CECP allows UAVs to relay critical information to other nearby UAVs, fostering collaboration without centralized control.
-    Adaptive Data Rate: The protocol dynamically adjusts data transfer rates based on the importance of shared information, conserving bandwidth and power resources.
-
-5. Swarm Resilience and Adaptability (SRA) Algorithm
-
-The Swarm Resilience and Adaptability (SRA) Algorithm focuses on the adaptability and resilience of the multi-UAV system in dynamic environments. Key features of the SRA Algorithm include:
-
-    Swarm Resilience Mechanisms: UAVs collaborate to recover from failures or recover from unexpected obstacles using swarm intelligence.
-    Dynamic Task Reassignment: SRA enables the real-time reassignment of exploration tasks in response to environmental changes or UAV failures.
-    Path Planning with Uncertainty: The algorithm integrates probabilistic path planning to navigate in environments with limited data or high uncertainty.
-
-These proposed coordination algorithms collectively contribute to the enhancement of multi-UAV coordination for exploration tasks. By combining principles from various disciplines, including decentralized control, sensor fusion, machine learning, and efficient communication, they address the complex challenges of exploring dynamic and unstructured environments. The effectiveness of these algorithms will be rigorously evaluated through simulation and field experiments, as described in the following sections of this paper.
-
-\section{Resultados Esperados y Analisis}
-
-The successful implementation and evaluation of the proposed coordination algorithms in multi-UAV exploration tasks are expected to yield significant improvements in exploration efficiency, coverage, and adaptability. The following analysis provides an overview of the expected results and their implications.
-
-Exploration Coverage Percentage
-
-One of the primary performance metrics is the exploration coverage percentage, representing the proportion of the exploration area successfully covered by the multi-UAV system. It is anticipated that the application of advanced coordination algorithms, such as the Decentralized Task Allocation (DTA) Algorithm and Geographic Exploration Coverage Strategy (GECS), will lead to a notable increase in coverage percentage. The analysis will involve:
-
-    Comparative analysis of the coverage achieved by the proposed coordination algorithms versus baseline approaches.
-    Examination of the adaptability of algorithms to variable terrain and dynamic environmental conditions.
-    Identification of areas with improved coverage due to the prioritization mechanisms within the algorithms.
-
-Resource Utilization and Efficiency
-
-Efficient resource utilization is crucial in multi-UAV exploration tasks to extend mission duration and optimize data collection. The expected results will focus on the utilization of resources, including energy, sensor time, and data storage. The analysis will encompass:
-
-    Comparative assessment of resource consumption between advanced coordination algorithms, such as Reinforcement Learning-Based Exploration (RLE) Algorithm and Sensor-Adaptive Exploration (SAE) Algorithm, and traditional methods.
-    Evaluation of the adaptability of algorithms to different resource constraints and mission objectives.
-    Identification of resource-efficient strategies that prolong mission endurance and data quality while conserving energy and storage.
-
-Adaptability to Dynamic Conditions
-
-Exploration environments are often characterized by dynamic conditions, such as changing weather, terrain alterations, and unforeseen obstacles. The proposed coordination algorithms, particularly the Cooperative Environmental Resilience and Emergency Response (CERER) Algorithm and Adaptive Risk-Aware Path Planning (ARAPP) Algorithm, are expected to demonstrate enhanced adaptability. The analysis will encompass:
-
-    Assessment of the algorithms' ability to dynamically reassign tasks and adjust paths in response to environmental changes.
-    Evaluation of the effectiveness of emergency response mechanisms, including task reassignment for disaster relief scenarios.
-    Identification of scenarios in which adaptive coordination strategies significantly improve mission success.
-
-Real-Time Decision-Making and Obstacle Avoidance
-
-Multi-UAV systems often encounter real-time decision-making challenges, such as obstacle avoidance and path planning. The proposed algorithms, including the Predictive Exploration Control (PEC) Algorithm and Communication-Efficient Swarm Intelligence (CESI) Algorithm, are expected to exhibit improved decision-making capabilities. The analysis will involve:
-
-    Comparative analysis of decision-making speed and efficiency between advanced algorithms and traditional approaches.
-    Evaluation of real-time obstacle avoidance mechanisms, especially in unstructured and unpredictable environments.
-    Identification of scenarios in which predictive models and decentralized control contribute to obstacle avoidance and efficient path planning.
-
-Human-Machine Interaction and User Satisfaction
-
-The user-centered design principles embedded in the proposed algorithms, as exemplified by the Adaptive Mission Planner and Dynamic Task Scheduler (AMP-DTS) Algorithm, are expected to enhance the interaction between human operators and the multi-UAV system. The analysis will encompass:
-
-    Assessment of user satisfaction and workload when operating multi-UAV systems with advanced coordination algorithms.
-    Evaluation of the usability and intuitiveness of user interfaces and control mechanisms.
-    Identification of design improvements based on user feedback and observations.
-
-    The analysis of these expected results will provide insights into the effectiveness and practical applicability of the proposed coordination algorithms in multi-UAV exploration tasks. It will highlight their contributions to enhanced exploration coverage, resource efficiency, adaptability to dynamic conditions, and user-friendly operation. The findings will also inform further refinements and applications in diverse exploration scenarios.
-    
-\section{Retos y limitantes}
-
-While the proposed coordination algorithms hold promise for advancing multi-UAV coordination in exploration tasks, several challenges and limitations should be considered. Acknowledging these challenges is critical for a comprehensive understanding of the practical applicability of the strategies.
-
-1. Scalability and Computational Complexity
-
-    Challenge: As the number of UAVs in a mission increases, the computational complexity of decentralized coordination algorithms, such as the Decentralized Task Allocation (DTA) Algorithm, can become a limiting factor. Real-time decision-making and task allocation may face scalability challenges.
-
-    Limitation: While efforts have been made to optimize these algorithms, there may still be limitations in handling extremely large-scale missions or scenarios where computational resources are constrained.
-
-2. Real-World Environmental Variability
-
-    Challenge: Exploration tasks often occur in unpredictable and dynamic environments, such as dense forests, mountainous terrains, or disaster-stricken areas. Algorithms like the Adaptive Risk-Aware Path Planning (ARAPP) Algorithm may face difficulties in adapting to rapidly changing conditions.
-
-    Limitation: While these algorithms offer adaptability, there may be limitations in situations where environmental changes occur too quickly for effective response, necessitating further research into real-time adaptation mechanisms.
-
-3. Communication and Bandwidth Constraints
-
-    Challenge: In remote or communication-constrained exploration scenarios, communication-efficient coordination algorithms like the Communication-Efficient Coordination Protocol (CECP) may face challenges in maintaining effective information exchange.
-
-    Limitation: The limitation of bandwidth and communication range may impact the speed and efficiency of real-time collaboration among UAVs, particularly in scenarios with limited connectivity.
-
-4. Hardware and Sensor Limitations
-
-    Challenge: The effectiveness of multi-UAV coordination is highly dependent on the hardware and sensors available on UAV platforms. While the Sensor-Adaptive Exploration (SAE) Algorithm adapts to sensor data quality, there may be challenges in integrating high-quality sensors on certain UAVs.
-
-    Limitation: UAVs with limited sensor capabilities may not fully leverage the strategies, potentially resulting in reduced data quality and coverage.
-
-5. Ethical and Legal Constraints
-
-    Challenge: Ensuring ethical and legal compliance is a complex challenge, particularly in exploration tasks involving sensitive or protected areas. Adherence to privacy, data protection, and UAV regulations is essential, but these can be challenging to implement in practice.
-
-    Limitation: Legal and ethical considerations may limit the deployment of multi-UAV systems in certain environments or necessitate additional oversight, potentially impacting the efficiency of exploration missions.
-
-6. Human-Machine Interaction
-
-    Challenge: Achieving seamless human-machine interaction, despite user-centered designs such as the Adaptive Mission Planner and Dynamic Task Scheduler (AMP-DTS) Algorithm, remains a challenge in practice. Operators may face challenges in adapting to the user interfaces or may require extensive training.
-
-    Limitation: While efforts are made to optimize the user experience, there may be limitations in achieving universal user-friendliness across different operators and mission scenarios.
-
-7. Cost and Resource Constraints
-
-    Challenge: Economic constraints can be a significant challenge in the deployment of multi-UAV systems for exploration. The economic analysis may reveal that the initial investment costs, including hardware, software, and development, are prohibitive for some organizations or missions.
-
-    Limitation: Limited budgets may restrict the accessibility of these advanced coordination strategies, potentially limiting their adoption in resource-constrained scenarios.
-
-8. Future-Readiness
-
-    Challenge: While efforts are made to ensure the strategies are adaptable to emerging technologies, the fast-paced nature of technological evolution can present challenges in keeping the algorithms up-to-date.
-
-    Limitation: The strategies may face limitations in remaining technologically current, potentially requiring continuous research and adaptation to stay competitive.
-
-9. Data Quality and Uncertainty
-
-    Challenge: Exploration environments often feature data uncertainty and inconsistency. The effectiveness of algorithms such as the Predictive Exploration Control (PEC) Algorithm may be limited by the quality of the data they receive.
-
-    Limitation: In situations with high data uncertainty, there may be limitations in the predictive capabilities of algorithms, potentially affecting exploration efficiency.
-
-10. Stakeholder Involvement and Collaboration
-
-    Challenge: Collaborating with domain experts and stakeholders is essential for aligning coordination strategies with specific exploration objectives and constraints. However, stakeholder engagement can be challenging, particularly in highly regulated or sensitive environments.
-
-    Limitation: Limited stakeholder involvement may hinder the development and customization of strategies to meet the unique needs of certain exploration missions, potentially resulting in suboptimal outcomes.
-
-Acknowledging these challenges and limitations is fundamental to guiding future research, improvements, and adaptations in the field of multi-UAV coordination for exploration tasks. While the proposed strategies show promise, addressing these constraints is essential to ensuring their practical success in diverse exploration scenarios.
+%Acknowledging these challenges and limitations is fundamental to guiding future research, improvements, and adaptations in the field of multi-UAV coordination for exploration tasks. While the proposed strategies show promise, addressing these constraints is essential to ensuring their practical success in diverse exploration scenarios.
 
 \section{Conclusiones}
 
+En conclusión, la incesante expansión de la tecnología de los vehículos aéreos no tripulados (VANTS) está brindando a la humanidad oportunidades incomparables de exploración y descubrimiento. Nuestro artículo busca ampliar el creciente cuerpo de conocimientos mediante la investigación de estrategias para la coordinación de múltiples UAV en tareas de exploración. A través de marcos teóricos, diseño de algoritmos y metodologías propuestas, aspiramos a allanar el camino para avances innovadores en este campo. Al fomentar la innovación en la coordinación de múltiples UAV, esperamos contribuir a la transformación de las industrias, la protección del medio ambiente y el avance de la comprensión científica.\\
+
 %Incluir un párrafo donde se indiquen las conclusiones del trabajo realizado y el trabajo actual o futuro en relación con el mismo.
 
-The realm of multi-UAV coordination for exploration tasks is on the brink of a transformative era. The strategies presented in this paper represent a significant leap forward in the pursuit of efficiency, adaptability, and mission success across diverse exploration domains. Through rigorous research and development, we have advanced our understanding of how advanced coordination algorithms can enhance exploration coverage, optimize resource utilization, and adapt to dynamic environmental conditions.
+El campo de la coordinación de múltiples drones para tareas de exploración está en un momento de cambio significativo. Las estrategias propuestas en este informe representan un avance importante hacia la eficiencia, adaptabilidad y éxito de la misión en diversas áreas de exploración. A través de investigaciones rigurosas y desarrollo, hemos ampliado nuestra comprensión sobre cómo los algoritmos de coordinación avanzados pueden mejorar la cobertura de exploración, optimizar el uso de recursos y adaptarse a condiciones cambiantes del entorno.\\
 
-The diverse range of coordination algorithms, from the Decentralized Task Allocation (DTA) Algorithm to the Communication-Efficient Swarm Intelligence (CESI) Algorithm, showcases the versatility and adaptability of these strategies. They have the potential to revolutionize how exploration missions are conducted, introducing a new level of sophistication and effectiveness to the field.
+%La variedad de algoritmos de coordinación presentados, desde el Descentralized Task Assignment (DTA) hasta el Communication Efficient Swarm Intelligence (CESI), demuestran la versatilidad y adaptabilidad de estas estrategias. Tienen el potencial de transformar la forma en que se llevan a cabo las misiones de exploración, introduciendo un nuevo nivel de sofisticación y efectividad en este campo.\\
 
-The anticipated results and analysis underscore the promising outlook for these strategies, from increased coverage percentages to improved resource efficiency. While challenges and limitations exist, they are intrinsic to the complexities of real-world exploration tasks. Addressing these challenges and limitations is an ongoing mission for the research community, providing a roadmap for future refinements and adaptations.
+Los resultados y análisis esperados indican las perspectivas prometedoras de esta estrategia, incluyendo mayores niveles de cobertura y una utilización eficiente de los recursos. Aunque existen desafíos y limitaciones inherentes a las complejidades de las tareas reales de exploración, abordar estos desafíos es una tarea continua para la comunidad investigadora, brindando una dirección clara para futuras mejoras y adaptaciones.\\
 
-The future work section outlines directions for further research and development, inviting the scientific community, industry, and stakeholders to join the endeavor of advancing multi-UAV coordination. Real-world validation, adaptive learning, standardization, and multidisciplinary collaboration are just some of the avenues for exploration, and they promise to extend the impact and applicability of these strategies.
+%La sección de trabajos futuros describe las áreas de investigación y desarrollo que se deben explorar, invitando a la comunidad científica, la industria y las partes interesadas a unirse en el esfuerzo de promover la coordinación de múltiples drones. La validación en escenarios reales, el aprendizaje adaptativo, la estandarización y la colaboración multidisciplinaria son solo algunos de los caminos a investigar para ampliar el impacto y la aplicabilidad de estas estrategias.\\
 
-In conclusion, this paper emphasizes that the potential of multi-UAV coordination strategies is limitless. They hold the promise to redefine how we explore, monitor, and respond to diverse environmental and disaster scenarios. The strategies presented here are not just theoretical constructs; they are invitations to make exploration more efficient, adaptable, and impactful.
+En conclusión, este artículo destaca que el potencial de las estrategias de coordinación de múltiples drones es ilimitado. Prometen redefinir la forma en que exploramos, monitoreamos y respondemos a diversos entornos y situaciones de desastre. Las estrategias presentadas no son solo conceptos teóricos, son invitaciones a hacer que la exploración sea más eficiente, adaptable y significativa.\\
 
-As researchers, engineers, and explorers, we stand at the threshold of a new era in exploration tasks. These strategies are tools in our hands, ready to shape the future of exploration. With ongoing research, experimentation, and a commitment to overcoming challenges, we can ensure that multi-UAV coordination plays a pivotal role in addressing the world's most pressing challenges.
+Como investigadores, ingenieros y exploradores, nos encontramos en el umbral de una nueva era en las tareas de exploración. Estas estrategias son herramientas en nuestras manos, listas para moldear el futuro de la exploración. Mediante investigación, experimentación y dedicación continua para superar los desafíos, podemos asegurar que la coordinación de múltiples vehículos aéreos no tripulados desempeñe un papel crucial en abordar los desafíos más apremiantes del mundo.\\
 
-The journey of exploration continues, and the strategies presented in this paper are poised to guide us toward a future where boundaries are pushed, data is collected more efficiently, and responses \citeauthor{HybridCampos2017}
-
-
+%El viaje de exploración sigue adelante y las estrategias presentadas en este documento nos guiarán hacia un futuro en el que superemos límites, recopilemos datos de manera más eficiente y respondamos de forma más eficaz.\\
 
 %\section*{Agradecimientos}
 %Incluir fuentes de financiamiento u otro apoyo para la realización del proyecto (No. proyecto, Fondo, becas, etc). Se pueden incluir agradecimientos a personas o grupos estrechamente relacionados con el trabajo presentado en el artículo.
