@@ -74,7 +74,7 @@
 
   Las estrategias de exploración son de suma importancia en esfuerzos como misiones de búsqueda y rescate, así como en el mapeo de zonas afectadas por desastres naturales. Los vehículos aéreos no tripulados (VANTS) han ganado una gran popularidad en estos escenarios debido a su movilidad, ya que cuentan con la capacidad de cubrir grandes áreas de interés. Con el avance de la electrónica a bordo de los VANTS, la investigación se ha desplazado hacia la toma de decisiones para misiones que involucran múltiples VANTS. No obstante, la navegación autónoma y la exploración de áreas extensas inexploradas siguen siendo un desafío, especialmente en ambientes cambiantes por obstáculos móviles.\\
 
-  Un enfoque colaborativo ofrece mejores resultados de exploración con una rápida obtención de información, logrando sus objetivos con un alto grado de consistencia y resilencia a fallos en comparación con una implementación donde se emplea un único vehículo aéreo no tripulado. Sin embargo, la exploración multi-VANT plantea diversos desafíos que deben abordarse para su correcto funcionamiento, como la comunicación, la colaboración y la fusión de datos.\\
+  Un enfoque colaborativo ofrece mejores resultados de exploración con una rápida obtención de información, logrando sus objetivos con un alto grado de consistencia y resilencia a fallos en comparación con una implementación donde se emplea un único vehículo aéreo no tripulado (VANT). Sin embargo, la exploración multi-VANT plantea diversos desafíos que deben abordarse para su correcto funcionamiento, como la comunicación, la colaboración y la fusión de datos.\\
   
   Este trabajo presenta la propuesta de una arquitectura descentralizada de software capaz de coordinar múltiples VANTS con habilidades para la exploración, generación de mapas y planificación de rutas para explorar eficientemente un área de interés, garantizando la adaptabilidad a cambios en su entorno. Este problema implica la toma de decisiones complejas, como asignar tareas de exploración a los VANTS, evitar colisiones y planificar rutas óptimas. Factores como la comunicación entre VANTS, la incertidumbre del entorno y las limitaciones de recursos de energía forman parte de los criterios considerados.
 
@@ -83,7 +83,7 @@
 
 %%
 %% Keywords. Incluir no menos de tres palabas clave que identifiquen el trabajo presentado. Separar las palabras con coma.
-\keywords{Estrategias multi-VANT, exploración multi-VANT, planificación de rutas multi-VANT}
+\keywords{estrategias multi-VANT, exploración multi-VANT, planificación de rutas multi-VANT}
 
 %% Creación de la primera parte del documento formateado, incluyendo título y autores.
 \maketitle
@@ -91,13 +91,13 @@
 %% Primera sección del artículo
 \section{Introducción}
 
-Los robots de servicio son máquinas autónomas diseñadas con el objetivo de prestar servicio a los humanos fuera del ambiente industrial, convirtiéndose poco a poco en una parte esencial en nuestras vidas. Los podemos encontrar en diversos ámbitos, como en el entretenimiento, limpieza, logística, entre otras soluciones inovadoras \cite{INTEL2023}.\\
+Los robots de servicio, son máquinas autónomas diseñadas con el objetivo de prestar servicio a los humanos, convirtiéndose poco a poco en una parte esencial en nuestras vidas. Los podemos encontrar en diversos ámbitos, como en el entretenimiento, limpieza, logística, entre otras soluciones inovadoras [\citenum{INTEL2023}].\\
 
-Los vehículos aéreos no tripulados han evolucionado rápidamente y se han convertido en sistemas versátiles capaces de una amplia gama de aplicaciones, desde vigilancia hasta misiones de búsqueda y rescate \cite{Schneider2016}. Entre ellas, las tareas de exploración en entornos complejos y dinámicos representan un área interesante y desafiante, donde la coordinación efectiva de múltiples VANT se vuelve primordial. Este tema es de creciente importancia a medida que los vehículos aéreos no tripulados continúan transformando distintas áreas, incluida la agricultura, el monitoreo ambiental, mantenimiento de infraestructuras (puentes, edificios, líneas eléctricas) y la respuesta a desastres naturales, reduciendo los riesgos y costos asociados con las inspecciones manuales.\\
+Los vehículos aéreos no tripulados (VANT) han evolucionado rápidamente y se han convertido en sistemas versátiles capaces de una amplia gama de aplicaciones, desde vigilancia hasta misiones de búsqueda y rescate [\citenum{Schneider2016}, \citenum{ACM2023}, \citenum{Sharma2016}]. Entre ellas, las tareas de exploración en entornos complejos y dinámicos representan un área interesante y desafiante, donde la coordinación efectiva de múltiples VANT se vuelve primordial. Este tema es de creciente importancia a medida que los vehículos aéreos no tripulados continúan transformando industrias, incluida la agricultura, el monitoreo ambiental, mantenimiento de infraestructuras (puentes, edificios, líneas eléctricas) y la respuesta a desastres naturales, reduciendo los riesgos y costos asociados con las inspecciones manuales.\\
 
 Los VANTS capaces de realizar tareas con autonomía generalmente cuentan con mayores capacidades de carga y procesamiento computacional, así como sensores capaces de percibir grandes volúmenes de datos en un tiempo reducido. Estos VANTS se centran en realizar tareas sencillas y estáticas en áreas abiertas con rutas predeterminadas, o bien, en contextos de operación por control remoto por un usuario. Sin embargo en donde los espacios son estrechos, se optan por el uso de VANTS reducidos, comúnmente llamados Micro-Vehículos Aéreos no tripulados (MAVs). Para aplicaciones complejas, donde se debe responder de manera autónoma con la mínima intervención humana, es decir, que solo se le ordene la tarea que deben realizar y no guiarlos en cada uno de sus movimientos.\\
 
-Un sistema autónomo de un Vehículo Aéreo no Tripulado, consta de tres algoritmos:
+Un sistema autónomo de un Vehículo Aéreo no Tripulado (VANT), consta de tres algoritmos:
 
 \begin{itemize}
 \item Generación de una representación del entorno
@@ -105,11 +105,11 @@ Un sistema autónomo de un Vehículo Aéreo no Tripulado, consta de tres algorit
 \item Planificación de trayectorias
 \end{itemize}
 
-La computadora embebida para un sistema de navegación usado en Micro-Vehículos Aéreos son de bajo rendimiento, pero su necesidad de autonomía sigue siendo la misma que un VANT de mayor tamaño. Es por ello que es necesario equiparlos con algoritmos de baja complejidad computacional para los sistemas de navegación.\\
+La computadora embebida para un sistema de navegación usados en Micro-Vehículos Aéreos son de bajo rendimiento, pero su necesidad de autonomía sigue siendo la misma que un VANT de mayor tamaño. Es por ello que es necesario equiparlos con algoritmos de baja complejidad computacional para los sistemas de navegación.\\
 
 La necesidad de coordinación entre múltiples VANTS en tareas de exploración, surge debido a las limitaciones individuales en cuanto a la extensión de terreno que pueden cubrir y su desempeño. La exploración de áreas extensas o peligrosas a menudo exige un enfoque colaborativo, donde los VANTS trabajen juntos para optimizar la asignación de recursos, minimizar la redundancia y mejorar la recopilación y el análisis de datos.\\
 
-Sin embargo, el camino hacia una coordinación entre múltiples vehículos aéreos no tripulados, presenta diversos desafíos. Las complejidades de gestionar un grupo de vehículos aéreos no tripulados, navegar en entornos dinámicos y distribuir tareas de forma inteligente son sólo algunas de las cuestiones que exigen nuestra atención. El objetivo del documento es explorar y proponer estrategias para mejorar la coordinación de múltiples VANTS en el contexto de las tareas de exploración.\\
+Sin embargo, el camino hacia una coordinación entre múltiples vehículos aéreos no tripulados, presenta diversos de desafíos. Las complejidades de gestionar un grupo de vehículos aéreos no tripulados, navegar en entornos dinámicos y distribuir tareas de forma inteligente son sólo algunas de las cuestiones que exigen nuestra atención. El objetivo del documento es explorar y proponer estrategias para mejorar la coordinación de múltiples VANTS en el contexto de las tareas de exploración.\\
 
 %En esta introducción, brindamos una descripción general de la importancia del tema, destacando la relevancia cada vez mayor de las misiones de exploración con múltiples vehículos aéreos no tripulados y las deficiencias de los métodos de coordinación existentes. También sentamos las bases para nuestras discusiones posteriores, que incluirán una revisión exhaustiva del estado actual del arte, una discusión de los objetivos de la investigación y un resumen de la estructura de este artículo.\\
 
@@ -118,17 +118,17 @@ La exploración de áreas desconocidas, a través de la sinergia de sistemas mul
 El presente trabajo de investigación busca resolver las siguientes preguntas de investigación:
 
 \begin{itemize}
-  \item ¿Cuáles son los principales desafíos técnicos y operativos que limitan la coordinación eficaz de múltiples vehículos aéreos no tripulados en tareas de exploración?
+  \item ¿Cuáles son los principales desafíos técnicos y operativos que impiden la coordinación eficaz de múltiples vehículos aéreos no tripulados en tareas de exploración?
   \item ¿Cómo se pueden aprovechar las tecnologías de vanguardia, desde sensores avanzados hasta algoritmos de inteligencia artificial, para superar estos desafíos?
   \item ¿Cuáles son las implicaciones de una mejor coordinación de múltiples vehículos aéreos no tripulados para diversos sectores, incluida la exploración autónoma en interiores?
 \end{itemize}
 
-Si bien este artículo no presenta resultados en esta etapa, sirve como una exploración de un dominio de investigación en evolución y guía para esfuerzos futuros en este campo. Al abordar estos desafíos y ampliar los límites de la tecnología de los vehículos aéreos no tripulados, nos esforzamos por desbloquear nuevas posibilidades para el descubrimiento científico, la gestión ambiental y los esfuerzos humanitarios.
+Si bien este artículo no presenta resultados en esta etapa, sirve como una exploración de un dominio de investigación en evolución y guíen esfuerzos futuros en este campo. Al abordar estos desafíos y ampliar los límites de la tecnología de los vehículos aéreos no tripulados, nos esforzamos por desbloquear nuevas posibilidades para el descubrimiento científico, la gestión ambiental y los esfuerzos humanitarios.
 
 %% Cuerpo principal, dividido por secciones.
 \section{Trabajos Relacionados}
 
-El despliegue rápido de robots en situaciones de riesgo, búsqueda y rescate ha sido un área ampliamente estudiada en la robótica móvil. Existen concursos como el DARPA CHALLENGE, donde los factores como la exploración, planeación y coordinación son clave para lograr los objetivos del reto \cite{DARPA2022}.\\
+El despliegue rápido de robots en situaciones de riesgo, búsqueda y rescate ha sido un área ampliamente estudiada en la robótica móvil. Donde existen concursos como el DARPA CHALLENGE, donde los factores como la exploración, planeación y coordinación son clave para lograr los objetivos del reto \cite{DARPA2022}, donde se han aplicado teorías de grafos para la obtención de la mejor ruta.\\
 
 La dirección en que apunta el estado del arte, se puede atribuir a los avances en tecnología en la última década. Investigadores de diversas áreas, que incluyen las ciencias computacionales y la ingeniería, han contribuido al crecimiento de este campo.\\
 
@@ -140,7 +140,7 @@ Para abordar esta limitación, \citeauthor{CIESLEWSKI2017} \cite{CIESLEWSKI2017}
 
 Por el contrario, \citeauthor{FUEL} \cite{FUEL}, introducen un enfoque de planificación jerárquica que produce rutas globales eficientes al tiempo que promueve maniobras locales seguras y ágiles para la exploración. Sin embargo, esta estrategia requiere el mantenimiento de un historial de fronteras activas.\\
 
-En el ámbito de la mejora de la eficiencia de la exploración, se han introducido en la literatura científica varios métodos que implican la cooperación entre múltiples robots, presentados tanto en forma centralizada como descentralizada. Los métodos centralizados suelen incorporar una estación terrestre central responsable de calcular inicialmente un plan integral para múltiples robots, que luego se difunde a los agentes, suponiendo una comunicación fluida. En este sentido, \citeauthor{1435481} \cite{1435481}, se esfuerzan por reducir la superposición en áreas exploradas disminuyendo la ganancia de información de una frontera potencial si se asigna otro robot a una frontera separada en su proximidad. Por el contrario, \citeauthor{Tian} \cite{Tian}, abordan el desafío de la asignación utilizando un problema de vendedores ambulantes múltiples (mTSP por sus siglas en inglés) para asignar a cada agente a una frontera candidata. Mientras tanto, el enfoque propuesto por \citeauthor{9844235} \cite{9844235}, sobresale en generar caminos eficientes para la reconstrucción 3D. Sin embargo, es importante señalar que este método requiere un sobrevuelo previo del área de interés, lo que la hace inadecuada para la exploración donde no se tiene conocimiento previo del área de interés. Por otro lado, el método descrito por \citeauthor{Tian} \cite{Tian}, pone un mayor énfasis en la navegación a través de bosques, con un enfoque particular en la estimación y el mapeo colaborativos del estado, en lugar de la planificación de rutas.\\
+En el ámbito de la mejora de la eficiencia de la exploración, se han introducido en la literatura científica varios métodos que implican la cooperación entre múltiples robots, presentados tanto en forma centralizada como descentralizada. Los métodos centralizados suelen incorporar una estación terrestre central responsable de calcular inicialmente un plan integral para múltiples robots, que luego se difunde a los agentes, suponiendo una comunicación fluida. En este sentido, \citeauthor{1435481} \cite{1435481}, se esfuerzan por reducir la superposición en áreas exploradas disminuyendo la ganancia de información de una frontera potencial si se asigna otro robot a una frontera separada en su proximidad. Por el contrario, \citeauthor{Tian} \cite{Tian}, abordan el desafío de la asignación utilizando un problema de vendedores ambulantes múltiples (mTSP) para asignar a cada agente a una frontera candidata. Mientras tanto, el enfoque propuesto por \citeauthor{9844235} \cite{9844235}, sobresale en generar caminos eficientes para la reconstrucción 3D. Sin embargo, es importante señalar que este método requiere un sobrevuelo previo del área de interés, lo que la hace inadecuada para la exploración donde no se tiene conocimiento previo del área de interés. Por otro lado, el método descrito por \citeauthor{Tian} \cite{Tian}, pone un mayor énfasis en la navegación a través de bosques, con un enfoque particular en la estimación y el mapeo colaborativos del estado, en lugar de la planificación de rutas.\\
 
 No obstante, los sistemas centralizados, por diseño, operan bajo el supuesto de una comunicación confiable a larga distancia. Además, enfrentan desafíos relacionados con la escalabilidad, ya que la carga de trabajo de la unidad central de procesamiento aumenta con el creciente número de agentes. Por otro lado, los enfoques descentralizados son intrínsecamente más sólidos debido a que no tienen dependencia de comunicación directa. En estos métodos, cada robot puede funcionar independientemente de los demás, lo que ofrece una mayor resiliencia. Sin embargo, esta ventaja tiene el costo de una mayor complejidad en la coordinación de las acciones de los agentes, ya que se limitan a utilizar información local exclusivamente.\\
 
@@ -154,13 +154,9 @@ Motivados por estas limitaciones, nuestra investigación introduce una estrategi
 
 \subsection*{Objetivo general}
 
-Uno de los desafíos fundamentales que enfrentamos reside en la capacidad de coordinar múltiples VANT en tareas de exploración y mapeo.\\
-
-En este contexto, el objetivo general es abordar y resolver este desafío, desarrollando una arquitectura de software descentralizada capaz de resolver los problemas de localización, mapeo, navegación y coordinación multi-VANT en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
+Desarrollar una arquitectura de software descentralizada capaz de resolver los problemas de localización, mapeo, navegación y coordinación multi-VANT en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
 
 \subsection*{Objetivos Particulares}
-
-En el marco de esta investigación, establecemos metas concretas que dirigen nuestro trabajo hacia el desarrollo de una estrategia destinada a optimizar la exploración coordinada de un grupo de vehículos aéreos no tripulados.\\
 
 \begin{itemize}
 \item Evaluar y comparar diferentes algoritmos de coordinación y planiﬁcación de vuelo para la exploración coordinada multi-VANT.
@@ -176,11 +172,11 @@ La implementación de una estrategia de exploración coordinada utilizando múlt
 
 Dada un área de interés desconocida en un espacio cerrado que se desea explorar denotada como $\mathcal{A}$, tal que $\mathcal{A} \subset \mathbb{R}^{3}$.\\
 
-Un voxel $v$ que representa el espacio contenido en $\mathcal{A}$ que es obtenido dividiendo recursivamente el área de interés $\mathcal{A}$ en ocho partes de igual tamaño, el voxel puede tomar los valores de libre, ocupado y desconocido o no explorado de notados como $v_{libre}$, $v_{ocup}$, $v_{desc}$. La región ocupada son obtenidas mediante un sensor basado en un modelo de ocupación probabilístico.\\
+Un voxel $v$ que representa el espacio contenido en $\mathcal{A}$ que es obtenido dividiendo recursivamente el área de interés $\mathcal{A}$ en ocho partes de igual tamaño, el voxel puede tomar los valores de libre o ocupado de notados como $v_{libre}$, $v_{occ}$. La región ocupada son obtenidas mediante un sensor basado en un modelo de ocupación probabilístico.\\
 
 Un conjunto de VANTS denotado como $\mathcal{V} = \{\mathcal{V}_{1},\mathcal{V}_{2},\mathcal{V}_{3},...,\mathcal{V}_{n}\}$ siendo $n$ el número total de VANTS disponibles y una configuración inicial $q$ cuya cardinalidad es el número de VANTS disponibles denotado como $q = \{q_{1},q_{2},q_{3},...,q_{n}\}$.\\
 
-%Determinar el conjunto de tareas para cada VANT, así como el conjunto de rutas que maximize el área explorada minimizando el tiempo y la energía consumida.\\
+Determinar el conjunto de tareas para cada VANT, así como el conjunto de rutas que maximize el área explorada minimizando el tiempo y la energía consumida.\\
 
 La estrategia propuesta debe tomar en cuenta las limitaciones de comunicación, sensores y energía, para distribuir las tareas de exploración entre todos los miembros del equipo de VANTS, así como establecer trayectorias seguras y libres de obstáculos para cada uno de los VANTS.\\
 
@@ -195,7 +191,7 @@ La funci\'{o}n objetivo tomar\'{a} en cuenta distintos objetivos espec\'{i}ficos
 
 \section{Metodología}
 
-Siguiendo los objetivos anteriores, la metodolog\'{i}a propuesta se divide en tres etapas, que comenzaron en septiembre del 2023 y terminarán en agosto de 2024. A continuaci\'{o}n se detallan cada una de las actividades que se plantean realizar en cada etapa.
+Siguiendo los objetivos anteriores, la metodolog\'{i}a propuesta se divide en tres etapas, que comenzarón en septiembre del 2023 y terminarán en agosto de 2024. A continuaci\'{o}n se detallan cada una de las actividades que se plantean realizar en cada etapa.
 
 \subsection*{Etapa 1. An\'{a}lisis y dise\~{n}o de la soluci\'{o}n propuesta}
 
@@ -212,7 +208,7 @@ Esta etapa comprende la revisi\'{o}n de la literatura de manera m\'{a}s completa
   
 \section{Algoritmos}
 
-Desarrollar una arquitectura para múltiples robots implica establecer un plan de toma de decisiones y definir un marco de interacción entre los distintos robots, lo cual afecta la configuración de cada robot individual, en donde las interacciones entre robots pueden tener lugar en diferentes niveles.
+Desarrollar una arquitectura para múltiples robots implica establecer un plan de toma de decisiones y definir un marco de interacción entre los distintos robots, lo cual, afecta la configuración de cada robot individual, en donde las interacciones entre robots pueden tener lugar en diferentes niveles.
 
 \subsection*{Planificación de trayectorias}
 
@@ -220,13 +216,13 @@ La planificación de trayectorias para múltiples VANTS implica diseñar algorit
 
 \begin{itemize}
   
-\item Planificadores basados en algoritmos de búsqueda: Estos planificadores utilizan algoritmos de búsqueda clásicos, como A* \cite{Astar}, RRT \cite{RRT} o RRT* \cite{RRTstar}, para generar trayectorias seguras y óptimas para cada VANT.
+\item Planificadores basados en algoritmos de búsqueda: Estos planificadores utilizan algoritmos de búsqueda clásicos, como A*, RRT o RRT*, para generar trayectorias seguras y óptimas para cada VANT.
 
-\item Planificadores basados en optimización \cite{UAVOpt}: Estos planificadores plantean la generación de trayectorias como un problema de optimización, donde se busca encontrar la mejor trayectoria según criterios como minimizar el tiempo de vuelo, reducir el consumo de energía o maximizar la cobertura del área de interés.
+\item Planificadores basados en optimización: Estos planificadores plantean la generación de trayectorias como un problema de optimización, donde se busca encontrar la mejor trayectoria según criterios como minimizar el tiempo de vuelo, reducir el consumo de energía o maximizar la cobertura del área de interés.
   
-\item Planificadores basados en aprendizaje por refuerzo \cite{DRL}: En este enfoque, se utilizan algoritmos de aprendizaje por refuerzo para enseñar a los VANTS a seleccionar las acciones adecuadas para alcanzar los objetivos de la misión. A través de la interacción con el entorno y la retroalimentación de recompensas, los VANTS mejoran su capacidad de planificación de trayectorias de forma autónoma.
+\item Planificadores basados en aprendizaje por refuerzo: En este enfoque, se utilizan algoritmos de aprendizaje por refuerzo para enseñar a los VANTS a seleccionar las acciones adecuadas para alcanzar los objetivos de la misión. A través de la interacción con el entorno y la retroalimentación de recompensas, los VANTS mejoran su capacidad de planificación de trayectorias de forma autónoma.
 
-\item Planificadores basados en enjambres [\citenum{Bio1},\citenum{Bio2},\citenum{Bio3}]: Estos planificadores se inspiran en los comportamientos observados en la naturaleza, como el vuelo en formación de las aves o el comportamiento de enjambre de las abejas. Mediante la coordinación y el seguimiento de patrones de vuelo predefinidos, los VANTS evitan colisiones y logran un rendimiento colectivo eficiente.
+\item Planificadores basados en enjambres: Estos planificadores se inspiran en los comportamientos observados en la naturaleza, como el vuelo en formación de las aves o el comportamiento de enjambre de las abejas. Mediante la coordinación y el seguimiento de patrones de vuelo predefinidos, los VANTS evitan colisiones y logran un rendimiento colectivo eficiente.
   
 \end{itemize}
 
@@ -236,13 +232,13 @@ La generación de mapas en 3D juega un papel fundamental en la navegación autó
 
 \begin{itemize}
 
-\item Mapeo basado en cuadrículas (grid-based mapping) \cite{GridUAV}: Esta aproximación divide el espacio del entorno en cuadrículas y asigna a cada celda un valor, indicando si está ocupada o libre. Los algoritmos de mapeo basado en cuadrículas, como Occupancy Grid Mapping, actualizan y mantienen un mapa de ocupación en tiempo real utilizando mediciones de los sensores para determinar la ocupación de las celdas.
+\item Mapeo basado en cuadrículas (grid-based mapping): Esta aproximación divide el espacio del entorno en cuadrículas y asigna a cada celda un valor, indicando si está ocupada o libre. Los algoritmos de mapeo basado en cuadrículas, como Occupancy Grid Mapping, actualizan y mantienen un mapa de ocupación en tiempo real utilizando mediciones de los sensores para determinar la ocupación de las celdas.
 
-\item Mapeo basado en características (feature-based mapping) \cite{LandmarksUAV}: Esta estrategia se basa en la detección y seguimiento de características distintivas (landmarks) del entorno, como esquinas o características visuales. Los algoritmos de mapeo basado en características emplean técnicas de extracción y emparejamiento de características para construir y actualizar un mapa basado en la ubicación y descripción de estas características.
+\item Mapeo basado en características (feature-based mapping): Esta estrategia se basa en la detección y seguimiento de características distintivas (landmarks) del entorno, como esquinas o características visuales. Los algoritmos de mapeo basado en características emplean técnicas de extracción y emparejamiento de características para construir y actualizar un mapa basado en la ubicación y descripción de estas características.
 
-\item Diagrama de Voronoi \cite{DVoronoi}: El diagrama de Voronoi es una estructura matemática que divide el espacio en regiones basadas en la proximidad a un conjunto de puntos de referencia. Los algoritmos de mapeo basados en el diagrama de Voronoi utilizan esta estructura para representar el entorno y facilitar la navegación a través de la información sobre la geometría del diagrama.
+\item Diagrama de Voronoi: El diagrama de Voronoi es una estructura matemática que divide el espacio en regiones basadas en la proximidad a un conjunto de puntos de referencia. Los algoritmos de mapeo basados en el diagrama de Voronoi utilizan esta estructura para representar el entorno y facilitar la navegación a través de la información sobre la geometría del diagrama.
 
-\item Mapeo basado en octree \cite{Octree2023}: Esta técnica divide el espacio del entorno en una estructura jerárquica de octantes tridimensionales. Cada octante puede ser etiquetado como ocupado o libre, permitiendo así una representación eficiente y detalladas.
+\item Mapeo basado en octree: Esta técnica divide el espacio del entorno en una estructura jerárquica de octantes tridimensionales. Cada octante puede ser etiquetado como ocupado o libre, permitiendo así una representación eficiente y detalladas.
 \end{itemize}
 
 \subsection*{Evasión de obstáculos}
@@ -250,22 +246,22 @@ La generación de mapas en 3D juega un papel fundamental en la navegación autó
 La capacidad de esquivar obstáculos desempeña un papel fundamental en la navegación autónoma, ya que les permite evitar colisiones y mantener un vuelo seguro. Al contar con un VANT equipado con una variedad de sensores como lidar y cámaras, que les permiten detectar y comprender el entorno en tiempo real. Mediante el uso de algoritmos de detección y seguimiento de objetos, los VANTS pueden identificar diferentes obstáculos, desde edificios hasta árboles o personas. Utilizando esta información, los algoritmos de evasión de obstáculos analizan y determinan rutas seguras y viables para evitar los obstáculos detectados. Estos algoritmos emplean técnicas avanzadas de planificación de movimientos y toman decisiones rápidas y precisas para modificar la trayectoria del VANT y asegurar una navegación fluida. Existen diversos algoritmos empleados para evitar obstáculos en VANTS.
 
 \begin{itemize}
-\item Algoritmos de respuesta reactiva \cite{ReactiveCA}: Estos algoritmos se basan en la detección en tiempo real de obstáculos y generan maniobras de evasión de manera reactiva. Utilizan sensores y técnicas de percepción del entorno para identificar obstáculos y calcular trayectorias alternativas que eviten cualquier colisión.
-\item Algoritmos de planificación de ruta \cite{ACA}: Estos algoritmos planifican trayectorias de vuelo que evitan áreas con obstáculos conocidos o detectados. Utilizan técnicas de planificación de caminos y buscan rutas seguras y eficientes basándose en los datos del entorno y los objetivos de navegación.
-\item Algoritmos de aprendizaje automático \cite{AACA}: Estos algoritmos utilizan técnicas de aprendizaje automático para mejorar la capacidad de evasión de obstáculos de los VANTS. Pueden ser entrenados con datos recopilados en situaciones de evasión y aprender patrones y estrategias para evitar colisiones.
+\item Algoritmos de respuesta reactiva: Estos algoritmos se basan en la detección en tiempo real de obstáculos y generan maniobras de evasión de manera reactiva. Utilizan sensores y técnicas de percepción del entorno para identificar obstáculos y calcular trayectorias alternativas que eviten cualquier colisión.
+\item Algoritmos de planificación de ruta: Estos algoritmos planifican trayectorias de vuelo que evitan áreas con obstáculos conocidos o detectados. Utilizan técnicas de planificación de caminos y buscan rutas seguras y eficientes basándose en los datos del entorno y los objetivos de navegación.
+\item Algoritmos de aprendizaje automático: Estos algoritmos utilizan técnicas de aprendizaje automático para mejorar la capacidad de evasión de obstáculos de los VANTS. Pueden ser entrenados con datos recopilados en situaciones de evasión y aprender patrones y estrategias para evitar colisiones.
 \end{itemize}
   
-Cabe destacar que éstos son sólo algunos ejemplos de los algoritmos utilizados para la evasión de obstáculos en VANTS y la elección del algoritmo depende de factores como el entorno, los sensores disponibles y los objetivos específicos.
+Cabe destacar que estos son solo algunos ejemplos de los algoritmos utilizados para la evasión de obstáculos en VANTS y la elección del algoritmo depende de factores como el entorno de vuelo, los sensores disponibles y los objetivos específicos.
 
 \subsection*{Coordinación}
 
 La armonización y eficiencia en un sistema multi-VANT es fundamental para lograr el funcionamiento óptimo de múltiples VANTS en una misión conjunta. Dentro de este tipo de sistemas, los VANTS deben establecer comunicación y colaboración mutua para realizar tareas complejas de manera coordinada. Esto implica intercambiar datos como la ubicación y el estado de cada VANT, y tomar decisiones conjuntas basadas en objetivos compartidos. Los algoritmos de coordinación proveen un marco de trabajo que permite a los VANTS planificar y distribuir sus tareas de forma eficiente, evitando colisiones y optimizando el aprovechamiento de los recursos disponibles. %La coordinación en un sistema multi-VANT es esencial para lograr una sincronización adecuada y maximizar la efectividad de las misiones conjuntas, garantizando un desempeño eficaz y seguro por parte de los múltiples VANTS involucrados.
 
 \begin{itemize}
-\item Comunicación e intercambio de información \cite{UAVConn}: Los VANTS pueden establecer canales de comunicación para compartir información relevante entre sí. Esta información incluye la posición, velocidad, estado de la batería y objetivos asignados. La comunicación bidireccional permite que los VANTS se mantengan informados y coordinen sus acciones en tiempo real.
-\item Planificación y asignación de tareas \cite{CAT}: Los VANTS pueden hacer uso de algoritmos de planificación para asignar y distribuir tareas entre ellos. Estos algoritmos consideran los recursos disponibles, los objetivos individuales y colectivos, así como las restricciones y prioridades. La planificación colaborativa y la asignación eficiente de tareas garantizan una distribución equitativa del trabajo y una óptima utilización de los recursos.
-\item Sincronización del comportamiento \cite{CCN}: Los VANTS pueden adoptar estrategias para sincronizar sus acciones y movimientos. Esto se logra mediante algoritmos que ajustan la velocidad, altitud, rumbo y otros parámetros de vuelo para mantener formaciones apropiadas y evitar colisiones. La sincronización del comportamiento asegura un vuelo coordinado y fluido.
-\item Control centralizado o distribuido \cite{CDUAV}: Según la aplicación y el nivel de autonomía deseado, se puede optar por un control centralizado o distribuido. En el control centralizado, un VANT líder toma decisiones y coordina las acciones de los demás VANTS. En el control distribuido, los VANTS toman decisiones de manera autónoma, pero se comunican y colaboran para mantener la coordinación.
+\item Comunicación e intercambio de información: Los VANTS pueden establecer canales de comunicación para compartir información relevante entre sí. Esta información incluye la posición, velocidad, estado de la batería y objetivos asignados. La comunicación bidireccional permite que los VANTS se mantengan informados y coordinen sus acciones en tiempo real.
+\item Planificación y asignación de tareas: Los VANTS pueden hacer uso de algoritmos de planificación para asignar y distribuir tareas entre ellos. Estos algoritmos consideran los recursos disponibles, los objetivos individuales y colectivos, así como las restricciones y prioridades. La planificación colaborativa y la asignación eficiente de tareas garantizan una distribución equitativa del trabajo y una óptima utilización de los recursos.
+\item Sincronización del comportamiento: Los VANTS pueden adoptar estrategias para sincronizar sus acciones y movimientos. Esto se logra mediante algoritmos que ajustan la velocidad, altitud, rumbo y otros parámetros de vuelo para mantener formaciones apropiadas y evitar colisiones. La sincronización del comportamiento asegura un vuelo coordinado y fluido.
+\item Control centralizado o distribuido: Según la aplicación y el nivel de autonomía deseado, se puede optar por un control centralizado o distribuido. En el control centralizado, un VANT líder toma decisiones y coordina las acciones de los demás VANTS. En el control distribuido, los VANTS toman decisiones de manera autónoma, pero se comunican y colaboran para mantener la coordinación.
 \end{itemize}
 
 \section{Resultados Esperados y Análisis}
@@ -309,26 +305,22 @@ El examen de los resultados esperados permitirá evaluar la efectividad y la via
 
 \section{Conclusiones}
 
-En conclusión, la incesante expansión de la tecnología de los vehículos aéreos no tripulados (VANTS) está brindando a la humanidad oportunidades incomparables para utilizarlos en tareas de exploración y vigilancia. Nuestro artículo busca ampliar el creciente cuerpo de conocimientos mediante la investigación de estrategias para la coordinación de múltiples VANTS en tareas de exploración. A través de marcos teóricos, diseño de algoritmos y metodologías propuestas, aspiramos a allanar el camino para avances innovadores en este campo. Al fomentar la innovación en la coordinación de múltiples VANTS, esperamos contribuir a la transformación de las industrias y el avance de la comprensión científica.\\
+En conclusión, la incesante expansión de la tecnología de los vehículos aéreos no tripulados (VANTS) está brindando a la humanidad oportunidades incomparables de exploración y descubrimiento. Nuestro artículo busca ampliar el creciente cuerpo de conocimientos mediante la investigación de estrategias para la coordinación de múltiples VANTS en tareas de exploración. A través de marcos teóricos, diseño de algoritmos y metodologías propuestas, aspiramos a allanar el camino para avances innovadores en este campo. Al fomentar la innovación en la coordinación de múltiples VANTS, esperamos contribuir a la transformación de las industrias y el avance de la comprensión científica.\\
 
 Los resultados y análisis esperados indican las perspectivas prometedoras de esta estrategia, incluyendo mayores niveles de cobertura y una utilización eficiente de los recursos. Aunque existen desafíos y limitaciones inherentes a las complejidades de las tareas reales de exploración, abordar estos desafíos es una tarea continua para la comunidad investigadora, brindando una dirección clara para futuras mejoras y adaptaciones.\\
 
 %En conclusión, este artículo destaca que el potencial de las estrategias de coordinación de múltiples VANTS es ilimitado. Prometen redefinir la forma en que exploramos, monitoreamos y respondemos a diversos entornos y situaciones de desastre. Las estrategias presentadas no son solo conceptos teóricos, son invitaciones a hacer que la exploración sea más eficiente, adaptable y significativa.\\
 
-%Como investigadores, ingenieros y exploradores, nos encontramos en el umbral de una nueva era en las tareas de exploración automática. Estas estrategias son herramientas en nuestras manos, listas para moldear el futuro de la exploración. A través de la investigación, la experimentación y el compromiso constante para superar los desafíos, podemos garantizar que la coordinación de múltiples VANTS juegue un papel fundamental en abordar los problemas más urgentes del mundo.
+Como investigadores, ingenieros y exploradores, nos encontramos en el umbral de una nueva era en las tareas de exploración. Estas estrategias son herramientas en nuestras manos, listas para moldear el futuro de la exploración. A través de la investigación, la experimentación y el compromiso constante para superar los desafíos, podemos garantizar que la coordinación de múltiples VANTS juegue un papel fundamental en abordar los problemas más urgentes del mundo.
 
 %\section*{Agradecimientos}
 %Incluir fuentes de financiamiento u otro apoyo para la realización del proyecto (No. proyecto, Fondo, becas, etc). Se pueden incluir agradecimientos a personas o grupos estrechamente relacionados con el trabajo presentado en el artículo.
 
 %% incluya la bibliografía en un archivo separado .bib
 
-\setcitestyle{numbers}
-\bibliographystyle{unsrtnat}%{plainnat}%{abbrvnat}
+\newpage
+\bibliographystyle{ACM-Reference-Format}
 \bibliography{samplebib}
-
-%\bibliographystyle{ACM-Reference-Format}
-%\bibliographystyle{unsrt}
-%\bibliography{samplebib}
 
 
 \end{document}
