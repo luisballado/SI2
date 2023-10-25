@@ -1,0 +1,83 @@
+Generar una lista de las aristas del problema
+
+Se identifican +6 problemas diferentes (mantenimiento, rendimiento, encontrar rutas ..etc.)
+
+Identificar que si se va hacer y que no ..
+
+* Hacer actividad de anotar cada uno de los problemas.
+
+Identificar las cosas que ya están hechas y otras son las que debo hacer.
+
+** Aterrizar la tesis **
+
+Agrupar los problemas
+- Esto esta hecho lo voy a usar
+- Esto debo hacer y es mi contribución
+- Esto existe, pero debo modificar esto otro
+
+Especificar herramientas a usar
+
+Esto es un problema complejo ... es decir que se va hacer puntualmente..
+
+TEOREMA DE CAP
+https://es.wikipedia.org/wiki/Teorema_CAP
+
+No se puede garantizar todos los objetivos (2/3)
+
+Conocer lo que no puedo resolver y conocer lo viable que puedo construir
+
+Conseguir un tradeoff
+
+ - Planteamiento no cubre lo que se menciona al principio
+|- Estrategia - Optimizar
+   	      - Coordinar
+	      - Explorar
+
+Ser conciente de todos los problemas
+
+Explicar mejor
+
+Hipotesis --> Quitar lo obvio
+
+¿Qué performance es medible?
+
+- Cobertura de área
+- Cuales son esos mejores resultados?
+- Considerar insertidumbres?
+
+
+>> Pensar en un escenario real y seguir toda la presentación <<
+
+Cuál seria el objetivo final? (rendimiento, fiabilidad(exactitud), costo(autonomia)).)
+
+- Representación
+- tiempo autonomia
+- costo autonomia
+
+
+Olvidar - Quitar palabras como: tolerancia a fallos ..etc.
+
+¿Representación ideal de un mapa?
+
+ -----------------------------------------
+|Enfocarse en la estrategia de exploración|
+ -----------------------------------------
+
+Acotar a una sola misión
+
+¿Minimizando el costo?
+
+Objetivos --> enfocar en estrategia con un protocolo ya conocido PARA... <-- incluir el para en objetivos
+
+Objetivo General --- ...Estrategia para qué?
+
+Objetivo Particular --- ...Arquitectura, rendimiento y costos
+--> Ayudan a construir la estrategia y son medibles
+
+¿Qué número de VANTS se consideran en el trabajo?
+
+>>> DEJAR en dos, tres aristas del problema <<<
+
+Comprometer lo que si sabemos
+
+¿Qué impacto en cada uno de los objetivos?
