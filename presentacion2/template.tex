@@ -289,9 +289,9 @@
   \vspace{2pt}\\
   
   \begin{itemize}
-  \item \textbf{Aplicaciones} en lugares inaccesibles o peligrosos
-  \item \textbf{Múltiples VANT} pueden reducir el tiempo de exploración
-  \item \textbf{Limitaciones} en carga, procesamiento y batería influyen en el tiempo de vuelo
+  \item \textbf{Aplicaciones} en lugares inaccesibles o peligrosos.
+  \item \textbf{Múltiples VANT} pueden reducir el tiempo de exploración y aumentar la confianza del sistema.
+  \item \textbf{Limitaciones} en carga, procesamiento y batería influyen en el tiempo de vuelo.
   \end{itemize}
 
   %\includegraphics[width=0.45\textwidth,height=0.35\textheight]{DJI_B5}$^\dag$ 
@@ -308,8 +308,8 @@
     \small La meta de este trabajo es la creación de una estrategia para la exploración de ambientes desconocidos de manera coordinada con múltiples vehículos aéreos no tripulados (VANTS).
     
     \begin{itemize}
-    \item Exploración con algoritmos de baja complejidad computacional.
-    \item Habilidad de cubrir ambientes en interiores sin señal GPS.
+    %\item Exploración con algoritmos de baja complejidad computacional.
+    \item Habilidad de cubrir ambientes sin señal GPS.
     \item Con una carga de tareas de exploración distribuida con el grupo de VANTS.
     \end{itemize}
   \end{minipage}
@@ -368,17 +368,17 @@
     \item Planificación de trayectorias.
     \end{itemize}
 
-    \small La computadora embebida usado en un VANT Micro es de bajo rendimiento, pero su necesidad de autónomia sigue siendo la misma que un VANT de mayor tamaño.\\
+    \small La computadora embebida usado en un micro-VANT es de bajo rendimiento, pero su necesidad de autónomia sigue siendo la misma que un VANT de mayor tamaño.\\
     Es necesario dotarlos de algoritmos de baja complejidad computacional.
     
   \end{minipage}
   \hspace{0.2cm}
   \begin{minipage}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{crazyflie.jpg}
+    \includegraphics[width=\textwidth]{ultra.jpg}
   \end{minipage}
 \end{frame}
 
-\begin{frame}{Mapeo}
+\begin{frame}{Generación de mapas}
   \bigskip % Vertical whitespace
   %\centering
   \includegraphics[width=0.45\textwidth,height=0.35\textheight]{map3d.jpg}$^\dag$
@@ -430,23 +430,18 @@
   \bigskip % Vertical whitespace
   \addvspace{\medskipamount}
   \noindent
-  \begin{tabularx}{\linewidth}{ @{} X X X @{} }
-    Por representación del Espacio
+  \begin{tabularx}{\linewidth}{ @{} X X @{} }
+    Por Grafos
     
     \begin{itemize}
     \item Grafos de visibilidad. 
     \item Diagramas de Voronoi.
     \item Descomposición por celdas.
-    \end{itemize} &
-
-    Por muestreo
-    
-    \begin{itemize}
     \item Consulta única (RRT)
     \item Consulta múltiple (PRM)
     \end{itemize} &
 
-    Por Grafos
+    Algoritmos
     
     \begin{itemize}
     \item BFS, DFS
@@ -463,7 +458,7 @@
   %\begin{columns}
   %  \column{0.5\textwidth}
   \justifying
-  \scriptsize Dada un área de interés desconocida en un espacio cerrado que se desea explorar denotada como $\mathcal{A}$, tal que $\mathcal{A} \subset \mathbb{R}^{3}$.\\
+  \scriptsize Dado un área de interés desconocida en un espacio cerrado que se desea explorar denotada como $\mathcal{A}$, tal que $\mathcal{A} \subset \mathbb{R}^{3}$.\\
 
   \begin{itemize}
   \item Un voxel $v$ que representa el espacio contenido en $\mathcal{A}$ que es obtenido dividiendo recursivamente el área de interés $\mathcal{A}$ en ocho partes de igual tamaño, el voxel puede tomar los valores de libre, ocupado y desconocido o no explorado de notados como $v_{libre}$, $v_{ocup}$, $v_{desc}$. La región ocupada son obtenidas mediante un sensor basado en un modelo de ocupación probabilístico.\\
@@ -502,11 +497,11 @@
   %\pause
   \begin{itemize}
 
-  \item ¿Cuáles son los principales desafíos técnicos y operativos que impiden la coordinación de múltiples vehículos aéreos no tripulados en tareas de exploración?
+  \item ¿Cuáles son los principales desafíos técnicos que dificultan la coordinación de múltiples vehículos aéreos no tripulados en tareas de exploración?
     %\pause
   \item ¿Cómo se pueden aprovechar las tecnologías de vanguardia, desde sensores avanzados hasta algoritmos de inteligencia artificial, para superar estos desafíos?
     %\pause
-  \item ¿Cuáles son las implicaciones de una mejor coordinación de múltiples vehículos aéreos no tripulados para diversos sectores, incluida la exploración autónoma en interiores?
+  \item ¿Cuáles consecuencias se derivan de una mejor coordinación de múltiples vehículos aéreos no tripulados para diversos sectores, incluida la exploración autónoma en interiores?
     
   \end{itemize}
 \end{frame}
@@ -515,7 +510,7 @@
 
 \begin{frame}{Hipótesis}
 
-  La implementación de una estrategia de exploración coordinada utilizando múltiples vehículos aéreos no tripulados (multi-VANT) en entornos complejos, permitirá obtener mejores resultados en comparación con la exploración individual (mono-VANT). Esta coordinación eﬁciente se traducirá en una reducción del tiempo y los recursos necesarios para completar la exploración, así como en una mayor cobertura del área de interés. Además, se espera que la exploración coordinada multi-VANT mejore la calidad de los datos recopilados, lo que permitirá tomar decisiones más informadas y eﬁcaces en diversos campos, como la cartografía, la vigilancia, el monitoreo y la respuesta a desastres naturales.
+  La implementación de una estrategia de exploración coordinada utilizando múltiples vehículos aéreos no tripulados (multi-VANT) en ambientes sin señal GPS, permitirá obtener mejores resultados en comparación con la exploración individual (mono-VANT). Esta coordinación eﬁciente se traducirá en una reducción del tiempo y los recursos necesarios para completar la exploración, así como en una mayor cobertura del área de interés. Además, se espera que la exploración coordinada multi-VANT mejore la calidad de los datos recopilados, lo que permitirá tomar decisiones más informadas y eﬁcaces en diversos campos, como la cartografía, la vigilancia, el monitoreo y la respuesta a desastres naturales.
   
   %La implementación de una arquitectura descentralizada integrada de algoritmos para la detección y evasión de obstáculos, toma de decisiones, navegación e inteligencia colectiva para los múltiples VANTS. Así como un enfoque de fusión de datos que integre la información de los sensores de los múltiples VANTS, mejorará la efectividad y conducirá a mejores resultados de exploración en entornos dinámicos e inciertos, incluida una mayor cobertura del área explorada, una mejor recopilación de datos en comparación con un enfoque de un solo VANT.
   
@@ -527,7 +522,7 @@
     %\item<1-> General \\
     \item General \\
     \bigskip
-    Desarrollar una arquitectura de software descentralizada que resuelva los problemas de localización, mapeo, navegación y coordinación multi-VANT en ambientes desconocidos y dinámicos para tareas de exploración en interiores.
+    Desarrollar una arquitectura de software hibrida descentralizada que resuelva los problemas de localización, mapeo, navegación y coordinación multi-VANT en ambientes desconocidos para tareas de exploración en interiores.
     \pause
     % \item<2-> Particulares\\
     \item Particulares\\
@@ -535,7 +530,7 @@
     \begin{itemize}
     \item Evaluar y comparar diferentes algoritmos de coordinación y planificación de vuelo para la exploración coordinada multi-VANT.
       %\pause
-    \item Elegir la representación del ambiente en 3D con menor complejidad computacional que nos ayude en crear trayectorios para los VANTS.
+    \item Elegir la representación del ambiente en 3D que nos ayude en crear trayectorios para los VANTS.
     \item Realizar pruebas y simulaciones de la solución propuesta en entornos complejos, analizando métricas como tiempo de exploración, cobertura del área de interés y calidad de los datos recopilados.
     \end{itemize}
   \end{enumerate}
@@ -689,7 +684,7 @@
     \begin{itemize}
     \item Análisis comparativo de la cobertura alcanzada por los algoritmos de coordinación.
     \item Evaluación comparativa del consumo de recursos entre algoritmos de coordinación avanzados y métodos tradicionales.
-    \item Evaluación de mecanismos de evasión de obstáculos en tiempo real, especialmente en entornos no estructurantes e impredecibles.
+    \item Evaluación de mecanismos de evasión de obstáculos en tiempo real.
     \end{itemize}
   \item<3-> Tesis impresa
   \end{enumerate}

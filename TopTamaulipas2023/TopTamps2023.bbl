@@ -1,0 +1,304 @@
+\begin{thebibliography}{34}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ed.(2023)]{INTEL2023}
+Intel Ed.
+\newblock What are service robots?, Ago 2023.
+\newblock URL
+  \url{https://www.intel.la/content/www/xl/es/robotics/service-robot.html}.
+
+\bibitem[Schneider and Wildermuth(2016)]{Schneider2016}
+Frank~E. Schneider and Dennis Wildermuth.
+\newblock Assessing the search and rescue domain as an applied and realistic
+  benchmark for robotic systems.
+\newblock In \emph{2016 17th International Carpathian Control Conference
+  ({ICCC})}. {IEEE}, May 2016.
+\newblock \doi{10.1109/carpathiancc.2016.7501177}.
+\newblock URL \url{https://doi.org/10.1109/carpathiancc.2016.7501177}.
+
+\bibitem[Jones et~al.(2023)Jones, Djahel, and Welsh]{ACM2023}
+Michael Jones, Soufiene Djahel, and Kristopher Welsh.
+\newblock Path-planning for unmanned aerial vehicles with environment
+  complexity considerations: A survey.
+\newblock \emph{ACM Comput. Surv.}, 55\penalty0 (11), feb 2023.
+\newblock ISSN 0360-0300.
+\newblock \doi{10.1145/3570723}.
+\newblock URL \url{https://doi.org/10.1145/3570723}.
+
+\bibitem[Sharma and Tiwari(2016)]{Sharma2016}
+Sujata Sharma and Ritu Tiwari.
+\newblock A survey on multi robots area exploration techniques and algorithms.
+\newblock In \emph{2016 International Conference on Computational Techniques in
+  Information and Communication Technologies ({ICCTICT})}. {IEEE}, March 2016.
+\newblock \doi{10.1109/icctict.2016.7514570}.
+\newblock URL \url{https://doi.org/10.1109/icctict.2016.7514570}.
+
+\bibitem[Rou\v{c}ek et~al.(2022)Rou\v{c}ek, Pecka, \v{C}\'{\i}\v{z}ek,
+  Pet\v{r}\'\i\v{c}ek, Bayer, \v{S}alansk\'{y}, Azayev, He\v{r}t, Petrl\'{i}k,
+  B\'{a}\v{c}a, Spurn\'y, Kr\'{a}tky\'{y}, Petr\'{a}\v{c}ek, Baril, Vaidis,
+  Kubelka, Pomerleau, Faigl, Zimmermann, Saska, Svoboda, and
+  Krajn\'{i}k]{DARPA2022}
+Tom\'{a}\v{s} Rou\v{c}ek, Martin Pecka, Petr \v{C}\'{\i}\v{z}ek, Tom\'{a}\v{s}
+  Pet\v{r}\'\i\v{c}ek, Jan Bayer, Vojt\v{e}ch \v{S}alansk\'{y}, Teymur Azayev,
+  Daniel He\v{r}t, Mat\v{e}j Petrl\'{i}k, Tom\'{a}\v{s} B\'{a}\v{c}a, Vojtech
+  Spurn\'y, V\'{i}t Kr\'{a}tky\'{y}, Pavel Petr\'{a}\v{c}ek, Dominic Baril,
+  Maxime Vaidis, Vladim\'{i}r Kubelka, Fran\c{c}ois Pomerleau, Jan Faigl, Karel
+  Zimmermann, Martin Saska, Tom\'{a}\v{s} Svoboda, and Tom\'{a}\v{s}
+  Krajn\'{i}k.
+\newblock System for multi-robotic exploration of underground environments
+  {CTU}-{CRAS}-{NORLAB} in the {DARPA} subterranean challenge.
+\newblock \emph{Field Robotics}, 2\penalty0 (1):\penalty0 1779--1818, March
+  2022.
+\newblock \doi{10.55417/fr.2022055}.
+\newblock URL \url{https://doi.org/10.55417/fr.2022055}.
+
+\bibitem[Cieslewski et~al.(2017)Cieslewski, Kaufmann, and
+  Scaramuzza]{CIESLEWSKI2017}
+Titus Cieslewski, Elia Kaufmann, and Davide Scaramuzza.
+\newblock Rapid exploration with multi-rotors: A frontier selection method for
+  high speed flight.
+\newblock In \emph{2017 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 2135--2142, 2017.
+\newblock \doi{10.1109/IROS.2017.8206030}.
+
+\bibitem[Zhou et~al.(2021)Zhou, Zhang, Chen, and Shen]{FUEL}
+Boyu Zhou, Yichen Zhang, Xinyi Chen, and Shaojie Shen.
+\newblock Fuel: Fast uav exploration using incremental frontier structure and
+  hierarchical planning.
+\newblock \emph{IEEE Robotics and Automation Letters}, 6\penalty0 (2):\penalty0
+  779--786, 2021.
+\newblock \doi{10.1109/LRA.2021.3051563}.
+
+\bibitem[Burgard et~al.(2005)Burgard, Moors, Stachniss, and Schneider]{1435481}
+W.~Burgard, M.~Moors, C.~Stachniss, and F.E. Schneider.
+\newblock Coordinated multi-robot exploration.
+\newblock \emph{IEEE Transactions on Robotics}, 21\penalty0 (3):\penalty0
+  376--386, 2005.
+\newblock \doi{10.1109/TRO.2004.839232}.
+
+\bibitem[Tian et~al.(2020)Tian, Liu, Ok, Tran, Allen, Roy, and How]{Tian}
+Yulun Tian, Katherine Liu, Kyel Ok, Loc Tran, Danette Allen, Nicholas Roy, and
+  Jonathan~P. How.
+\newblock Search and rescue under the forest canopy using multiple uavs.
+\newblock \emph{The International Journal of Robotics Research}, 39\penalty0
+  (10-11):\penalty0 1201--1221, 2020.
+\newblock \doi{10.1177/0278364920929398}.
+\newblock URL \url{https://doi.org/10.1177/0278364920929398}.
+
+\bibitem[Morilla-Cabello et~al.(2022)Morilla-Cabello, Bartolomei, Teixeira,
+  Montijano, and Chli]{9844235}
+David Morilla-Cabello, Luca Bartolomei, Lucas Teixeira, Eduardo Montijano, and
+  Margarita Chli.
+\newblock Sweep-your-map: Efficient coverage planning for aerial teams in
+  large-scale environments.
+\newblock \emph{IEEE Robotics and Automation Letters}, 7\penalty0 (4):\penalty0
+  10810--10817, 2022.
+\newblock \doi{10.1109/LRA.2022.3194686}.
+
+\bibitem[Yamauchi(1997)]{YAMAUCHI1997}
+B.~Yamauchi.
+\newblock A frontier-based approach for autonomous exploration.
+\newblock In \emph{Proceedings 1997 IEEE International Symposium on
+  Computational Intelligence in Robotics and Automation CIRA'97. 'Towards New
+  Computational Principles for Robotics and Automation'}, pages 146--151, 1997.
+\newblock \doi{10.1109/CIRA.1997.613851}.
+
+\bibitem[Kabir and Lee(2021)]{9483227}
+Rabiul~Hasan Kabir and Kooktae Lee.
+\newblock Efficient, decentralized, and collaborative multi-robot exploration
+  using optimal transport theory.
+\newblock In \emph{2021 American Control Conference (ACC)}, pages 4203--4208,
+  2021.
+\newblock \doi{10.23919/ACC50511.2021.9483227}.
+
+\bibitem[Yu et~al.(2021)Yu, Tong, Xu, Xu, Dong, Yang, and Wang]{9561328}
+Jincheng Yu, Jianming Tong, Yuanfan Xu, Zhilin Xu, Haolin Dong, Tianxiang Yang,
+  and Yu~Wang.
+\newblock Smmr-explore: Submap-based multi-robot exploration system with
+  multi-robot multi-target potential field exploration method.
+\newblock In \emph{2021 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 8779--8785, 2021.
+\newblock \doi{10.1109/ICRA48506.2021.9561328}.
+
+\bibitem[Corah and Michael(2021)]{9561226}
+Micah Corah and Nathan Michael.
+\newblock Volumetric objectives for multi-robot exploration of
+  three-dimensional environments.
+\newblock In \emph{2021 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 9043--9050, 2021.
+\newblock \doi{10.1109/ICRA48506.2021.9561226}.
+
+\bibitem[Zhou et~al.(2023)Zhou, Xu, and Shen]{RACER2022}
+Boyu Zhou, Hao Xu, and Shaojie Shen.
+\newblock Racer: Rapid collaborative exploration with a decentralized multi-uav
+  system.
+\newblock \emph{IEEE Transactions on Robotics}, 39\penalty0 (3):\penalty0
+  1816--1835, 2023.
+\newblock \doi{10.1109/TRO.2023.3236945}.
+
+\bibitem[Hart et~al.(1968)Hart, Nilsson, and Raphael]{Astar}
+Peter~E. Hart, Nils~J. Nilsson, and Bertram Raphael.
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock \emph{IEEE Transactions on Systems Science and Cybernetics},
+  4\penalty0 (2):\penalty0 100--107, 1968.
+\newblock \doi{10.1109/TSSC.1968.300136}.
+
+\bibitem[Lin and Saripalli(2017)]{RRT}
+Yucong Lin and Srikanth Saripalli.
+\newblock Sampling-based path planning for uav collision avoidance.
+\newblock \emph{IEEE Transactions on Intelligent Transportation Systems},
+  18\penalty0 (11):\penalty0 3179--3192, 2017.
+\newblock \doi{10.1109/TITS.2017.2673778}.
+
+\bibitem[Guo et~al.(2022)Guo, Xia, Hu, and Ma]{RRTstar}
+Jun Guo, Wei Xia, Xiaoxuan Hu, and Huawei Ma.
+\newblock Feedback rrt* algorithm for uav path planning in a hostile
+  environment.
+\newblock \emph{Computers and Industrial Engineering}, 174:\penalty0 108771,
+  December 2022.
+\newblock \doi{10.1016/j.cie.2022.108771}.
+\newblock URL \url{https://doi.org/10.1016/j.cie.2022.108771}.
+
+\bibitem[Saadi et~al.(2022)Saadi, Soukane, Meraihi, Gabis, Mirjalili, and
+  Ramdane-Cherif]{UAVOpt}
+Amylia~Ait Saadi, Assia Soukane, Yassine Meraihi, Asma~Benmessaoud Gabis,
+  Seyedali Mirjalili, and Amar Ramdane-Cherif.
+\newblock {UAV} path planning using optimization approaches: A survey.
+\newblock \emph{Archives of Computational Methods in Engineering}, 29\penalty0
+  (6):\penalty0 4233--4284, April 2022.
+\newblock \doi{10.1007/s11831-022-09742-7}.
+\newblock URL \url{https://doi.org/10.1007/s11831-022-09742-7}.
+
+\bibitem[R\"{u}ckin et~al.(2021)R\"{u}ckin, Jin, and Popović]{DRL}
+Julius R\"{u}ckin, Liren Jin, and Marija Popović.
+\newblock Adaptive informative path planning using deep reinforcement learning
+  for uav-based active sensing, 2021.
+\newblock URL \url{https://arxiv.org/abs/2109.13570}.
+
+\bibitem[Roberge et~al.(2013)Roberge, Tarbouchi, and Labonte]{Bio1}
+Vincent Roberge, Mohammed Tarbouchi, and Gilles Labonte.
+\newblock Comparison of parallel genetic algorithm and particle swarm
+  optimization for real-time uav path planning.
+\newblock \emph{IEEE Transactions on Industrial Informatics}, 9\penalty0
+  (1):\penalty0 132--141, 2013.
+\newblock \doi{10.1109/TII.2012.2198665}.
+
+\bibitem[Yu et~al.(2019)Yu, Chen, Gu, Yuan, Zhang, and Zhang]{Bio2}
+Xue Yu, Wei-Neng Chen, Tianlong Gu, Huaqiang Yuan, Huaxiang Zhang, and Jun
+  Zhang.
+\newblock Aco-a*: Ant colony optimization plus a* for 3-d traveling in
+  environments with dense obstacles.
+\newblock \emph{IEEE Transactions on Evolutionary Computation}, 23\penalty0
+  (4):\penalty0 617--631, 2019.
+\newblock \doi{10.1109/TEVC.2018.2878221}.
+
+\bibitem[Karimi and Pourtakdoust(2013)]{Bio3}
+J.~Karimi and Seid~H. Pourtakdoust.
+\newblock Optimal maneuver-based motion planning over terrain and threats using
+  a dynamic hybrid pso algorithm.
+\newblock \emph{Aerospace Science and Technology}, 26\penalty0 (1):\penalty0
+  60--71, 2013.
+\newblock ISSN 1270-9638.
+\newblock \doi{https://doi.org/10.1016/j.ast.2012.02.014}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S1270963812000466}.
+
+\bibitem[Han et~al.(2022)Han, Qu, Tong, Jiang, Zlatanova, Wang, and
+  Cheng]{GridUAV}
+Bing Han, Tengteng Qu, Xiaochong Tong, Jie Jiang, Sisi Zlatanova, Haipeng Wang,
+  and Chengqi Cheng.
+\newblock Grid-optimized {UAV} indoor path planning algorithms in a complex
+  environment.
+\newblock \emph{International Journal of Applied Earth Observation and
+  Geoinformation}, 111:\penalty0 102857, July 2022.
+\newblock \doi{10.1016/j.jag.2022.102857}.
+\newblock URL \url{https://doi.org/10.1016/j.jag.2022.102857}.
+
+\bibitem[Singh and Sujit(2016)]{LandmarksUAV}
+Shreya Singh and P.B. Sujit.
+\newblock Landmarks based path planning for {UAVs} in {GPS}-denied areas.
+\newblock \emph{{IFAC}-{PapersOnLine}}, 49\penalty0 (1):\penalty0 396--400,
+  2016.
+\newblock \doi{10.1016/j.ifacol.2016.03.086}.
+\newblock URL \url{https://doi.org/10.1016/j.ifacol.2016.03.086}.
+
+\bibitem[Pehlivanoglu(2012)]{DVoronoi}
+Y.~Volkan Pehlivanoglu.
+\newblock A new vibrational genetic algorithm enhanced with a voronoi diagram
+  for path planning of autonomous {UAV}.
+\newblock \emph{Aerospace Science and Technology}, 16\penalty0 (1):\penalty0
+  47--55, January 2012.
+\newblock \doi{10.1016/j.ast.2011.02.006}.
+\newblock URL \url{https://doi.org/10.1016/j.ast.2011.02.006}.
+
+\bibitem[shun Yuan et~al.(2023)shun Yuan, le~Zhou, and Chen]{Octree2023}
+Meng shun Yuan, Tong le~Zhou, and Mou Chen.
+\newblock Improved lazy theta$\ast$ algorithm based on octree map for path
+  planning of {UAV}.
+\newblock \emph{Defence Technology}, 23:\penalty0 8--18, May 2023.
+\newblock \doi{10.1016/j.dt.2022.01.006}.
+\newblock URL \url{https://doi.org/10.1016/j.dt.2022.01.006}.
+
+\bibitem[Tripathi et~al.(2014)Tripathi, Raja, and Padhi]{ReactiveCA}
+Amit~K. Tripathi, Ramsingh~G. Raja, and Radhakant Padhi.
+\newblock Reactive collision avoidance of {UAVs} with stereovision camera
+  sensors using {UKF}.
+\newblock \emph{{IFAC} Proceedings Volumes}, 47\penalty0 (1):\penalty0
+  1119--1125, 2014.
+\newblock \doi{10.3182/20140313-3-in-3024.00171}.
+\newblock URL \url{https://doi.org/10.3182/20140313-3-in-3024.00171}.
+
+\bibitem[Yasin et~al.(2020)Yasin, Mohamed, Haghbayan, Heikkonen, Tenhunen, and
+  Plosila]{ACA}
+Jawad~N. Yasin, Sherif A.~S. Mohamed, Mohammad-Hashem Haghbayan, Jukka
+  Heikkonen, Hannu Tenhunen, and Juha Plosila.
+\newblock Unmanned aerial vehicles (uavs): Collision avoidance systems and
+  approaches.
+\newblock \emph{IEEE Access}, 8:\penalty0 105139--105155, 2020.
+\newblock \doi{10.1109/ACCESS.2020.3000064}.
+
+\bibitem[Das and Mishra(2022)]{AACA}
+Subhranil Das and Sudhansu~Kumar Mishra.
+\newblock A machine learning approach for collision avoidance and path planning
+  of mobile robot under dense and cluttered environments.
+\newblock \emph{Computers and Electrical Engineering}, 103:\penalty0 108376,
+  October 2022.
+\newblock \doi{10.1016/j.compeleceng.2022.108376}.
+\newblock URL \url{https://doi.org/10.1016/j.compeleceng.2022.108376}.
+
+\bibitem[Cui et~al.(2017)Cui, Liu, Wang, and Yu]{UAVConn}
+Qiannan Cui, Peizhi Liu, Jinhua Wang, and Jing Yu.
+\newblock Brief analysis of drone swarms communication.
+\newblock In \emph{2017 IEEE International Conference on Unmanned Systems
+  (ICUS)}, pages 463--466, 2017.
+\newblock \doi{10.1109/ICUS.2017.8278390}.
+
+\bibitem[Poudel and Moh(2022)]{CAT}
+Sabitri Poudel and Sangman Moh.
+\newblock Task assignment algorithms for unmanned aerial vehicle networks: A
+  comprehensive survey.
+\newblock \emph{Vehicular Communications}, 35:\penalty0 100469, June 2022.
+\newblock \doi{10.1016/j.vehcom.2022.100469}.
+\newblock URL \url{https://doi.org/10.1016/j.vehcom.2022.100469}.
+
+\bibitem[Giagkos et~al.(2021)Giagkos, Tuci, Wilson, and Charlesworth]{CCN}
+Alexandros Giagkos, Elio Tuci, Myra~S. Wilson, and Philip~B. Charlesworth.
+\newblock {UAV} flight coordination for communication networks: genetic
+  algorithms versus game theory.
+\newblock \emph{Soft Computing}, 25\penalty0 (14):\penalty0 9483--9503, May
+  2021.
+\newblock \doi{10.1007/s00500-021-05863-6}.
+\newblock URL \url{https://doi.org/10.1007/s00500-021-05863-6}.
+
+\bibitem[De~Sá and Neto(2023)]{CDUAV}
+Denis Fabrício~Sousa De~Sá and João Viana Da~Fonseca Neto.
+\newblock Multi-agent collision avoidance system based on centralization and
+  decentralization control for uav applications.
+\newblock \emph{IEEE Access}, 11:\penalty0 7031--7042, 2023.
+\newblock \doi{10.1109/ACCESS.2023.3235595}.
+
+\end{thebibliography}

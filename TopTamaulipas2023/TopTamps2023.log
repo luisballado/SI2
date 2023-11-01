@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (prel
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**TopTamps2023_submission.tex
-(./TopTamps2023_submission.tex
+**TopTamps2023.tex
+(./TopTamps2023.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./acmart.cls
 Document Class: acmart 2019/08/05 v1.63a Typesetting articles for the Associati
@@ -725,134 +725,168 @@ Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
 ))
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 27.
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box59
+\UL@hyphenbox=\box60
+\UL@skip=\skip81
+\UL@hook=\toks40
+\UL@height=\dimen195
+\UL@pe=\count315
+\UL@pixel=\dimen196
+\ULC@box=\box61
+Package: ulem 2019/11/18
+\ULdepth=\dimen197
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count316
+\lst@gtempboxa=\box62
+\lst@token=\toks41
+\lst@length=\count317
+\lst@currlwidth=\dimen198
+\lst@column=\count318
+\lst@pos=\count319
+\lst@lostspace=\dimen199
+\lst@width=\dimen256
+\lst@newlines=\count320
+\lst@lineno=\count321
+\lst@maxwidth=\dimen257
 
-\c@theorem=\count315
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count322
+\lst@skipnumbers=\count323
+\lst@framebox=\box63
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 70.
+
+\c@theorem=\count324
 
 (/usr/share/texlive/texmf-dist/tex/latex/preprint/balance.sty
 Package: balance 1999/02/23 4.3 (PWD)
-\oldvsize=\dimen195
+\oldvsize=\dimen258
 )
 Excluding comment 'screenonly' Include comment 'printonly'
 Include comment 'anonsuppress'
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count316
-\l__pdf_internal_box=\box59
+\l__color_backend_stack_int=\count325
+\l__pdf_internal_box=\box64
 )
-(./TopTamps2023_submission.aux
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+(./TopTamps2023.aux
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
 )
-\openout1 = `TopTamps2023_submission.aux'.
+\openout1 = `TopTamps2023.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 27.
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 70.
 LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line
- 27.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/omlnxlmi.fd
+ 70.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 70.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-27.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
+70.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 70.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 27.
+ 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 70.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 27.
+e 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    ... okay on input line 70.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 27.
+(Font)              scaled to size 7.0pt on input line 70.
 LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF
- on input line 27.
+ on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.fd
 File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 27.
+(Font)              scaled to size 7.3pt on input line 70.
 <<ot1.cmap>>
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 27.
+(Font)              scaled to size 5.5pt on input line 70.
 <<oml.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-27.
+70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-27.
+70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-27.
+70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 27.
+(Font)              scaled to size 9.0pt on input line 70.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 27.
-LaTeX Info: Redefining \microtypecontext on input line 27.
-Package microtype Info: Applying patch `item' on input line 27.
-Package microtype Info: Applying patch `toc' on input line 27.
-Package microtype Info: Applying patch `eqnum' on input line 27.
-Package microtype Info: Applying patch `footnote' on input line 27.
+(Font)              scaled to size 9.0pt on input line 70.
+LaTeX Info: Redefining \microtypecontext on input line 70.
+Package microtype Info: Applying patch `item' on input line 70.
+Package microtype Info: Applying patch `toc' on input line 70.
+Package microtype Info: Applying patch `eqnum' on input line 70.
+Package microtype Info: Applying patch `footnote' on input line 70.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 27.
+LaTeX Info: Redefining \showhyphens on input line 70.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -860,7 +894,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -868,30 +902,30 @@ Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count317
+\c@section@level=\count326
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
 
-(./TopTamps2023_submission.out) (./TopTamps2023_submission.out)
+(./TopTamps2023.out) (./TopTamps2023.out)
 \@outlinefile=\write4
-\openout4 = `TopTamps2023_submission.out'.
+\openout4 = `TopTamps2023.out'.
 
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count318
-\scratchdimen=\dimen196
-\scratchbox=\box60
-\nofMPsegments=\count319
-\nofMParguments=\count320
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count321
-\MPscratchDim=\dimen197
-\MPnumerator=\count322
-\makeMPintoPDFobject=\count323
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count327
+\scratchdimen=\dimen259
+\scratchbox=\box65
+\nofMPsegments=\count328
+\nofMParguments=\count329
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count330
+\MPscratchDim=\dimen260
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
+\everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -935,41 +969,43 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count324
-\c@mv@boldtabular=\count325
+\c@mv@tabular=\count333
+\c@mv@boldtabular=\count334
 (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
+\c@lstlisting=\count335
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 94.
+(Font)              scaled to size 17.28pt on input line 158.
 LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF o
-n input line 94.
+n input line 158.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
 uxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 94.
+(Font)              scaled to size 17.28pt on input line 158.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 94.
+(Font)              scaled to size 17.28pt on input line 158.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 94.
+(Font)              scaled to size 12.0pt on input line 158.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 94.
+(Font)              scaled to size 10.0pt on input line 158.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 94.
+(Font)              scaled to size 10.0pt on input line 158.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -984,164 +1020,55 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <ccbync.png, id=47, 1284.8pt x 449.68pt>
 File: ccbync.png Graphic file (type png)
 <use ccbync.png>
-Package pdftex.def Info: ccbync.png  used on input line 94.
+Package pdftex.def Info: ccbync.png  used on input line 158.
 (pdftex.def)             Requested size: 45.56902pt x 15.94624pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 94.
+(Font)              scaled to size 7.0pt on input line 158.
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
- on input line 94.
+ on input line 158.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 94.
+(Font)              scaled to size 7.0pt on input line 158.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 94.
+(Font)              scaled to size 9.0pt on input line 158.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 94.
+(Font)              scaled to size 10.95pt on input line 158.
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
 
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 94.
+(Font)              scaled to size 8.0pt on input line 158.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 94.
+(Font)              scaled to size 8.0pt on input line 158.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 94.
+(Font)              scaled to size 8.0pt on input line 158.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 163--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 171--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-[1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
- <./ccbync.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-<racer_drone.png, id=69, 445.665pt x 323.2075pt>
-File: racer_drone.png Graphic file (type png)
-<use racer_drone.png>
-Package pdftex.def Info: racer_drone.png  used on input line 147.
-(pdftex.def)             Requested size: 116.44568pt x 84.44623pt.
-<aerial_navigation.png, id=70, 365.365pt x 232.87pt>
-File: aerial_navigation.png Graphic file (type png)
-<use aerial_navigation.png>
-Package pdftex.def Info: aerial_navigation.png  used on input line 148.
-(pdftex.def)             Requested size: 116.44568pt x 74.21788pt.
-
-Class acmart Warning: A possible image without description on input line 151.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 160.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 160.
-[2.2 <./racer_drone.png> <./aerial_navigation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
@@ -1151,14 +1078,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
  []
 
 
-Underfull \vbox (badness 6157) has occurred while \output is active []
-
- [3.3]
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+ <./ccbync.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
@@ -1169,162 +1098,558 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--204
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-<control_drone.png, id=128, 658.46pt x 263.98625pt>
-File: control_drone.png Graphic file (type png)
-<use control_drone.png>
-Package pdftex.def Info: control_drone.png  used on input line 240.
-(pdftex.def)             Requested size: 253.14749pt x 101.48799pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 240--241
- [][] 
- []
-
-
-Class acmart Warning: A possible image without description on input line 243.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 
-Underfull \vbox (badness 1163) has occurred while \output is active []
+Overfull \hbox (14.263pt too wide) in paragraph at lines 222--223
+[]\T1/LinuxLibertineT-TLF/m/n/9 (-20) Un en-fo-que am-plia-men-te adop-ta-do pa
+-ra es-tu-diar []|   []   |   []
+ []
 
- [4.4 <./control_drone.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+<racer_drone.png, id=76, 445.665pt x 323.2075pt>
+File: racer_drone.png Graphic file (type png)
+<use racer_drone.png>
+Package pdftex.def Info: racer_drone.png  used on input line 228.
+(pdftex.def)             Requested size: 116.44568pt x 84.44623pt.
+<aerial_navigation.png, id=77, 365.365pt x 232.87pt>
+File: aerial_navigation.png Graphic file (type png)
+<use aerial_navigation.png>
+Package pdftex.def Info: aerial_navigation.png  used on input line 229.
+(pdftex.def)             Requested size: 116.44568pt x 74.21788pt.
+
+Package natbib Warning: Citation `Zhang2023' on page 2 undefined on input line 
+232.
+
+
+Package natbib Warning: Citation `Zhang2023' on page 2 undefined on input line 
+232.
+
+
+Class acmart Warning: A possible image without description on input line 234.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+
+ []
+
+
+Overfull \hbox (8.68239pt too wide) in paragraph at lines 240--241
+[]\T1/LinuxLibertineT-TLF/m/n/9 (-20) En []|   []   |   []   |   []   |   []   
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 241.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 241.
+[2.2 <./racer_drone.png> <./aerial_navigation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Package natbib Warning: Citation `CINVESTAM2013' on page 3 undefined on input l
+ine 254.
+
+
+Package natbib Warning: Citation `CINVESTAM2013' on page 3 undefined on input l
+ine 254.
+
+
+Overfull \hbox (13.7628pt too wide) in paragraph at lines 254--255
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []
+ []
+
+
+Overfull \hbox (12.3722pt too wide) in paragraph at lines 254--255
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
+
+Overfull \hbox (26.162pt too wide) in paragraph at lines 278--279
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \vbox (badness 6157) has occurred while \output is active []
+
+ [3.3]
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5.5]
-Overfull \hbox (1.64058pt too wide) in paragraph at lines 297--298
-[]\T1/LinuxLibertineT-TLF/m/n/9 (-20) Comunicación e in-ter-cam-bio de in-for-m
-a-ción [[]]: Los VANTS
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
-<arqui_drone.png, id=188, 839.135pt x 372.39125pt>
-File: arqui_drone.png Graphic file (type png)
-<use arqui_drone.png>
-Package pdftex.def Info: arqui_drone.png  used on input line 311.
-(pdftex.def)             Requested size: 253.14749pt x 112.33759pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 311--312
+Overfull \hbox (3.6308pt too wide) in paragraph at lines 324--327
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]
+ []
+
+<control_drone.png, id=129, 658.46pt x 263.98625pt>
+File: control_drone.png Graphic file (type png)
+<use control_drone.png>
+Package pdftex.def Info: control_drone.png  used on input line 330.
+(pdftex.def)             Requested size: 253.14749pt x 101.48799pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 330--331
  [][] 
  []
 
 
-Class acmart Warning: A possible image without description on input line 314.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
-
+Underfull \hbox (badness 1874) in paragraph at lines 331--331
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
-
+Underfull \hbox (badness 1622) in paragraph at lines 331--331
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
+Class acmart Warning: A possible image without description on input line 333.
 
+
+Overfull \hbox (1.94211pt too wide) in paragraph at lines 335--336
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
-
+Overfull \hbox (19.94653pt too wide) in paragraph at lines 335--336
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
-
- []
-
-[6.6 <./arqui_drone.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
-
+[4.4 <./control_drone.png>]
+Overfull \hbox (18.62914pt too wide) in paragraph at lines 338--339
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []   |   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
-
+Overfull \hbox (3.04836pt too wide) in paragraph at lines 338--339
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--342
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
-
- []
-
-
-Underfull \vbox (badness 1688) has occurred while \output is active []
-
- [7.7]
-(./TopTamps2023_submission.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
+ [5.5]
+Overfull \hbox (1.76875pt too wide) in paragraph at lines 418--421
+[]\T1/LinuxLibertineT-TLF/m/n/9 (-20) Comunicación e in-ter-cam-bio de in-for-m
+a-ción []|   []   []: Los VANTS
+ []
+
+
+Overfull \hbox (4.81319pt too wide) in paragraph at lines 434--435
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Overfull \hbox (8.4266pt too wide) in paragraph at lines 434--435
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+
+ []
+
+
+Overfull \hbox (11.59384pt too wide) in paragraph at lines 437--438
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []
+ []
+
+
+Overfull \hbox (14.94pt too wide) in paragraph at lines 437--438
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []
+ []
+
+<arqui_drone.png, id=187, 839.135pt x 372.39125pt>
+File: arqui_drone.png Graphic file (type png)
+<use arqui_drone.png>
+Package pdftex.def Info: arqui_drone.png  used on input line 441.
+(pdftex.def)             Requested size: 253.14749pt x 112.33759pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 441--442
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--442
+[]\T1/LinuxLibertineT-TLF/b/n/9 (+20) Figura 3: |[]|   []   |   []   |   []   |
+   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--442
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--442
+|   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Class acmart Warning: A possible image without description on input line 444.
+
+
+Package natbib Warning: Citation `D_estrella' on page 6 undefined on input line
+ 455.
+
+
+Overfull \hbox (16.3403pt too wide) in paragraph at lines 455--456
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]
+ []
+
+
+Overfull \hbox (19.07358pt too wide) in paragraph at lines 455--456
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+
+Overfull \hbox (2.14114pt too wide) in paragraph at lines 457--458
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
+
+Overfull \hbox (19.43251pt too wide) in paragraph at lines 459--460
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []
+ []
+
+
+Overfull \hbox (1.73131pt too wide) in paragraph at lines 459--460
+|   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+
+ []
+
+
+Overfull \hbox (9.87213pt too wide) in paragraph at lines 461--462
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []   |   []
+ []
+
+
+Overfull \hbox (2.7395pt too wide) in paragraph at lines 461--462
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Overfull \hbox (27.09784pt too wide) in paragraph at lines 461--462
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []
+ []
+
+
+Overfull \hbox (6.12079pt too wide) in paragraph at lines 461--462
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []
+ []
+
+
+Overfull \hbox (9.72437pt too wide) in paragraph at lines 461--462
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []   |   [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
+
+ []
+
+[6.6 <./arqui_drone.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
+ []
+
+
+Overfull \hbox (9.56688pt too wide) in paragraph at lines 465--466
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []   |   []
+ []
+
+
+Overfull \hbox (22.61296pt too wide) in paragraph at lines 465--466
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+
+ []
+
+
+Package natbib Warning: Citation `CINVESTAM2013' on page 7 undefined on input l
+ine 471.
+
+
+Package natbib Warning: Citation `CINVESTAM2013' on page 7 undefined on input l
+ine 471.
+
+
+Overfull \hbox (7.58058pt too wide) in paragraph at lines 471--472
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []
+ []
+
+
+Overfull \hbox (13.7292pt too wide) in paragraph at lines 471--472
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+
+ []
+
+
+Overfull \hbox (3.64755pt too wide) in paragraph at lines 475--476
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
+
+ []
+
+
+Overfull \hbox (15.60408pt too wide) in paragraph at lines 477--478
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
+
+ []
+
+
+Package natbib Warning: Citation `Chen2023' on page 7 undefined on input line 4
+81.
+
+
+Overfull \hbox (27.88622pt too wide) in paragraph at lines 481--482
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Overfull \hbox (15.82716pt too wide) in paragraph at lines 481--482
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []   |   []   |   [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
+
+Overfull \hbox (8.34747pt too wide) in paragraph at lines 484--485
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]
+ []
+
+
+Overfull \hbox (5.14056pt too wide) in paragraph at lines 484--485
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []
+ []
+
+
+Overfull \hbox (27.22038pt too wide) in paragraph at lines 484--485
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []   |   []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+
+ []
+
+
+Underfull \vbox (badness 1895) has occurred while \output is active []
+
+ [7.7]
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+ []
+
+
+Overfull \hbox (7.85945pt too wide) in paragraph at lines 534--535
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Overfull \hbox (2.59628pt too wide) in paragraph at lines 534--535
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Overfull \hbox (27.46785pt too wide) in paragraph at lines 534--535
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []   |   []
+ []
+
+
+Overfull \hbox (20.82751pt too wide) in paragraph at lines 534--535
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []
+ []
+
+
+Overfull \hbox (10.89003pt too wide) in paragraph at lines 534--535
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []
+ []
+
+(./TopTamps2023.bbl [8.8])
+
+Package natbib Warning: There were undefined citations.
+
 
 Class acmart Warning: Some images may lack descriptions.
 
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
+Overfull \vbox (1.152pt too high) has occurred while \output is active []
 
-[8.8] (./TopTamps2023_submission.aux
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+ [9.9]
+(./TopTamps2023.aux
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
 )
-Package rerunfilecheck Info: File `TopTamps2023_submission.out' has not changed
-.
+Package rerunfilecheck Info: File `TopTamps2023.out' has not changed.
 (rerunfilecheck)             Checksum: 5296297EDFEF929E8F943CD0D6B43BA2;1389.
  ) 
 Here is how much of TeX's memory you used:
- 21707 strings out of 478287
- 350205 string characters out of 5849289
- 710233 words of memory out of 5000000
- 38869 multiletter control sequences out of 15000+600000
- 611666 words of font info for 348 fonts, out of 8000000 for 9000
+ 23151 strings out of 478287
+ 370496 string characters out of 5849289
+ 804710 words of memory out of 5000000
+ 40310 multiletter control sequences out of 15000+600000
+ 610601 words of font info for 340 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 84i,12n,131p,1614b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,11n,131p,1738b,644s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/shar
 e/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/share/texl
@@ -1338,13 +1663,13 @@ pe1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type
 /public/libertine/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/libertine/LinLibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/libertine/LinLibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfon
-ts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-
-Output written on TopTamps2023_submission.pdf (8 pages, 603703 bytes).
+public/amsfonts/latxfont/lasy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
+s/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on TopTamps2023.pdf (9 pages, 625396 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
+ 320 PDF objects out of 1000 (max. 8388607)
  269 compressed objects within 3 object streams
- 77 named destinations out of 1000 (max. 500000)
+ 76 named destinations out of 1000 (max. 500000)
  69750 words of extra memory for PDF output out of 74296 (max. 10000000)
 
