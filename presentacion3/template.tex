@@ -528,17 +528,13 @@
   %\begin{columns}
   %  \column{0.5\textwidth}
   \justifying
-  \small Dado un volumen de interés desconocida en un espacio cerrado que se desea explorar denotada como $\mathcal{E}$, tal que $\mathcal{E} \subset \mathbb{R}^{3}$.\\
+  \small Dado un volumen de interés desconocido en un espacio cerrado que se desea explorar denotada como $\mathcal{S}$, tal que $\mathcal{S} \subset \mathbb{R}^{3}$.\\
+  Encontrar y repartir rutas libres de colisiones para un conjunto de VANTS denotado como $\mathcal{V} = \{\mathcal{V}_{1},\mathcal{V}_{2},\mathcal{V}_{3},...,\mathcal{V}_{n}\}$ siendo $n$ el número total de VANTS disponibles, comenzando cada uno en un estado inicial conocido denotados como $q = \{q_{1},q_{2},q_{3},...,q_{n}\}$, y terminando en una configuración que maximice la localización del VANT y exactitud en la construcción del mapa.\\
 
-  \small El espacio $\mathcal{E}$ puede ser representado usando una estructura de datos tridimencional de tipo árbol. A partir de los valores de una cámara RGB-D basada en un modelo de ocupación probabilístico que puede tomar los valores de libre, ocupado y desconocido o no explorado de notados como $v_{libre}$, $v_{ocup}$, $v_{desc}$.
-  
-  \begin{itemize}
-  \item Un conjunto de VANTS denotado como $\mathcal{V} = \{\mathcal{V}_{1},\mathcal{V}_{2},\mathcal{V}_{3},...,\mathcal{V}_{n}\}$ siendo $n$ el número total de VANTS disponibles.
-  \item Una configuración inicial $q$ cuya cardinalidad es el número de VANTS disponibles denotado como $q = \{q_{1},q_{2},q_{3},...,q_{n}\}$.\\
-  \end{itemize}
-  %Determinar el conjunto de tareas para cada VANT, así como el conjunto de rutas que maximize el área explorada minimizando el tiempo y la energía consumida.\\
+  La representación del volumen a explorar se utiliza un mapa de ocupación que se obtiene dividiendo el volumen en volumenes cúbicos (voxel) que puede tomar los valores de libre, ocupado y desconocido o no explorado de notados como $v_{libre}$, $v_{ocup}$, $v_{desc}$ con lecturas a partir de los valores de una cámara RGB-D basada en un modelo de ocupación probabilístico.\\
+
   \bigskip % Vertical whitespace
-  El problema se basa en la propuesta de una estrategia que incluya las habilidades de autonomía, para tareas de exploración de forma coordinada dividiendo la carga de trabajo de exploración entre el grupo.\\
+  El problema se basa en la propuesta de una estrategia que incluya las habilidades de autonomía, para tareas de exploración de forma coordinada dividiendo la carga de trabajo de exploración entre el grupo de una forma descentralizada.\\
   
   %Para lograr una exploraci\'{o}n eficiente y completa con un tiempo y recursos m\'{i}nimos, el problema requiere la creaci\'{o}n de algoritmos y t\'{e}cnicas de optimizaci\'{o}n.\\
     
@@ -558,13 +554,14 @@
 \end{frame}
 
 \begin{frame}{Preguntas de investigación}
-  Con base en lo anterior, surgen las siguientes preguntas de investigación:
+  
   %\pause
   \begin{itemize}
 
-  \item ¿Es posible que el uso de una estructura de datos como octree para representar la ocupación de un volumen, sea más eficiente que una representación en una matriz cúbica?
+  \item ¿Qué mecanismos de coordinación existen dentro de la literatura de teoría de juegos podrían ayudar en resolver el problema de exploración multi-VANT?
+  \item ¿Es posible que el uso de una estructura de datos como octree para representar la ocupación de un volumen, sea más eficiente que una representación usando una matriz cúbica?
     %\pause
-  \item ¿Qué efectiva será en seguir una estrategia de exploración basada en asignación de tareas en comparación con los resultados reportados en la literatura?
+  %\item ¿Qué efectiva será en seguir una estrategia de exploración basada en asignación de tareas en comparación con los resultados reportados en la literatura?
     %\pause
   \item ¿Qué características de la dinámica del robot se deben considerar en el simulador, para que los resultados en el mundo real se aproximen a los del simulador?
     
@@ -575,7 +572,7 @@
 
 \begin{frame}{Hipótesis}
 
-  Una estrategia de coordinación y asignación de tareas en combinación con una arquitectura de software (que resuelve los problemas de planificación de rutas, evasión de obstáculos y localización) puede mejorar la exploración de múltiples VANTS en entornos desconocidos tomado un enfoque descentralizado.
+  Una estrategia de exploración con un efoque en coordinación y asignación de tareas, en combinación con una arquitectura de software (que resuelve los problemas de planificación de rutas, evasión de obstáculos y localización) puede mejorar la tarea de exploración de múltiples VANTS en entornos desconocidos tomado un enfoque descentralizado.
   
   %La implementación de una estrategia de exploración coordinada utilizando múltiples vehículos aéreos no tripulados (multi-VANT) en ambientes sin señal GPS, permitirá obtener mejores resultados en comparación con la exploración individual (mono-VANT). Esta coordinación eﬁciente se traducirá en una reducción del tiempo y los recursos necesarios para completar la exploración, así como en una mayor cobertura del área de interés. Además, se espera que la exploración coordinada multi-VANT mejore la calidad de los datos recopilados, lo que permitirá tomar decisiones más informadas y eﬁcaces en diversos campos, como la cartografía, la vigilancia, el monitoreo y la respuesta a desastres naturales.
   
@@ -589,14 +586,15 @@
     %\item<1-> General \\
     \item General \\
     \bigskip
-    Desarrollar una arquitectura de software que resuelva los problemas de localización, mapeo, navegación y coordinación multi-VANT en ambientes desconocidos para tareas de exploración en interiores.
+    Desarrollar una estrategia de exploración descentralizada que permita resolver los problemas de coordinación para múltiples VANTS en ambientes desconocidos.
     \pause
+    \bigskip
     % \item<2-> Particulares\\
     \item Particulares\\
-    \bigskip
+    
     \begin{itemize}
-    \item Elegir la representación del ambiente en 3D que nos ayude en crear trayectorios para los VANTS.
-    \item Evaluar y comparar diferentes algoritmos de coordinación y planificación de vuelo para la exploración coordinada multi-VANT.
+    \item Desarrollar una arquitectura de software que resuelva los problemas de autonomía para un VANT (localización, manejo de mapas y navegación).
+    \item Crear un mecanismo de coordinación que asigne trayectorias libres de colisiones para la tarea de exploración.
     \item Realizar pruebas y simulaciones de la solución propuesta en entornos complejos, analizando métricas como tiempo de exploración y cobertura del área de interés.
     \end{itemize}
   \end{enumerate}
@@ -898,9 +896,9 @@
   \begin{enumerate}
   \item<1-> Documentación y códigos liberados
     \begin{itemize}
-    \item Algoritmo para la asignación de tareas de exploración multi-VANT.
+    \item Estrategia coordinada para tareas de exploración multi-VANT.
     \item Arquitectura de software que resuelva los problemas de autonomía para un vehículo aéreo no tripulado.
-    \item Protocolo de comunicación y coordinación multi-VANT que formaran parte de la arquitectura de software
+    \item Protocolo de comunicación multi-VANT que formaran parte de la arquitectura de software
     \end{itemize}
   \item<2-> Validación de la solución en un simulador
     \begin{itemize}

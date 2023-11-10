@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.18)  10 NOV 2023 02:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.18)  10 NOV 2023 09:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1580,7 +1580,7 @@ LaTeX Info: Redefining \% on input line 1.
 <Images//metodologia.png, id=203, 585.18625pt x 380.42125pt>
 File: Images//metodologia.png Graphic file (type png)
 <use Images//metodologia.png>
-Package pdftex.def Info: Images//metodologia.png  used on input line 624.
+Package pdftex.def Info: Images//metodologia.png  used on input line 622.
 (pdftex.def)             Requested size: 284.52756pt x 184.97426pt.
  [18
 
@@ -1591,9 +1591,9 @@ LaTeX Info: Redefining \% on input line 1.
 
 ]
 LaTeX Font Info:    Font shape `OT1/opensans-TLF/b/n' will be
-(Font)              scaled to size 6.0pt on input line 721.
+(Font)              scaled to size 6.0pt on input line 719.
 
-Overfull \hbox (217.35175pt too wide) in paragraph at lines 721--721
+Overfull \hbox (217.35175pt too wide) in paragraph at lines 719--719
 [] 
  []
 
@@ -1603,17 +1603,17 @@ Overfull \hbox (217.35175pt too wide) in paragraph at lines 721--721
 <Images//estrategia.png, id=230, 151.56625pt x 302.12875pt>
 File: Images//estrategia.png Graphic file (type png)
 <use Images//estrategia.png>
-Package pdftex.def Info: Images//estrategia.png  used on input line 739.
+Package pdftex.def Info: Images//estrategia.png  used on input line 737.
 (pdftex.def)             Requested size: 86.66748pt x 172.76378pt.
  [21
 
  <./Images//estrategia.png>]
 File: Images//maxresdefault.jpg Graphic file (type jpg)
 <use Images//maxresdefault.jpg>
-Package pdftex.def Info: Images//maxresdefault.jpg  used on input line 759.
+Package pdftex.def Info: Images//maxresdefault.jpg  used on input line 757.
 (pdftex.def)             Requested size: 216.67201pt x 121.87592pt.
 
-Overfull \hbox (4.27783pt too wide) in paragraph at lines 759--759
+Overfull \hbox (4.27783pt too wide) in paragraph at lines 757--757
 [][]$[]$ 
  []
 
@@ -1623,10 +1623,10 @@ Overfull \hbox (4.27783pt too wide) in paragraph at lines 759--759
 <Images//arquitectura.png, id=245, 879.285pt x 462.72874pt>
 File: Images//arquitectura.png Graphic file (type png)
 <use Images//arquitectura.png>
-Package pdftex.def Info: Images//arquitectura.png  used on input line 766.
+Package pdftex.def Info: Images//arquitectura.png  used on input line 764.
 (pdftex.def)             Requested size: 426.79134pt x 224.59969pt.
 
-Overfull \vbox (8.67746pt too high) detected at line 766
+Overfull \vbox (8.67746pt too high) detected at line 764
  []
 
 [23
@@ -1635,7 +1635,7 @@ Overfull \vbox (8.67746pt too high) detected at line 766
 <Images//ros_problem.png, id=253, 1879.02pt x 896.34875pt>
 File: Images//ros_problem.png Graphic file (type png)
 <use Images//ros_problem.png>
-Package pdftex.def Info: Images//ros_problem.png  used on input line 773.
+Package pdftex.def Info: Images//ros_problem.png  used on input line 771.
 (pdftex.def)             Requested size: 433.34402pt x 206.71664pt.
  [24
 
@@ -1643,7 +1643,7 @@ Package pdftex.def Info: Images//ros_problem.png  used on input line 773.
 <Images//visual.png, id=261, 907.39pt x 697.60625pt>
 File: Images//visual.png Graphic file (type png)
 <use Images//visual.png>
-Package pdftex.def Info: Images//visual.png  used on input line 780.
+Package pdftex.def Info: Images//visual.png  used on input line 778.
 (pdftex.def)             Requested size: 260.00905pt x 199.89494pt.
  [25
 
@@ -1656,7 +1656,7 @@ LaTeX Info: Redefining \% on input line 1.
 <Images//soa.png, id=282, 526.96875pt x 329.23pt>
 File: Images//soa.png Graphic file (type png)
 <use Images//soa.png>
-Package pdftex.def Info: Images//soa.png  used on input line 832.
+Package pdftex.def Info: Images//soa.png  used on input line 830.
 (pdftex.def)             Requested size: 260.00905pt x 162.4494pt.
  [27
 
@@ -1705,7 +1705,7 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 Here is how much of TeX's memory you used:
  33576 strings out of 478287
  662520 string characters out of 5849289
- 1095833 words of memory out of 5000000
+ 1095834 words of memory out of 5000000
  50922 multiletter control sequences out of 15000+600000
  495921 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1724,7 +1724,7 @@ msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on template.pdf (33 pages, 5114005 bytes).
+Output written on template.pdf (33 pages, 5114068 bytes).
 PDF statistics:
  441 PDF objects out of 1000 (max. 8388607)
  351 compressed objects within 4 object streams
