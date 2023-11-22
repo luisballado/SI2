@@ -1,0 +1,8 @@
+\babel@toc {spanish}{}\relax 
+\beamer@sectionintoc {1}{Descripción del proyecto}{2}{0}{1}
+\beamer@sectionintoc {2}{Planteamiento del problema}{10}{0}{2}
+\beamer@sectionintoc {3}{Hipótesis y Objetivos}{13}{0}{3}
+\beamer@sectionintoc {4}{Metodología}{17}{0}{4}
+\beamer@sectionintoc {5}{Cronograma}{19}{0}{5}
+\beamer@sectionintoc {6}{Estado del Arte}{26}{0}{6}
+\beamer@sectionintoc {7}{Contribuciones o resultados esperados}{28}{0}{7}
