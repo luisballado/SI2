@@ -235,8 +235,11 @@
 \newcommand{\on}[1][1]{
   \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&\cellcolor{gray}}
 }
+\newcommand{\onok}[1][1]{
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&\cellcolor{green}}
+}
 \newcommand{\off}[1][1]{
-  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&}
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&\cellcolor{white}}
 }
 
 \addtolength{\textheight}{90pt}
@@ -285,7 +288,7 @@
   \centering
   \includegraphics[width=0.45\textwidth,height=0.35\textheight]{DJI_B1}$^\dag$
   \hfil
-  \includegraphics[width=0.45\textwidth,height=0.35\textheight]{DJI_B4}$^\dag$
+  \includegraphics[width=0.45\textwidth,height=0.35\textheight]{survey_chart.jpg}\footnotemark
   \vspace{2pt}\\
   
   \begin{itemize}
@@ -294,6 +297,7 @@
   \item \textbf{Limitaciones} en carga, procesamiento y batería influyen en el tiempo de vuelo.
   \end{itemize}
 
+  \footnotetext{UAV in the advent of the twenties: Where we stand and what is next [\cite{Nex2022}]}
   %\includegraphics[width=0.45\textwidth,height=0.35\textheight]{DJI_B5}$^\dag$ 
   %\hfil
   %\includegraphics[width=0.45\textwidth,height=0.35\textheight]{DJI_B4}$^\dag$\\
@@ -304,7 +308,7 @@
 \begin{frame}{Antecedentes}
   
   %\centering
-  Principales preguntas que un robot autónomo debe responder
+  Principales preguntas que un robot autónomo debe responder \footnotemark
   \bigskip % Vertical whitespace
   \begin{itemize}
   \item ¿Dónde estoy? $\implies$ Localización 
@@ -320,13 +324,16 @@
   \item Localizarse dentro del ambiente
   \item Planear y ejecutar los movimientos
   \end{itemize}
+
+  \footnotetext{Visual map making for a mobile robot [\cite{1087348}]}
   
 \end{frame}
 
-\begin{frame}{Localizacion - ¿Dónde estoy?}
+\begin{frame}{Localización - ¿Dónde estoy?}
 
-  \begin{minipage}{0.47\textwidth}
-    \begin{itemize}
+  Problema de Localización y Mapeo Simultáneos  \footnote{Simultaneous localization and mapping: part I [\cite{slam_doc}]}
+  \bigskip % Vertical whitespace
+  \begin{itemize}
     \item \textcolor{blue}{VER}: El Robot utiliza la lectura de sus sensores para encontrarse a el mismo.
       \bigskip % Vertical whitespace
     \item \textcolor{red}{ACTUAR}: El Robot, se mueve hacia adelante
@@ -335,26 +342,30 @@
       \item Acumulación de incertidumbre.
       \end{itemize}
       \bigskip % Vertical whitespace
-    \item \textcolor{blue}{VER}: El Robot utiliza la lectura de sus sensores nuevamente para localizarse a si mismo
-    \end{itemize}
-  \end{minipage}
-  \hspace{0.2cm}
-  \begin{minipage}{0.5\textwidth}
-    \includegraphics[width=1\textwidth]{vant_autonomo}
-  \end{minipage}
-    
+    \item \textcolor{blue}{VER}: Lectura de sus sensores nuevamente para localizarse a sí mismo
+  \end{itemize}
+      
   \bigskip % Vertical whitespace
-  Belief update (Fusión de información)
+  Belief update (Fusión de información) \footnote{Uncertain geometry in robotics [\cite{slam_dur}]} \footnote{Estimating Uncertain Spatial Relationships in Robotics [\cite{Smith1988}]}
+  
 \end{frame}
 
 \begin{frame}{Cognición - ¿A dónde voy?}
-  \centering
-  \includegraphics[width=0.65\textwidth]{control_drone.png}
+  %\centering
+  \begin{figure}[h]
+    \includegraphics[width=0.65\textwidth]{control_drone.png}
+    \caption{Diagrama control lazo cerrado VANT}
+  \end{figure}
+  \bigskip % Vertical whitespace
+  \small Un sistema de control para un robot móvil autónomo opera en un entorno donde las condiciones están cambiando rápidamente. (considerando el problema de control instantáneo en una formulación clásica de teoría de control) \footnote{A robust layered control system for a mobile robot [\cite{brooks_robot}]}
+  
 \end{frame}
 
 \begin{frame}{Planificación de trayectoria - ¿Cómo llego hasta ahí?}
-  \begin{minipage}{0.47\textwidth}
-    
+  \begin{minipage}{0.57\textwidth}
+
+    El uso de heuristicas para encontrar soluciones óptimas, proporciona resultados computacionales eficientes. \footnote{A Survey of Trajectory Planning Techniques for Autonomous Systems [\cite{Mir2022}]} 
+    \bigskip % Vertical whitespace
     \begin{itemize}
     \item Planificador de trayectoria global
       \begin{itemize}
@@ -367,9 +378,10 @@
       \item Algoritmos Bug
       \end{itemize}
     \end{itemize}
+    \bigskip % Vertical whitespace
   \end{minipage}
   \hspace{0.2cm}
-  \begin{minipage}{0.5\textwidth}
+  \begin{minipage}{0.4\textwidth}
     \includegraphics[width=0.6\textwidth]{img5}$^\dag$\\
   \end{minipage}
 \end{frame}
@@ -516,9 +528,9 @@
   \end{minipage}
   \hspace{0.2cm}
   \begin{minipage}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{maxresdefault.jpg}$^\dag$\\
-      \rule{0in}{1.2em}$^\dag$\scriptsize Ilustración Drone en Mina \\
-      \tiny \url{https://dronevideos.com/} 
+    \includegraphics[width=\textwidth]{drone-staff.jpg}$^\dag$\\
+      \rule{0in}{1.2em}$^\dag$\scriptsize Los bomberos de una unidad de drones observan los daños en el lugar del derrumbe.\\
+      \tiny \url{https://www.nydailynews.com/2019/08/27/bronx-building-collapse-kills-injures-victims/} 
   \end{minipage}
 \end{frame}
 
@@ -558,12 +570,12 @@
   %\pause
   \begin{itemize}
 
-  \item ¿Qué mecanismos de coordinación existen dentro de la literatura de teoría de juegos podrían ayudar en resolver el problema de exploración multi-VANT?
+  \item ¿Qué mecanismos de coordinación existen dentro de la literatura que podrían ayudar en resolver el problema de exploración multi-VANT?
   \item ¿Es posible que el uso de una estructura de datos como octree para representar la ocupación de un volumen, sea más eficiente que una representación usando una matriz cúbica?
     %\pause
   %\item ¿Qué efectiva será en seguir una estrategia de exploración basada en asignación de tareas en comparación con los resultados reportados en la literatura?
     %\pause
-  \item ¿Qué características de la dinámica del robot se deben considerar en el simulador, para que los resultados en el mundo real se aproximen a los del simulador?
+  \item ¿Qué características de la dinámica del robot se deben considerar en el simulador, para que los resultados se aproximen a los del mundo real?
     
   \end{itemize}
 \end{frame}
@@ -595,7 +607,7 @@
     \begin{itemize}
     \item Desarrollar una arquitectura de software que resuelva los problemas de autonomía para un VANT (localización, manejo de mapas y navegación).
     \item Crear un mecanismo de coordinación que asigne trayectorias libres de colisiones para la tarea de exploración.
-    \item Realizar pruebas y simulaciones de la solución propuesta en entornos complejos, analizando métricas como tiempo de exploración y cobertura del área de interés.
+    \item Realizar pruebas y simulaciones de la solución propuesta en entornos complejos, analizando la relación tiempo de exploración y cobertura del área de interés.
     \end{itemize}
   \end{enumerate}
 \end{frame}
@@ -630,44 +642,47 @@
   % The top line
   %\diagbox[width=12.5em]{Actividades}{Cuatrimestres}
   \hline
-  & \multicolumn{4}{c|}{\textbf{Cuatrimestre 1}} 
-  & \multicolumn{4}{c|}{\textbf{Cuatrimestre 2}}
-  & \multicolumn{4}{c|}{\textbf{Cuatrimestre 3}}\\
+  & \multicolumn{4}{c|}{\color{teal!80}\textbf{Cuatrimestre 4}} 
+  & \multicolumn{4}{c|}{\textbf{Cuatrimestre 5}}
+  & \multicolumn{4}{c|}{\textbf{Cuatrimestre 6}}\\
   \hline
   % The second line, with its five years of four quarters
   %\textcolor{black}{\textbf{Etapas}}
   \rpt[3]{& 1 & 2 & 3 & 4} \\
   \hline
-  \rowcolor{black!5}{\textbf{Etapa 1}}\\
+  \rowcolor{teal!40}{\textbf{Etapa 1}}\\
   % using the on macro to fill in twenty cells as `on'
   %\specialcell{Actividad 1\\espacio}        \on[0] \off[12] \\
 %Actividad 1    \on[0] \off[12]\\
-\hline
-\textbf{E1.A1.} Revisi\'{o}n literatura relevante
+  \hline
+  \rowcolor{teal!15}{\textbf{E1.A1.} Revisi\'{o}n literatura relevante}
 %en exploraci\'{o}n multi-VANT, estrategias de exploraci\'{o}n, algoritmos de coordinaci\'{o}n y evaci\'{o}n de obst\'{a}culos
-\on[12] \\
+  \onok[3] 
+  \on[9]\\
 \hline
 %\textbf{E1.A2.} Evaluaci\'{o}n de aptitudes\footnote{Evaluaci\'{o}n a partir de los nuevos trabajos}     \on[12] \\
 %\hline
-\textbf{E1.A2.} Selecci\'{o}n de algoritmos \on[2] \off[10] \\
+\rowcolor{teal!15}{\textbf{E1.A2.} Selecci\'{o}n de algoritmos} \onok[2] \off[10] \\
 \hline
-\textbf{E1.A3.} Dise\~{n}o de la arquitectura de software \off[1] \on[3] \off[8] \\
+\rowcolor{teal!15}{\textbf{E1.A3.} Dise\~{n}o de la arquitectura de software}
+\off[1] \onok[2] \on[1] \off[8] \\
 \hline
-\textbf{E1.A4.} Documentaci\'{o}n Etapa 1 \on[4]  \off[8] \\
+\rowcolor{teal!15}{\textbf{E1.A4.} Documentaci\'{o}n Etapa 1}
+\onok[3] \on[1]  \off[8] \\
 \hline
 \textbf{E1.A5.} Revisi\'{o}n de tesis Etapa 1 \off[3] \on[1]  \off[8] \\
 \hline
 % using the on macro followed by the off macro
-\rowcolor{black!5}{\textbf{Etapa 2}}\\
+\rowcolor{teal!40}{\textbf{Etapa 2}}\\
 \hline
-\textbf{E2.A1.} Selecci\'{o}n Simulador
-\on[1]  \off[11] \\
+\rowcolor{teal!15}{\textbf{E2.A1.} Selecci\'{o}n Simulador}
+\onok[1]  \off[11] \\
 \hline
-\textbf{E2.A2.} Visualizaci\'{o}n de datos
-\off[1] \on[2]  \off[9] \\
+\rowcolor{teal!15}{\textbf{E2.A2.} Visualizaci\'{o}n de datos}
+\off[1] \onok[2]  \off[9] \\
 \hline
-\textbf{E2.A3.} Control de desplazamientos
-\off[2] \on[2]  \off[8] \\
+\rowcolor{teal!15}{\textbf{E2.A3.} Control de desplazamientos}
+\off[2] \onok[1] \on[1]  \off[8] \\
 \hline
 \textbf{E2.A4.} Desarrollo de algoritmo de exploraci\'{o}n
 \off[3] \on[2] \off[7] \\
@@ -681,7 +696,7 @@
 \textbf{E2.A6.} Desarrollo de coordinaci\'{o}n
 \off[4] \on[3] \off[5] \\
 \hline
-\textbf{E2.A7.} Implementaci\'{o}n y sumulaci\'{o}n
+\textbf{E2.A7.} Implementaci\'{o}n y simulaci\'{o}n
 \off[6] \on[2] \off[4] \\
 \hline
 %\textbf{E2.A9.} Simulaci\'{o}n multi-VANT
@@ -718,6 +733,29 @@
 
 \end{frame}
 
+\begin{frame}{Algoritmos}
+  
+  \begin{minipage}{0.47\textwidth}
+    
+    \begin{itemize}
+      %\item Exploración con algoritmos de baja complejidad computacional.
+    \item \small PRM 
+    \item \small RGB-D $\implies$ Voxels $\implies$ Octomap
+      
+    \item \small Exploración basada en fronteras
+    \item \small Estrategia basada en auto-ofertas (Método Hungaro)
+      
+    \end{itemize}
+  \end{minipage}
+  \hspace{0.1cm}
+  \begin{minipage}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{maxresdefault.jpg}$^\dag$\\
+    \rule{0in}{1.2em}$^\dag$\scriptsize Ilustración Drone en Mina \\
+    \tiny \url{https://dronevideos.com/} 
+  \end{minipage}
+  
+\end{frame}
+
 \begin{frame}{Estrategia}
   
   \begin{minipage}{0.67\textwidth}
@@ -736,26 +774,6 @@
   
 \end{frame}
 
-\begin{frame}{Algoritmos}
-  
-  \begin{minipage}{0.47\textwidth}
-    
-    \begin{itemize}
-      %\item Exploración con algoritmos de baja complejidad computacional.
-    \item \small PRM 
-    \item \small RGB-D $\implies$ Voxels $\implies$ Octomap
-    \item \small Estrategia coordinada y basada en fronteras que aproveche la dinámica del VANT para obtener movimientos agresivos.
-    \end{itemize}
-  \end{minipage}
-  \hspace{0.1cm}
-  \begin{minipage}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{maxresdefault.jpg}$^\dag$\\
-    \rule{0in}{1.2em}$^\dag$\scriptsize Ilustración Drone en Mina \\
-    \tiny \url{https://dronevideos.com/} 
-  \end{minipage}
-  
-\end{frame}
-
 \begin{frame}{Arquitectura}
   \begin{figure}
     \centering
@@ -766,128 +784,105 @@
 \begin{frame}{Simulador}
   \begin{figure}
     \centering
-    \includegraphics[width=1\textwidth]{ros_problem}
-  \end{figure}
-\end{frame}
-
-\begin{frame}{Visualización de datos}
-  \begin{figure}
-    \centering
     \includegraphics[width=0.6\textwidth]{visual}
   \end{figure}
 \end{frame}
 
 
 \section{Estado del Arte}
-\begin{frame}{Estado del Arte}
-  \bigskip % Vertical whitespace
+\begin{frame}
   \centering
-  \includegraphics[width=0.6\textwidth]{soa}
-  %\begin{tabular}{ | p{4cm} | p{3cm} | p{2.5cm} | p{3.5cm}|}
-  %  \hline
-  %  \scriptsize REFERENCIA&
-  %  \scriptsize REPRESENTACION&
-  %  \scriptsize BUSQUEDA&
-  %  \scriptsize TRAYECTORIA\\
-  %  \hline
-  %  \hline
+  \begin{tabular}{ | p{3cm} | p{3.1cm} | p{2.5cm} | p{3.5cm}|}
+    \hline    
+    \tiny REFERENCIA&
+    \tiny REPRESENTACION&
+    \tiny EXPLORACION&
+    \tiny TRAYECTORIA\\
+    \hline
+    \hline
     %--------------------------
-  %  \scriptsize \cite{CIESLEWSKI2017}[\citenum{CIESLEWSKI2017}]&
-  %  \scriptsize Octomap&
-  %  \scriptsize Basado en fronteras&
-  %  \scriptsize Control directo de velocidad\\ \hline
+    \tiny \cite{CIESLEWSKI2017}[\citenum{CIESLEWSKI2017}]&
+    \tiny Octomap&
+    \tiny Basado en fronteras&
+    \tiny Control directo de velocidad\\ \hline
     %--------------------------
-  %  \scriptsize \cite{USENKO2017}[\citenum{USENKO2017}]&
-  %  \scriptsize Cuadr\'{i}cula egoc\'{e}ntrica&
-  %  \scriptsize Offline RRT*&
-  %  \scriptsize Curvas de Bezier\\ \hline 
+    \tiny \cite{USENKO2017}[\citenum{USENKO2017}]&
+    \tiny Cuadr\'{i}cula egoc\'{e}ntrica&
+    \tiny Offline RRT*&
+    \tiny Curvas de Bezier\\ \hline 
     %--------------------------
-  %  \scriptsize \cite{MOHTA2017}[\citenum{MOHTA2017}]&
-  %  \scriptsize mapa 3D-Local y 2D-Global&
-  %  \scriptsize A*&
-  %  \scriptsize Programaci\'{o}n cuadr\'{a}tica \\ \hline 
+    \tiny \cite{MOHTA2017}[\citenum{MOHTA2017}]&
+    \tiny mapa 3D-Local y 2D-Global&
+    \tiny A*&
+    \tiny Programaci\'{o}n cuadr\'{a}tica \\ \hline 
     %--------------------------
-  %  \scriptsize \cite{LIN2017}[\citenum{LIN2017}]&
-  %  \scriptsize 3D voxel array TSDF&
-  %  \scriptsize A*&
-  %  \scriptsize Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
+    \tiny \cite{LIN2017}[\citenum{LIN2017}]&
+    \tiny 3D voxel array TSDF&
+    \tiny A*&
+    \tiny Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
     %--------------------------
-  %  \scriptsize \cite{PAPACHRISTOS2017}[\citenum{PAPACHRISTOS2017}]&
-  %  \scriptsize Octomap&
-  %  \scriptsize NBVP&
-  %  \scriptsize Control directo de velocidad \\ \hline
+    \tiny \cite{PAPACHRISTOS2017}[\citenum{PAPACHRISTOS2017}]&
+    \tiny Octomap&
+    \tiny NBVP&
+    \tiny Control directo de velocidad \\ \hline
     %--------------------------
-  %  \scriptsize \cite{OLEYNIKOVA2018}[\citenum{OLEYNIKOVA2018}]&
-  %  \scriptsize Voxel Hashing TSDF&
-  %  \scriptsize NBVP&
-  %  \scriptsize Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
+    \tiny \cite{OLEYNIKOVA2018}[\citenum{OLEYNIKOVA2018}]&
+    \tiny Voxel Hashing TSDF&
+    \tiny NBVP&
+    \tiny Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
     %--------------------------
-  %  \scriptsize \cite{GAO2018}[\citenum{GAO2018}]&
-  %  \scriptsize Mapa de cuadr\'{i}cula&
-  %  \scriptsize M\'{e}todo de marcha r\'{a}pida&
-  %  \scriptsize Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
-  %\end{tabular}
+    \tiny \cite{GAO2018}[\citenum{GAO2018}]&
+    \tiny Mapa de cuadr\'{i}cula&
+    \tiny M\'{e}todo de marcha r\'{a}pida&
+    \tiny Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
+    %--------------------------
+    \tiny \cite{FLORENCE2018}[\citenum{FLORENCE2018}]&
+    \tiny Busqueda basada en visibilidad&
+    \tiny 2D A*&
+    \tiny Control predictivo por modelo (MPC) \\ \hline
+    %--------------------------
+    \tiny \cite{SELIN2019}[\citenum{SELIN2019}]&
+    \tiny Octomap&
+    \tiny Next Best View Planner (NBVP)&
+    \tiny Control directo de velocidad \\ \hline
+    %--------------------------
+    \tiny \cite{BUG2019}[\citenum{BUG2019}]&
+    \tiny NA&
+    \tiny Swarm Gradient Bug Algorithm (SGBA)&
+    \tiny Control directo de velocidad \\ \hline
+    %--------------------------
+    \tiny \cite{COLLINS2019}[\citenum{COLLINS2019}]&
+    \tiny KD Tree $+$ Mapa en Voxel&
+    \tiny B\'{u}squeda en Grafo&
+    \tiny Movimientos suaves \\ \hline
+    %--------------------------
+    \tiny \cite{CINVES2021}[\citenum{CINVES2021}]&
+    \tiny Octree&
+    \tiny Rapidly Exploring Random Trees (RRT)&
+    \tiny Basado en contornos \\ \hline
+    %--------------------------
+    \tiny \cite{RACER2022}[\citenum{RACER2022}]&
+    \tiny Octomap HGrid&
+    \tiny NBVP&
+    \tiny Control directo de velocidad \\ \hline
+    %--------------------------
+    %\scriptsize \cite{WESTHEIDER2023}[\citenum{WESTHEIDER2023}]&
+    %\scriptsize Mapa de cuadrícula&
+    %\scriptsize Deep Reinforcement Learning&
+    %\scriptsize Control directo de velocidad \\ \hline
+    %--------------------------
+    \tiny \cite{BARTOLOMEI2023}[\citenum{BARTOLOMEI2023}]&
+    \tiny Octomap&
+    \tiny Basado en fronteras&
+    \tiny Control directo de velocidad \\ \hline
+    %--------------------------
+  \end{tabular} 
 \end{frame}
 
-%\begin{frame}
-  
-%  \centering
-%  \begin{tabular}{ | p{4cm} | p{3cm} | p{2.5cm} | p{3.5cm}|}
-%    \hline
-%    \scriptsize REFERENCIA&
-%    \scriptsize REPRESENTACION&
-%    \scriptsize BUSQUEDA&
-%    \scriptsize TRAYECTORIA\\
-%    \hline
-%    \hline
-    %--------------------------
-%    \scriptsize \cite{FLORENCE2018}[\citenum{FLORENCE2018}]&
-%    \scriptsize Busqueda basada en visibilidad&
-%    \scriptsize 2D A*&
-%    \scriptsize Control predictivo por modelo (MPC) \\ \hline
-    %--------------------------
-%    \scriptsize \cite{SELIN2019}[\citenum{SELIN2019}]&
-%    \scriptsize Octomap&
-%    \scriptsize Next Best View Planner (NBVP)&
-%    \scriptsize Control directo de velocidad \\ \hline
-    %--------------------------
-%    \scriptsize \cite{BUG2019}[\citenum{BUG2019}]&
-%    \scriptsize NA&
-%    \scriptsize Swarm Gradient Bug Algorithm (SGBA)&
-%    \scriptsize Control directo de velocidad \\ \hline
-    %--------------------------
-%    \scriptsize \cite{COLLINS2019}[\citenum{COLLINS2019}]&
-%    \scriptsize KD Tree $+$ Mapa en Voxel&
-%    \scriptsize B\'{u}squeda en Grafo&
-%    \scriptsize Movimientos suaves \\ \hline
-    %--------------------------
-%    \scriptsize \cite{CINVES2021}[\citenum{CINVES2021}]&
-%    \scriptsize Octree&
-%    \scriptsize Rapidly Exploring Random Trees (RRT)&
-%    \scriptsize Basado en contornos \\ \hline
-    %--------------------------
-%    \scriptsize \cite{RACER2022}[\citenum{RACER2022}]&
-%    \scriptsize Octomap HGrid&
-%    \scriptsize NBVP&
-%    \scriptsize Control directo de velocidad \\ \hline
-    %--------------------------
-%    \scriptsize \cite{WESTHEIDER2023}[\citenum{WESTHEIDER2023}]&
-%    \scriptsize Mapa de cuadrícula&
-%    \scriptsize Deep Reinforcement Learning&
-%    \scriptsize Control directo de velocidad \\ \hline
-    %--------------------------
-%    \scriptsize \cite{BARTOLOMEI2023}[\citenum{BARTOLOMEI2023}]&
-%    \scriptsize Octomap&
-%    \scriptsize Basado en fronteras&
-%    \scriptsize Control directo de velocidad \\ \hline
-    %--------------------------
-%  \end{tabular} 
-  
-%\begin{figure}
-%  \centering
-%  \includegraphics[width=10cm, height=6cm]{estado_del_arte}
-%\end{figure}
-%\end{frame}
+\begin{frame}
+  \centering
+  \includegraphics[width=10cm, height=6cm]{soa}
+\end{frame}
 
 \section{Contribuciones o resultados esperados}
 \begin{frame}

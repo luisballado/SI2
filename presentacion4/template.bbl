@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,20 @@ L.~Bartolomei, L.~Teixeira, and M.~Chli.
 \newblock \emph{IEEE Robotics and Automation Letters}, 8\penalty0 (9):\penalty0
   5576--5583, 2023.
 \newblock \doi{10.1109/LRA.2023.3296037}.
+
+\bibitem[Brooks(1985)]{1087348}
+R.~Brooks.
+\newblock Visual map making for a mobile robot.
+\newblock In \emph{Proceedings. 1985 IEEE International Conference on Robotics
+  and Automation}, volume~2, pages 824--829, 1985.
+\newblock \doi{10.1109/ROBOT.1985.1087348}.
+
+\bibitem[Brooks(1986)]{brooks_robot}
+R.~Brooks.
+\newblock A robust layered control system for a mobile robot.
+\newblock \emph{IEEE Journal on Robotics and Automation}, 2\penalty0
+  (1):\penalty0 14--23, 1986.
+\newblock \doi{10.1109/JRA.1986.1087032}.
 
 \bibitem[Campos-Mac\'{i}as et~al.(2020)Campos-Mac\'{i}as, Aldana-L\'{o}pez,
   Guardia, Parra-Vilchis, and G\'{o}mez-Guti\'{e}rrez]{CINVES2021}
@@ -39,16 +53,19 @@ M.~Collins and N.~Michael.
   Automation (ICRA)}, pages 11450--11456, 2020.
 \newblock \doi{10.1109/ICRA40945.2020.9197167}.
 
-\bibitem[Debnath et~al.(2020)Debnath, Omar, Bagchi, Sabudin, Kandar, Foysol,
-  and Chakraborty]{Debnath2020}
-S.~K. Debnath, R.~Omar, S.~Bagchi, E.~N. Sabudin, M.~H. A.~S. Kandar,
-  K.~Foysol, and T.~K. Chakraborty.
-\newblock Different cell decomposition path planning methods for unmanned air
-  vehicles-a review.
-\newblock In \emph{Lecture Notes in Electrical Engineering}, pages 99--111.
-  Springer Nature Singapore, July 2020.
-\newblock \doi{10.1007/978-981-15-5281-6_8}.
-\newblock URL \url{https://doi.org/10.1007/978-981-15-5281-6_8}.
+\bibitem[Durrant-Whyte(1988)]{slam_dur}
+H.~Durrant-Whyte.
+\newblock Uncertain geometry in robotics.
+\newblock \emph{IEEE Journal on Robotics and Automation}, 4\penalty0
+  (1):\penalty0 23--31, 1988.
+\newblock \doi{10.1109/56.768}.
+
+\bibitem[Durrant-Whyte and Bailey(2006)]{slam_doc}
+H.~Durrant-Whyte and T.~Bailey.
+\newblock Simultaneous localization and mapping: part i.
+\newblock \emph{IEEE Robotics and Automation Magazine}, 13\penalty0
+  (2):\penalty0 99--110, 2006.
+\newblock \doi{10.1109/MRA.2006.1638022}.
 
 \bibitem[Florence et~al.(2018)Florence, Carter, Ware, and
   Tedrake]{FLORENCE2018}
@@ -63,16 +80,6 @@ F.~Gao, W.~Wu, Y.~Lin, and S.~Shen.
 \newblock In \emph{2018 IEEE International Conference on Robotics and
   Automation (ICRA)}, pages 344--351, 2018.
 \newblock \doi{10.1109/ICRA.2018.8462878}.
-
-\bibitem[Hornung et~al.(2013)Hornung, Wurm, Bennewitz, Stachniss, and
-  Burgard]{hornung13auro}
-A.~Hornung, K.~M. Wurm, M.~Bennewitz, C.~Stachniss, and W.~Burgard.
-\newblock {OctoMap}: An efficient probabilistic {3D} mapping framework based on
-  octrees.
-\newblock \emph{Autonomous Robots}, 2013.
-\newblock \doi{10.1007/s10514-012-9321-0}.
-\newblock URL \url{https://octomap.github.io}.
-\newblock Software available at \url{https://octomap.github.io}.
 
 \bibitem[Lin et~al.(2017)Lin, Gao, Qin, Gao, Liu, Wu, Yang, and Shen]{LIN2017}
 Y.~Lin, F.~Gao, T.~Qin, W.~Gao, T.~Liu, W.~Wu, Z.~Yang, and S.~Shen.
@@ -92,6 +99,16 @@ K.~N. McGuire, C.~D. Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
 \newblock URL
   \url{https://www.science.org/doi/abs/10.1126/scirobotics.aaw9710}.
 
+\bibitem[Mir et~al.(2022)Mir, Gul, Mir, Khan, Saeed, Abualigah, Abuhaija, and
+  Gandomi]{Mir2022}
+I.~Mir, F.~Gul, S.~Mir, M.~A. Khan, N.~Saeed, L.~Abualigah, B.~Abuhaija, and
+  A.~H. Gandomi.
+\newblock A survey of trajectory planning techniques for autonomous systems.
+\newblock \emph{Electronics}, 11\penalty0 (18):\penalty0 2801, Sept. 2022.
+\newblock ISSN 2079-9292.
+\newblock \doi{10.3390/electronics11182801}.
+\newblock URL \url{http://dx.doi.org/10.3390/electronics11182801}.
+
 \bibitem[Mohta et~al.(2017)Mohta, Watterson, Mulgaonkar, Liu, Qu, Makineni,
   Saulnier, Sun, Zhu, Delmerico, Karydis, Atanasov, Loianno, Scaramuzza,
   Daniilidis, Taylor, and Kumar]{MOHTA2017}
@@ -103,6 +120,17 @@ K.~Mohta, M.~Watterson, Y.~Mulgaonkar, S.~Liu, C.~Qu, A.~Makineni, K.~Saulnier,
   Dec. 2017.
 \newblock \doi{10.1002/rob.21774}.
 \newblock URL \url{https://doi.org/10.1002/rob.21774}.
+
+\bibitem[Nex et~al.(2022)Nex, Armenakis, Cramer, Cucci, Gerke, Honkavaara,
+  Kukko, Persello, and Skaloud]{Nex2022}
+F.~Nex, C.~Armenakis, M.~Cramer, D.~Cucci, M.~Gerke, E.~Honkavaara, A.~Kukko,
+  C.~Persello, and J.~Skaloud.
+\newblock Uav in the advent of the twenties: Where we stand and what is next.
+\newblock \emph{ISPRS Journal of Photogrammetry and Remote Sensing},
+  184:\penalty0 215–242, Feb. 2022.
+\newblock ISSN 0924-2716.
+\newblock \doi{10.1016/j.isprsjprs.2021.12.006}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.isprsjprs.2021.12.006}.
 
 \bibitem[Oleynikova et~al.(2018)Oleynikova, Taylor, Siegwart, and
   Nieto]{OLEYNIKOVA2018}
@@ -132,6 +160,14 @@ M.~Selin, M.~Tiger, D.~Duberg, F.~Heintz, and P.~Jensfelt.
   1699--1706, 2019.
 \newblock \doi{10.1109/LRA.2019.2897343}.
 
+\bibitem[Smith et~al.(1988)Smith, Self, and Cheeseman]{Smith1988}
+R.~Smith, M.~Self, and P.~Cheeseman.
+\newblock \emph{Estimating Uncertain Spatial Relationships in Robotics}, page
+  435–461.
+\newblock Elsevier, 1988.
+\newblock \doi{10.1016/b978-0-444-70396-5.50042-x}.
+\newblock URL \url{http://dx.doi.org/10.1016/B978-0-444-70396-5.50042-X}.
+
 \bibitem[Usenko et~al.(2017)Usenko, von Stumberg, Pangercic, and
   Cremers]{USENKO2017}
 V.~Usenko, L.~von Stumberg, A.~Pangercic, and D.~Cremers.
@@ -141,13 +177,6 @@ V.~Usenko, L.~von Stumberg, A.~Pangercic, and D.~Cremers.
   Robots and Systems ({IROS})}. {IEEE}, sep 2017.
 \newblock \doi{10.1109/iros.2017.8202160}.
 \newblock URL \url{https://doi.org/10.1109/iros.2017.8202160}.
-
-\bibitem[Wallgr\"{u}n(2010)]{Wallgrn2010}
-J.~O. Wallgr\"{u}n.
-\newblock \emph{Hierarchical Voronoi Graphs}.
-\newblock Springer Berlin Heidelberg, 2010.
-\newblock \doi{10.1007/978-3-642-10345-2}.
-\newblock URL \url{https://doi.org/10.1007/978-3-642-10345-2}.
 
 \bibitem[Westheider et~al.(2023)Westheider, R{\"u}ckin, and
   Popovi{\.c}]{WESTHEIDER2023}

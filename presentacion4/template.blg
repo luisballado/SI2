@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: template.aux
 The style file: abbrvnat.bst
 Database file #1: test.bib
-You've used 18 entries,
+You've used 22 entries,
             2773 wiz_defined-function locations,
-            731 strings with 9540 characters,
-and the built_in function-call counts, 11338 in all, are:
-= -- 998
-> -- 826
-< -- 7
-+ -- 276
-- -- 258
-* -- 1033
-:= -- 1742
-add.period$ -- 80
-call.type$ -- 18
-change.case$ -- 139
-chr.to.int$ -- 18
-cite$ -- 36
-duplicate$ -- 435
-empty$ -- 785
-format.name$ -- 278
-if$ -- 2381
+            767 strings with 10195 characters,
+and the built_in function-call counts, 13609 in all, are:
+= -- 1209
+> -- 942
+< -- 12
++ -- 316
+- -- 294
+* -- 1223
+:= -- 2076
+add.period$ -- 96
+call.type$ -- 22
+change.case$ -- 163
+chr.to.int$ -- 22
+cite$ -- 44
+duplicate$ -- 538
+empty$ -- 964
+format.name$ -- 320
+if$ -- 2877
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 17
-newline$ -- 122
-num.names$ -- 72
-pop$ -- 268
+missing$ -- 21
+newline$ -- 147
+num.names$ -- 88
+pop$ -- 306
 preamble$ -- 1
-purify$ -- 122
+purify$ -- 142
 quote$ -- 0
-skip$ -- 371
+skip$ -- 462
 stack$ -- 0
-substring$ -- 412
-swap$ -- 80
-text.length$ -- 5
+substring$ -- 526
+swap$ -- 108
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 193
+type$ -- 237
 warning$ -- 0
-while$ -- 77
+while$ -- 94
 width$ -- 0
-write$ -- 286
+write$ -- 350
