@@ -67,6 +67,14 @@ H.~Durrant-Whyte and T.~Bailey.
   (2):\penalty0 99--110, 2006.
 \newblock \doi{10.1109/MRA.2006.1638022}.
 
+\bibitem[Elizondo~Leal(2013)]{LEAL2013}
+J.~C. Elizondo~Leal.
+\newblock \emph{Estrategia descentralizada para la exploración multi-robot,
+  incluyendo restricciones en rango de comunicación}.
+\newblock PhD thesis, CINVESTAV Unidad Tamaulipas, Junio 2013.
+\newblock URL
+  \url{https://repositorio.cinvestav.mx/handle/cinvestav/69?locale-attribute=en}.
+
 \bibitem[Florence et~al.(2018)Florence, Carter, Ware, and
   Tedrake]{FLORENCE2018}
 P.~R. Florence, J.~Carter, J.~Ware, and R.~Tedrake.
@@ -177,12 +185,6 @@ V.~Usenko, L.~von Stumberg, A.~Pangercic, and D.~Cremers.
   Robots and Systems ({IROS})}. {IEEE}, sep 2017.
 \newblock \doi{10.1109/iros.2017.8202160}.
 \newblock URL \url{https://doi.org/10.1109/iros.2017.8202160}.
-
-\bibitem[Westheider et~al.(2023)Westheider, R{\"u}ckin, and
-  Popovi{\.c}]{WESTHEIDER2023}
-J.~Westheider, J.~R{\"u}ckin, and M.~Popovi{\.c}.
-\newblock Multi-uav adaptive path planning using deep reinforcement learning,
-  2023.
 
 \bibitem[Zhou et~al.(2023)Zhou, Xu, and Shen]{RACER2022}
 B.~Zhou, H.~Xu, and S.~Shen.

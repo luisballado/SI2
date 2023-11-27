@@ -5,37 +5,37 @@ The style file: abbrvnat.bst
 Database file #1: test.bib
 You've used 22 entries,
             2773 wiz_defined-function locations,
-            767 strings with 10195 characters,
-and the built_in function-call counts, 13609 in all, are:
-= -- 1209
-> -- 942
-< -- 12
-+ -- 316
-- -- 294
-* -- 1223
-:= -- 2076
-add.period$ -- 96
+            771 strings with 10301 characters,
+and the built_in function-call counts, 13504 in all, are:
+= -- 1208
+> -- 922
+< -- 13
++ -- 310
+- -- 288
+* -- 1211
+:= -- 2069
+add.period$ -- 98
 call.type$ -- 22
-change.case$ -- 163
+change.case$ -- 160
 chr.to.int$ -- 22
 cite$ -- 44
 duplicate$ -- 538
-empty$ -- 964
-format.name$ -- 320
-if$ -- 2877
+empty$ -- 953
+format.name$ -- 314
+if$ -- 2851
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 21
-newline$ -- 147
+newline$ -- 149
 num.names$ -- 88
-pop$ -- 306
+pop$ -- 295
 preamble$ -- 1
-purify$ -- 142
+purify$ -- 140
 quote$ -- 0
-skip$ -- 462
+skip$ -- 457
 stack$ -- 0
 substring$ -- 526
-swap$ -- 108
+swap$ -- 109
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
@@ -43,4 +43,4 @@ type$ -- 237
 warning$ -- 0
 while$ -- 94
 width$ -- 0
-write$ -- 350
+write$ -- 355

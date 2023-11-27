@@ -537,16 +537,20 @@
 \section{Planteamiento del problema}
 \begin{frame}
   \frametitle{Planteamiento del problema}
+  \centering
+  \includegraphics[width=10cm]{problema}
   %\begin{columns}
   %  \column{0.5\textwidth}
-  \justifying
-  \small Dado un volumen de interés desconocido en un espacio cerrado que se desea explorar denotada como $\mathcal{S}$, tal que $\mathcal{S} \subset \mathbb{R}^{3}$.\\
-  Encontrar y repartir rutas libres de colisiones para un conjunto de VANTS denotado como $\mathcal{V} = \{\mathcal{V}_{1},\mathcal{V}_{2},\mathcal{V}_{3},...,\mathcal{V}_{n}\}$ siendo $n$ el número total de VANTS disponibles, comenzando cada uno en un estado inicial conocido denotados como $q = \{q_{1},q_{2},q_{3},...,q_{n}\}$, y terminando en una configuración que maximice la localización del VANT y exactitud en la construcción del mapa.\\
+  %\justifying
+  %\small Dado un volumen de interés desconocido en un espacio cerrado que se desea explorar denotada como $\mathcal{S}$, tal que $\mathcal{S} \subset \mathbb{R}^{3}$.\\
+  %Encontrar y repartir rutas libres de colisiones para un conjunto de VANTS denotado como $\mathcal{V} = \{\mathcal{V}_{1},\mathcal{V}_{2},\mathcal{V}_{3},...,\mathcal{V}_{n}\}$ siendo $n$ el número total de VANTS disponibles, comenzando cada uno en un estado inicial conocido denotados como $q = \{q_{1},q_{2},q_{3},...,q_{n}\}$, y terminando en una configuración que maximice la localización del VANT y exactitud en la construcción del mapa.\\
 
-  La representación del volumen a explorar se utiliza un mapa de ocupación que se obtiene dividiendo el volumen en volumenes cúbicos (voxel) que puede tomar los valores de libre, ocupado y desconocido o no explorado de notados como $v_{libre}$, $v_{ocup}$, $v_{desc}$ con lecturas a partir de los valores de una cámara RGB-D basada en un modelo de ocupación probabilístico.\\
+  %La representación del volumen a explorar se utiliza un mapa de ocupación que se obtiene dividiendo el volumen en volumenes cúbicos (voxel) que puede tomar los valores de libre, ocupado y desconocido o no explorado de notados como $v_{libre}$, $v_{ocup}$, $v_{desc}$ con lecturas a partir de los valores de una cámara RGB-D basada en un modelo de ocupación probabilístico.\\
 
+  
+  
   \bigskip % Vertical whitespace
-  El problema se basa en la propuesta de una estrategia que incluya las habilidades de autonomía, para tareas de exploración de forma coordinada dividiendo la carga de trabajo de exploración entre el grupo de una forma descentralizada.\\
+  El problema se basa en la propuesta de una estrategia que incluya las habilidades de autonomía para tareas de exploración de forma coordinada, dividiendo la carga de trabajo de exploración entre el grupo de VANTS.\\
   
   %Para lograr una exploraci\'{o}n eficiente y completa con un tiempo y recursos m\'{i}nimos, el problema requiere la creaci\'{o}n de algoritmos y t\'{e}cnicas de optimizaci\'{o}n.\\
     
@@ -584,7 +588,7 @@
 
 \begin{frame}{Hipótesis}
 
-  Una estrategia de exploración con un efoque en coordinación y asignación de tareas, en combinación con una arquitectura de software (que resuelve los problemas de planificación de rutas, evasión de obstáculos y localización) puede mejorar la tarea de exploración de múltiples VANTS en entornos desconocidos tomado un enfoque descentralizado.
+  Una estrategia que coordine y asigne tareas de exploración para múltiples VANTS, en combinación con una arquitectura de software (que resuelva los problemas de localización, manejo de mapas y planificación de rutas) mejorará el desempeño en tareas de exploración con múltiples VANTS en entornos desconocidos en interiores.
   
   %La implementación de una estrategia de exploración coordinada utilizando múltiples vehículos aéreos no tripulados (multi-VANT) en ambientes sin señal GPS, permitirá obtener mejores resultados en comparación con la exploración individual (mono-VANT). Esta coordinación eﬁciente se traducirá en una reducción del tiempo y los recursos necesarios para completar la exploración, así como en una mayor cobertura del área de interés. Además, se espera que la exploración coordinada multi-VANT mejore la calidad de los datos recopilados, lo que permitirá tomar decisiones más informadas y eﬁcaces en diversos campos, como la cartografía, la vigilancia, el monitoreo y la respuesta a desastres naturales.
   
@@ -756,7 +760,9 @@
   
 \end{frame}
 
-\begin{frame}{Estrategia}
+\begin{frame}{Estrategia \footnote{Estrategia descentralizada para la exploración multi-robot, incluyendo restricciones en rango de comunicación [\cite{LEAL2013}]}}
+
+  
   
   \begin{minipage}{0.67\textwidth}
     \begin{itemize}
@@ -788,83 +794,143 @@
   \end{figure}
 \end{frame}
 
+\begin{frame}
+  \begin{columns}
+    \begin{column}{.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.6\textwidth]{racer}\\
+        \href{run:./OrbiteEul.gif}{Zhou et al. (2023)}
+      \end{figure}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.6\textwidth]{fame}\\
+        \href{run:Images/fame_x10.webm}{Bartolomei et al. (2023)}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
 
 \section{Estado del Arte}
 \begin{frame}
   \centering
-  \begin{tabular}{ | p{3cm} | p{3.1cm} | p{2.5cm} | p{3.5cm}|}
+  \scalebox{0.85}{
+  \begin{tabular}{ | p{3cm} | p{1.6cm} | p{2.5cm} | p{3cm} | p{3.1cm} | p{0.8cm} | p{0.9cm} | }
     \hline    
     \tiny REFERENCIA&
-    \tiny REPRESENTACION&
-    \tiny EXPLORACION&
-    \tiny TRAYECTORIA\\
-    \hline
+    \tiny APLICACIÓN&
+    \tiny GENERACION MAPA&
+    \tiny PLANIFICACION DE RUTA&
+    \tiny GENERACION TRAYECTORIA&
+    \tiny SENSOR RGB-D&
+    \tiny DINAMICA VANT\\
     \hline
     %--------------------------
     \tiny \cite{CIESLEWSKI2017}[\citenum{CIESLEWSKI2017}]&
+    \tiny Exploración&
     \tiny Octomap&
     \tiny Basado en fronteras&
-    \tiny Control directo de velocidad\\ \hline
+    \tiny Control directo de velocidad&
+    \tiny \ding{51} &
+    \tiny \ding{55} \\ \hline
     %--------------------------
     \tiny \cite{USENKO2017}[\citenum{USENKO2017}]&
+    \tiny Punto Objetivo&
     \tiny Cuadr\'{i}cula egoc\'{e}ntrica&
     \tiny Offline RRT*&
-    \tiny Curvas de Bezier\\ \hline 
+    \tiny Curvas de Bezier&
+    \tiny \ding{55} &
+    \tiny \ding{51} \\ \hline
     %--------------------------
     \tiny \cite{MOHTA2017}[\citenum{MOHTA2017}]&
+    \tiny Punto Objetivo&
     \tiny mapa 3D-Local y 2D-Global&
     \tiny A*&
-    \tiny Programaci\'{o}n cuadr\'{a}tica \\ \hline 
+    \tiny Programaci\'{o}n cuadr\'{a}tica&
+    \tiny \ding{55} &
+    \tiny \ding{51} \\ \hline
     %--------------------------
     \tiny \cite{LIN2017}[\citenum{LIN2017}]&
+    \tiny Punto Objetivo&
     \tiny 3D voxel array TSDF&
     \tiny A*&
-    \tiny Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
+    \tiny Optimizaci\'{o}n cuadr\'{a}tica&
+    \tiny \ding{55}&
+    \tiny \ding{55} \\ \hline
     %--------------------------
     \tiny \cite{PAPACHRISTOS2017}[\citenum{PAPACHRISTOS2017}]&
-    \tiny Octomap&
-    \tiny NBVP&
-    \tiny Control directo de velocidad \\ \hline
-    %--------------------------
-    \tiny \cite{OLEYNIKOVA2018}[\citenum{OLEYNIKOVA2018}]&
-    \tiny Voxel Hashing TSDF&
-    \tiny NBVP&
-    \tiny Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
-    %--------------------------
-    \tiny \cite{GAO2018}[\citenum{GAO2018}]&
-    \tiny Mapa de cuadr\'{i}cula&
-    \tiny M\'{e}todo de marcha r\'{a}pida&
-    \tiny Optimizaci\'{o}n cuadr\'{a}tica \\ \hline
-    %--------------------------
-    \tiny \cite{FLORENCE2018}[\citenum{FLORENCE2018}]&
-    \tiny Busqueda basada en visibilidad&
-    \tiny 2D A*&
-    \tiny Control predictivo por modelo (MPC) \\ \hline
-    %--------------------------
-    \tiny \cite{SELIN2019}[\citenum{SELIN2019}]&
+    \tiny Exploración&
     \tiny Octomap&
     \tiny Next Best View Planner (NBVP)&
-    \tiny Control directo de velocidad \\ \hline
+    \tiny Control directo de velocidad&
+    \tiny \ding{55}&
+    \tiny \ding{55} \\ \hline
+    %--------------------------
+    \tiny \cite{OLEYNIKOVA2018}[\citenum{OLEYNIKOVA2018}]&
+    \tiny Punto Objetivo&
+    \tiny Voxel Hashing TSDF&
+    \tiny Next Best View Planner (NBVP)&
+    \tiny Optimizaci\'{o}n cuadr\'{a}tica&
+    \tiny \ding{51}&
+    \tiny \ding{51} \\ \hline
+    %--------------------------
+    \tiny \cite{GAO2018}[\citenum{GAO2018}]&
+    \tiny Punto Objetivo&
+    \tiny Mapa de cuadr\'{i}cula&
+    \tiny M\'{e}todo de marcha r\'{a}pida&
+    \tiny Optimizaci\'{o}n cuadr\'{a}tica&
+    \tiny \ding{55}&
+    \tiny \ding{51} \\ \hline
+    %--------------------------
+    \tiny \cite{FLORENCE2018}[\citenum{FLORENCE2018}]&
+    \tiny Punto Objetivo&
+    \tiny Busqueda basada en visibilidad&
+    \tiny 2D A*&
+    \tiny Control predictivo por modelo (MPC)&
+    \tiny \ding{51}&
+    \tiny \ding{51} \\ \hline
+    %--------------------------
+    \tiny \cite{SELIN2019}[\citenum{SELIN2019}]&
+    \tiny Exploración&
+    \tiny Octomap&
+    \tiny Next Best View Planner (NBVP)&
+    \tiny Control directo de velocidad&
+    \tiny \ding{55}&
+    \tiny \ding{55} \\ \hline
     %--------------------------
     \tiny \cite{BUG2019}[\citenum{BUG2019}]&
+    \tiny Exploración&
     \tiny NA&
     \tiny Swarm Gradient Bug Algorithm (SGBA)&
-    \tiny Control directo de velocidad \\ \hline
+    \tiny Control directo de velocidad&
+    \tiny \ding{55}&
+    \tiny \ding{55} \\ \hline
     %--------------------------
     \tiny \cite{COLLINS2019}[\citenum{COLLINS2019}]&
+    \tiny Punto Objetivo&
     \tiny KD Tree $+$ Mapa en Voxel&
     \tiny B\'{u}squeda en Grafo&
-    \tiny Movimientos suaves \\ \hline
+    \tiny Movimientos suaves&
+    \tiny \ding{51}&
+    \tiny \ding{51} \\ \hline
     %--------------------------
     \tiny \cite{CINVES2021}[\citenum{CINVES2021}]&
+    \tiny Punto Objetivo&
     \tiny Octree&
     \tiny Rapidly Exploring Random Trees (RRT)&
-    \tiny Basado en contornos \\ \hline
+    \tiny Basado en contornos&
+    \tiny \ding{51}&
+    \tiny \ding{51} \\ \hline
     %--------------------------
     \tiny \cite{RACER2022}[\citenum{RACER2022}]&
+    \tiny Exploración&
     \tiny Octomap HGrid&
-    \tiny NBVP&
-    \tiny Control directo de velocidad \\ \hline
+    \tiny Next Best View Planner (NBVP)&
+    \tiny Control directo de velocidad&
+    \tiny \ding{51}&
+    \tiny \ding{51} \\ \hline
     %--------------------------
     %\scriptsize \cite{WESTHEIDER2023}[\citenum{WESTHEIDER2023}]&
     %\scriptsize Mapa de cuadrícula&
@@ -872,11 +938,15 @@
     %\scriptsize Control directo de velocidad \\ \hline
     %--------------------------
     \tiny \cite{BARTOLOMEI2023}[\citenum{BARTOLOMEI2023}]&
+    \tiny Exploración&
     \tiny Octomap&
     \tiny Basado en fronteras&
-    \tiny Control directo de velocidad \\ \hline
+    \tiny Control directo de velocidad&
+    \tiny \ding{51}&
+    \tiny \ding{51} \\ \hline
     %--------------------------
-  \end{tabular} 
+  \end{tabular}
+  }
 \end{frame}
 
 \begin{frame}
