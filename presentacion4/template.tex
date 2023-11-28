@@ -743,11 +743,11 @@
     
     \begin{itemize}
       %\item Exploración con algoritmos de baja complejidad computacional.
-    \item \small PRM 
+    \item \small Probabilistic Road-Map (Método a base de muestreos) \footnote{Survey of UAV motion planning [\cite{Quan2020}]}  
     \item \small RGB-D $\implies$ Voxels $\implies$ Octomap
       
-    \item \small Exploración basada en fronteras
-    \item \small Estrategia basada en auto-ofertas (Método Hungaro)
+    \item \small Exploración basada en fronteras \footnote{A frontier-based approach for autonomous exploration [\cite{613851}]}
+    \item \small Estrategia basada en auto-ofertas (Método Húngaro) \footnote{Estrategia descentralizada para la exploración multi-robot, incluyendo restricciones en rango de comunicación [\cite{LEAL2013}]}
       
     \end{itemize}
   \end{minipage}
@@ -800,7 +800,7 @@
       \begin{figure}
         \centering
         \includegraphics[width=0.6\textwidth]{racer}\\
-        \href{run:./OrbiteEul.gif}{Zhou et al. (2023)}
+        \href{run:Images/racer_x10.webm}{Zhou et al. (2023)}
       \end{figure}
     \end{column}
     \begin{column}{.5\textwidth}
@@ -814,6 +814,13 @@
 \end{frame}
 
 \section{Estado del Arte}
+\begin{frame}{Estado del Arte}
+  \tiny https://researchrabbitapp.com/ en base a articulos de drones autónomos
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.2\textwidth]{soa_graph}
+  \end{figure}
+\end{frame}
 \begin{frame}
   \centering
   \scalebox{0.85}{
@@ -828,13 +835,13 @@
     \tiny DINAMICA VANT\\
     \hline
     %--------------------------
-    \tiny \cite{CIESLEWSKI2017}[\citenum{CIESLEWSKI2017}]&
-    \tiny Exploración&
-    \tiny Octomap&
-    \tiny Basado en fronteras&
-    \tiny Control directo de velocidad&
-    \tiny \ding{51} &
-    \tiny \ding{55} \\ \hline
+    \tiny \cellcolor{gray!20}\cite{CIESLEWSKI2017}[\citenum{CIESLEWSKI2017}]&
+    \tiny \cellcolor{gray!20}Exploración&
+    \tiny \cellcolor{gray!20}Octomap&
+    \tiny \cellcolor{gray!20}Basado en fronteras&
+    \tiny \cellcolor{gray!20}Control directo de velocidad&
+    \tiny \cellcolor{gray!20}\ding{51} &
+    \tiny \cellcolor{gray!20}\ding{55} \\ \hline
     %--------------------------
     \tiny \cite{USENKO2017}[\citenum{USENKO2017}]&
     \tiny Punto Objetivo&
@@ -860,13 +867,13 @@
     \tiny \ding{55}&
     \tiny \ding{55} \\ \hline
     %--------------------------
-    \tiny \cite{PAPACHRISTOS2017}[\citenum{PAPACHRISTOS2017}]&
-    \tiny Exploración&
-    \tiny Octomap&
-    \tiny Next Best View Planner (NBVP)&
-    \tiny Control directo de velocidad&
-    \tiny \ding{55}&
-    \tiny \ding{55} \\ \hline
+    \tiny \cellcolor{gray!20}\cite{PAPACHRISTOS2017}[\citenum{PAPACHRISTOS2017}]&
+    \tiny \cellcolor{gray!20}Exploración&
+    \tiny \cellcolor{gray!20}Octomap&
+    \tiny \cellcolor{gray!20}Next Best View Planner (NBVP)&
+    \tiny \cellcolor{gray!20}Control directo de velocidad&
+    \tiny \cellcolor{gray!20}\ding{55}&
+    \tiny \cellcolor{gray!20}\ding{55} \\ \hline
     %--------------------------
     \tiny \cite{OLEYNIKOVA2018}[\citenum{OLEYNIKOVA2018}]&
     \tiny Punto Objetivo&
@@ -892,21 +899,21 @@
     \tiny \ding{51}&
     \tiny \ding{51} \\ \hline
     %--------------------------
-    \tiny \cite{SELIN2019}[\citenum{SELIN2019}]&
-    \tiny Exploración&
-    \tiny Octomap&
-    \tiny Next Best View Planner (NBVP)&
-    \tiny Control directo de velocidad&
-    \tiny \ding{55}&
-    \tiny \ding{55} \\ \hline
+    \tiny \cellcolor{gray!20}\cite{SELIN2019}[\citenum{SELIN2019}]&
+    \tiny \cellcolor{gray!20}Exploración&
+    \tiny \cellcolor{gray!20}Octomap&
+    \tiny \cellcolor{gray!20}Next Best View Planner (NBVP)&
+    \tiny \cellcolor{gray!20}Control directo de velocidad&
+    \tiny \cellcolor{gray!20}\ding{55}&
+    \tiny \cellcolor{gray!20}\ding{55} \\ \hline
     %--------------------------
-    \tiny \cite{BUG2019}[\citenum{BUG2019}]&
-    \tiny Exploración&
-    \tiny NA&
-    \tiny Swarm Gradient Bug Algorithm (SGBA)&
-    \tiny Control directo de velocidad&
-    \tiny \ding{55}&
-    \tiny \ding{55} \\ \hline
+    \tiny \cellcolor{gray!20}\cite{BUG2019}[\citenum{BUG2019}]&
+    \tiny \cellcolor{gray!20}Exploración&
+    \tiny \cellcolor{gray!20}NA&
+    \tiny \cellcolor{gray!20}Swarm Gradient Bug Algorithm (SGBA)&
+    \tiny \cellcolor{gray!20}Control directo de velocidad&
+    \tiny \cellcolor{gray!20}\ding{55}&
+    \tiny \cellcolor{gray!20}\ding{55} \\ \hline
     %--------------------------
     \tiny \cite{COLLINS2019}[\citenum{COLLINS2019}]&
     \tiny Punto Objetivo&
@@ -924,26 +931,34 @@
     \tiny \ding{51}&
     \tiny \ding{51} \\ \hline
     %--------------------------
-    \tiny \cite{RACER2022}[\citenum{RACER2022}]&
-    \tiny Exploración&
-    \tiny Octomap HGrid&
-    \tiny Next Best View Planner (NBVP)&
-    \tiny Control directo de velocidad&
-    \tiny \ding{51}&
-    \tiny \ding{51} \\ \hline
+    \tiny \cellcolor{gray!20}\cite{CIESLEWSKI2021}[\citenum{CIESLEWSKI2021}]&
+    \tiny \cellcolor{gray!20}Exploración&
+    \tiny \cellcolor{gray!20}Octomap&
+    \tiny \cellcolor{gray!20}Basado en fronteras&
+    \tiny \cellcolor{gray!20}Control directo de velocidad&
+    \tiny \cellcolor{gray!20}\ding{51}&
+    \tiny \cellcolor{gray!20}\ding{55} \\ \hline
+    %--------------------------
+    \tiny \cellcolor{gray!20}\cite{RACER2022}[\citenum{RACER2022}]&
+    \tiny \cellcolor{gray!20}Exploración&
+    \tiny \cellcolor{gray!20}Octomap HGrid&
+    \tiny \cellcolor{gray!20}Next Best View Planner (NBVP)&
+    \tiny \cellcolor{gray!20}Control directo de velocidad&
+    \tiny \cellcolor{gray!20}\ding{51}&
+    \tiny \cellcolor{gray!20}\ding{51} \\ \hline
     %--------------------------
     %\scriptsize \cite{WESTHEIDER2023}[\citenum{WESTHEIDER2023}]&
     %\scriptsize Mapa de cuadrícula&
     %\scriptsize Deep Reinforcement Learning&
     %\scriptsize Control directo de velocidad \\ \hline
     %--------------------------
-    \tiny \cite{BARTOLOMEI2023}[\citenum{BARTOLOMEI2023}]&
-    \tiny Exploración&
-    \tiny Octomap&
-    \tiny Basado en fronteras&
-    \tiny Control directo de velocidad&
-    \tiny \ding{51}&
-    \tiny \ding{51} \\ \hline
+    \tiny \cellcolor{gray!20}\cite{BARTOLOMEI2023}[\citenum{BARTOLOMEI2023}]&
+    \tiny \cellcolor{gray!20}Exploración&
+    \tiny \cellcolor{gray!20}Octomap&
+    \tiny \cellcolor{gray!20}Basado en fronteras&
+    \tiny \cellcolor{gray!20}Control directo de velocidad&
+    \tiny \cellcolor{gray!20}\ding{51}&
+    \tiny \cellcolor{gray!20}\ding{51} \\ \hline
     %--------------------------
   \end{tabular}
   }
@@ -957,19 +972,19 @@
 \section{Contribuciones o resultados esperados}
 \begin{frame}
   \frametitle{Contribuciones o resultados esperados}
-  Se espera que un mecanismo de coordinación en tareas de exploración con múltiples VANTS produzcan mejoras significativas en eficiencia, cobertura y adaptabilidad en la exploración.
+  \small Se espera que un mecanismo de coordinación en tareas de exploración con múltiples VANTS produzcan mejoras significativas en eficiencia y cobertura en la exploración.
   \begin{enumerate}
-  \item<1-> Documentación y códigos liberados
+  \item<1-> \small Documentación y códigos liberados
     \begin{itemize}
-    \item Estrategia coordinada para tareas de exploración multi-VANT.
-    \item Arquitectura de software que resuelva los problemas de autonomía para un vehículo aéreo no tripulado.
-    \item Protocolo de comunicación multi-VANT que formaran parte de la arquitectura de software
+    \item \small Estrategia coordinada para tareas de exploración multi-VANT.
+    \item \small Arquitectura de software que resuelva los problemas de autonomía para un vehículo aéreo no tripulado.
+    \item \small Protocolo de comunicación multi-VANT que formaran parte de la arquitectura de software
     \end{itemize}
-  \item<2-> Validación de la solución en un simulador
+  \item<2-> \small Validación de la solución en un simulador
     \begin{itemize}
-    \item Análisis comparativo de la cobertura alcanzada por la estrategia propuesta.
+    \item \small Análisis comparativo de la cobertura alcanzada por la estrategia propuesta con los reportados en el estado del arte.
     %\item Evaluación comparativa del consumo de recursos entre algoritmos de coordinación avanzados y métodos tradicionales.
-    \item Evaluación de mecanismos de evasión de obstáculos.
+    \item \small Evaluación de mecanismos de evasión de obstáculos.
     \end{itemize}
   \item<3-> Tesis impresa
   \end{enumerate}

@@ -5,4 +5,4 @@
 \beamer@sectionintoc {4}{Metodología}{17}{0}{4}
 \beamer@sectionintoc {5}{Cronograma}{19}{0}{5}
 \beamer@sectionintoc {6}{Estado del Arte}{26}{0}{6}
-\beamer@sectionintoc {7}{Contribuciones o resultados esperados}{29}{0}{7}
+\beamer@sectionintoc {7}{Contribuciones o resultados esperados}{30}{0}{7}

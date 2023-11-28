@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.18)  27 NOV 2023 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.18)  27 NOV 2023 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1618,7 +1618,9 @@ Overfull \hbox (217.35175pt too wide) in paragraph at lines 738--738
 [20
 
 ]
-<Images//maxresdefault.jpg, id=243, 1284.8pt x 722.7pt>
+LaTeX Font Info:    Font shape `OT1/opensans-TLF/m/it' will be
+(Font)              scaled to size 7.0pt on input line 761.
+<Images//maxresdefault.jpg, id=246, 1284.8pt x 722.7pt>
 File: Images//maxresdefault.jpg Graphic file (type jpg)
 <use Images//maxresdefault.jpg>
 Package pdftex.def Info: Images//maxresdefault.jpg  used on input line 761.
@@ -1631,7 +1633,7 @@ Overfull \hbox (4.27783pt too wide) in paragraph at lines 761--761
 [21
 
  <./Images//maxresdefault.jpg>]
-<Images//estrategia.png, id=251, 151.56625pt x 302.12875pt>
+<Images//estrategia.png, id=258, 151.56625pt x 302.12875pt>
 File: Images//estrategia.png Graphic file (type png)
 <use Images//estrategia.png>
 Package pdftex.def Info: Images//estrategia.png  used on input line 781.
@@ -1645,7 +1647,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
  [22
 
  <./Images//estrategia.png>]
-<Images//arquitectura.png, id=261, 879.285pt x 462.72874pt>
+<Images//arquitectura.png, id=267, 879.285pt x 462.72874pt>
 File: Images//arquitectura.png Graphic file (type png)
 <use Images//arquitectura.png>
 Package pdftex.def Info: Images//arquitectura.png  used on input line 788.
@@ -1657,7 +1659,7 @@ Overfull \vbox (8.67746pt too high) detected at line 788
 [23
 
  <./Images//arquitectura.png>]
-<Images//visual.png, id=269, 622.325pt x 542.025pt>
+<Images//visual.png, id=275, 622.325pt x 542.025pt>
 File: Images//visual.png Graphic file (type png)
 <use Images//visual.png>
 Package pdftex.def Info: Images//visual.png  used on input line 795.
@@ -1669,12 +1671,12 @@ Overfull \vbox (10.53575pt too high) detected at line 795
 [24
 
  <./Images//visual.png>]
-<Images//racer.png, id=277, 337.26pt x 331.2375pt>
+<Images//racer.png, id=283, 337.26pt x 331.2375pt>
 File: Images//racer.png Graphic file (type png)
 <use Images//racer.png>
 Package pdftex.def Info: Images//racer.png  used on input line 814.
 (pdftex.def)             Requested size: 130.00452pt x 127.68604pt.
-<Images//fame.png, id=279, 337.26pt x 331.2375pt>
+<Images//fame.png, id=285, 337.26pt x 331.2375pt>
 File: Images//fame.png Graphic file (type png)
 <use Images//fame.png>
 Package pdftex.def Info: Images//fame.png  used on input line 814.
@@ -1688,50 +1690,62 @@ LaTeX Info: Redefining \% on input line 1.
 ) [26
 
 ]
-Overfull \hbox (3.43146pt too wide) in paragraph at lines 950--950
-[]|\OT1/opensans-TLF/m/n/6 DINAMICA
- []
+<Images//soa_graph.png, id=309, 421.575pt x 1116.17pt>
+File: Images//soa_graph.png Graphic file (type png)
+<use Images//soa_graph.png>
+Package pdftex.def Info: Images//soa_graph.png  used on input line 823.
+(pdftex.def)             Requested size: 86.66748pt x 229.46352pt.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 950--950
-[]|\OT1/opensans-TLF/m/n/6 mapa 3D-Local y
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 950--950
-[]|\OT1/opensans-TLF/m/n/6 Swarm Gra-dient Bug Al-go-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 950--950
-[]|\OT1/opensans-TLF/m/n/6 Rapidly Ex-plo-ring Ran-dom
- []
-
-
-Overfull \hbox (5.96957pt too wide) in paragraph at lines 950--950
- [][] 
+Overfull \vbox (21.98248pt too high) detected at line 823
  []
 
 [27
 
+ <./Images//soa_graph.png>]
+Overfull \hbox (3.43146pt too wide) in paragraph at lines 965--965
+[]|\OT1/opensans-TLF/m/n/6 DINAMICA
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--965
+[]|\OT1/opensans-TLF/m/n/6 mapa 3D-Local y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--965
+[]|\OT1/opensans-TLF/m/n/6 Swarm Gra-dient Bug Al-go-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--965
+[]|\OT1/opensans-TLF/m/n/6 Rapidly Ex-plo-ring Ran-dom
+ []
+
+
+Overfull \hbox (5.96957pt too wide) in paragraph at lines 965--965
+ [][] 
+ []
+
+[28
+
 ]
-<Images//soa.png, id=353, 526.96875pt x 329.23pt>
+<Images//soa.png, id=370, 530.98375pt x 359.3425pt>
 File: Images//soa.png Graphic file (type png)
 <use Images//soa.png>
-Package pdftex.def Info: Images//soa.png  used on input line 955.
-(pdftex.def)             Requested size: 284.5428pt x 170.7183pt.
- [28
+Package pdftex.def Info: Images//soa.png  used on input line 970.
+(pdftex.def)             Requested size: 284.53127pt x 170.72235pt.
+ [29
 
  <./Images//soa.png>] (./template.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [29
-
-] [30
+) [30
 
 ] [31
 
 ] [32
+
+] [33
 
 ]
 (./template.bbl
@@ -1740,9 +1754,9 @@ LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 ))
-[33
+[34
 
-] [34
+] [35
 
 
 ]
@@ -1763,11 +1777,11 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 9EA1C54634D3248297057768392D79CF;1161.
  ) 
 Here is how much of TeX's memory you used:
- 33677 strings out of 478287
- 664334 string characters out of 5849289
- 1116031 words of memory out of 5000000
- 51009 multiletter control sequences out of 15000+600000
- 499781 words of font info for 116 fonts, out of 8000000 for 9000
+ 33707 strings out of 478287
+ 664888 string characters out of 5849289
+ 1116150 words of memory out of 5000000
+ 51033 multiletter control sequences out of 15000+600000
+ 500454 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,131p,739b,895s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
@@ -1782,10 +1796,10 @@ lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on template.pdf (34 pages, 3486392 bytes).
+Output written on template.pdf (35 pages, 3568677 bytes).
 PDF statistics:
- 485 PDF objects out of 1000 (max. 8388607)
- 395 compressed objects within 4 object streams
- 99 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 506 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -35,6 +35,12 @@ L.~Campos-Mac\'{i}as, R.~Aldana-L\'{o}pez, R.~Guardia, J.~I. Parra-Vilchis, and
   may 2020.
 \newblock \doi{10.1002/rob.21959}.
 \newblock URL \url{https://doi.org/10.1002/rob.21959}.
+
+\bibitem[Cieslewski(2021)]{CIESLEWSKI2021}
+T.~Cieslewski.
+\newblock \emph{Decentralized Multi-Agent Visual SLAM}.
+\newblock PhD thesis, University of Zurich, Febrero 2021.
+\newblock URL \url{https://rpg.ifi.uzh.ch/docs/thesis_Cieslewski_final.pdf}.
 
 \bibitem[Cieslewski et~al.(2017)Cieslewski, Kaufmann, and
   Scaramuzza]{CIESLEWSKI2017}
@@ -159,6 +165,15 @@ C.~Papachristos, S.~Khattak, and K.~Alexis.
   Automation (ICRA)}, pages 4568--4575, 2017.
 \newblock \doi{10.1109/ICRA.2017.7989531}.
 
+\bibitem[Quan et~al.(2020)Quan, Han, Zhou, Shen, and Gao]{Quan2020}
+L.~Quan, L.~Han, B.~Zhou, S.~Shen, and F.~Gao.
+\newblock Survey of uav motion planning.
+\newblock \emph{IET Cyber-Systems and Robotics}, 2\penalty0 (1):\penalty0
+  14–21, Mar. 2020.
+\newblock ISSN 2631-6315.
+\newblock \doi{10.1049/iet-csr.2020.0004}.
+\newblock URL \url{http://dx.doi.org/10.1049/iet-csr.2020.0004}.
+
 \bibitem[Selin et~al.(2019)Selin, Tiger, Duberg, Heintz, and
   Jensfelt]{SELIN2019}
 M.~Selin, M.~Tiger, D.~Duberg, F.~Heintz, and P.~Jensfelt.
@@ -185,6 +200,14 @@ V.~Usenko, L.~von Stumberg, A.~Pangercic, and D.~Cremers.
   Robots and Systems ({IROS})}. {IEEE}, sep 2017.
 \newblock \doi{10.1109/iros.2017.8202160}.
 \newblock URL \url{https://doi.org/10.1109/iros.2017.8202160}.
+
+\bibitem[Yamauchi(1997)]{613851}
+B.~Yamauchi.
+\newblock A frontier-based approach for autonomous exploration.
+\newblock In \emph{Proceedings 1997 IEEE International Symposium on
+  Computational Intelligence in Robotics and Automation CIRA'97. 'Towards New
+  Computational Principles for Robotics and Automation'}, pages 146--151, 1997.
+\newblock \doi{10.1109/CIRA.1997.613851}.
 
 \bibitem[Zhou et~al.(2023)Zhou, Xu, and Shen]{RACER2022}
 B.~Zhou, H.~Xu, and S.~Shen.
