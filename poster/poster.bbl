@@ -1,5 +1,16 @@
 \begin{thebibliography}{1}
 
+\bibitem{otromas}
+Ashten Akemoto and Frances Zhu.
+\newblock Informative path planning to explore and map unknown planetary
+  surfaces with gaussian processes.
+\newblock In {\em 2022 IEEE Aerospace Conference (AERO)}, pages 1--12, 2022.
+
+\bibitem{unomas}
+Yixin Jiang, Lingyun Zhou, Yijia Tang, Ya~Tu, Chunhong Liu, and Qingjiang Shi.
+\newblock A collaborative jamming algorithm based on multi-uav scheduling,
+  2023.
+
 \bibitem{shannon1948communication}
 Claude~E. Shannon.
 \newblock A mathematical theory of communication.

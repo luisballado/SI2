@@ -1,3 +1,12 @@
+https://www.google.com/search?q=drone+infographic&tbm=isch&ved=2ahUKEwj0xJrKgeqCAxWH1MkDHZ-jC7AQ2-cCegQIABAA&oq=drone+info&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgYIABAFEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIHCAAQgAQQGDIHCAAQgAQQGDoKCAAQgAQQigUQQzoECAAQHjoJCAAQgAQQGBAKULUKWIwjYPYqaANwAHgCgAG8A4gBwCKSAQkwLjQuNC43LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=PZpnZbSyJYepp84Pn8eugAs&bih=970&biw=1920&client=firefox-b-d#imgrc=fKs44uVKCjmqOM&imgdii=4oNY_jvZ5gVmoM
+https://www.science.org/doi/10.1126/scirobotics.abm5954
+https://www.google.com/search?q=uav+chart&client=firefox-b-d&sca_esv=586359844&tbm=isch&source=lnms&sa=X&ved=2ahUKEwj3_Z3a_emCAxUcM0QIHRRPBnkQ_AUoAXoECAEQAw&biw=1920&bih=970&dpr=1#imgrc=nFoVwTJ7E7mpWM
+https://www.businessinsider.com/commercial-uav-market-analysis?r=MX&IR=T
+https://journals.sagepub.com/doi/10.1177/1729881420970461
+https://www.google.com/search?q=infographic+robotics&tbm=isch&ved=2ahUKEwjFk-_m-umCAxVA1MkDHYtNAmcQ2-cCegQIABAA&oq=infographic+robotics&gs_lcp=CgNpbWcQAzIFCAAQgAQ6BggAEAgQHlDFEFiQFGCuFWgAcAB4AIABfogBwwOSAQMwLjSYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=IpNnZcX6KMCop84Pi5uJuAY&bih=970&biw=1920&client=firefox-b-d#imgrc=wSo_F2n23ehLIM&imgdii=GM0RyR7U9ovgWM
+https://www.freepik.com/free-photos-vectors/drone-infographic
+https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.alliancy.fr%2Fwp-content%2Fuploads%2F2015%2F10%2Finfographie-drone-chiffres.jpg&tbnid=mulyZkaZB9uozM&vet=10CBgQxiAoCWoXChMIgJnvhfrpggMVAAAAAB0AAAAAEA8..i&imgrefurl=https%3A%2F%2Fwww.smartcob.sottaycia.cl%2F%3Fy%3Dset-of-modern-air-drones-infographic-elements-with-icons-qq-P8ELKqsv&docid=40JYzF7hWqu-xM&w=2560&h=1707&itg=1&q=infographic%20exploration%20uav&client=firefox-b-d&ved=0CBgQxiAoCWoXChMIgJnvhfrpggMVAAAAAB0AAAAAEA8
+
 https://en.hg-fly.com/cases/88.html
 https://tenor.com/view/racing-drone-racing-league-flying-fast-speedy-gif-18964656
 https://www.statista.com/chart/17201/commecial-drones-projected-growth/
@@ -14,3 +23,6 @@ https://acl.mit.edu/projects/real-time-planning-obstacle-avoidance-uavs
 https://medium.com/udacity/the-importance-of-mapping-in-robotics-8f2299ef75e5
 https://giphy.com/gifs/Drone-Racing-League-drone-racing-drl-IbsNGyWdGz7WS0sZ8i
 https://www.popularmechanics.com/flight/drones/a25562574/transforming-drone-quadcopter/
+
+
+http://delta.cs.cinvestav.mx/~fraga/Cursos/SeminarioTesis/2019/pmfTesis/node1.html

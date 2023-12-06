@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.9.7)  4 DEC 2023 18:21
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.9.7)  5 DEC 2023 19:31
  restricted system commands enabled.
 **poster.tex
 (./poster.tex
@@ -1282,47 +1282,115 @@ File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty
 Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
 )
-\sepwidth=\skip84
-\colwidth=\skip85
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count380
+\mult@box=\box82
+\multicol@leftmargin=\dimen337
+\c@unbalance=\count381
+\c@collectmore=\count382
+\doublecol@number=\count383
+\multicoltolerance=\count384
+\multicolpretolerance=\count385
+\full@width=\dimen338
+\page@free=\dimen339
+\premulticols=\dimen340
+\postmulticols=\dimen341
+\multicolsep=\skip84
+\multicolbaselineskip=\skip85
+\partial@page=\box83
+\last@line=\box84
+\maxbalancingoverflow=\dimen342
+\mult@rightbox=\box85
+\mult@grightbox=\box86
+\mult@firstbox=\box87
+\mult@gfirstbox=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\c@minrows=\count386
+\c@columnbadness=\count387
+\c@finalcolumnbadness=\count388
+\last@try=\dimen343
+\multicolovershoot=\dimen344
+\multicolundershoot=\dimen345
+\mult@nat@firstbox=\box125
+\colbreak@box=\box126
+\mc@col@check@num=\count389
+)
+\sepwidth=\skip86
+\colwidth=\skip87
 <logoCinves.png, id=10, 187.902pt x 175.857pt>
 File: logoCinves.png Graphic file (type png)
 <use logoCinves.png>
-Package luatex.def Info: logoCinves.png  used on input line 60.
+Package luatex.def Info: logoCinves.png  used on input line 61.
 (luatex.def)             Requested size: 212.82567pt x 199.16928pt.
 <cinves.png, id=11, 250.9375pt x 89.33376pt>
 File: cinves.png Graphic file (type png)
 <use cinves.png>
-Package luatex.def Info: cinves.png  used on input line 61.
+Package luatex.def Info: cinves.png  used on input line 62.
 (luatex.def)             Requested size: 559.49626pt x 199.16928pt.
-
-(./poster.aux)
+ (./poster.aux)
 \openout1 = poster.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
-7.
+8.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1360,16 +1428,16 @@ LaTeX Font Info:    ... okay on input line 67.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count380
-\scratchdimen=\dimen337
-\scratchbox=\box82
-\nofMPsegments=\count381
-\nofMParguments=\count382
+\scratchcounter=\count390
+\scratchdimen=\dimen346
+\scratchbox=\box127
+\nofMPsegments=\count391
+\nofMParguments=\count392
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count383
-\MPscratchDim=\dimen338
-\MPnumerator=\count384
-\makeMPintoPDFobject=\count385
+\MPscratchCnt=\count393
+\MPscratchDim=\dimen347
+\MPnumerator=\count394
+\makeMPintoPDFobject=\count395
 \everyMPtoPDFconversion=\toks55
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1380,7 +1448,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 68.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1392,11 +1460,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count386
+\c@section@level=\count396
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
  (./poster.out) (./poster.out)
 \@outlinefile=\write5
 
@@ -1432,44 +1500,60 @@ enefit from \pgfplotsset{compat=1.18} (current compat level: 1.14).
 (./poster.nav)
 File: cinves.png Graphic file (type png)
 <use cinves.png>
-Package luatex.def Info: cinves.png  used on input line 67.
+Package luatex.def Info: cinves.png  used on input line 68.
 (luatex.def)             Requested size: 559.49626pt x 199.16928pt.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
-7.
+8.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
-7.
+8.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-67.
+68.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 67.
+(Font)              <6> on input line 68.
 File: logoCinves.png Graphic file (type png)
 <use logoCinves.png>
-Package luatex.def Info: logoCinves.png  used on input line 67.
+Package luatex.def Info: logoCinves.png  used on input line 68.
 (luatex.def)             Requested size: 212.82567pt x 199.16928pt.
- (./poster.bbl)
+<images/datos.png, id=17, 2509.375pt x 1411.2725pt>
+File: images/datos.png Graphic file (type png)
+<use images/datos.png>
+Package luatex.def Info: images/datos.png  used on input line 245.
+(luatex.def)             Requested size: 995.84645pt x 560.06296pt.
+<images/uav_planning_drone.jpg, id=21, 4113.3675pt x 2117.9125pt>
+File: images/uav_planning_drone.jpg Graphic file (type jpg)
+<use images/uav_planning_drone.jpg>
+Package luatex.def Info: images/uav_planning_drone.jpg  used on input line 245.
+
+(luatex.def)             Requested size: 1081.20471pt x 556.6875pt.
+
+Overfull \hbox (56.8951pt too wide) in paragraph at lines 245--245
+ [] 
+ []
+
+(./poster.bbl)
 File: cinves.png Graphic file (type png)
 <use cinves.png>
-Package luatex.def Info: cinves.png  used on input line 313.
+Package luatex.def Info: cinves.png  used on input line 245.
 (luatex.def)             Requested size: 559.49626pt x 199.16928pt.
 File: logoCinves.png Graphic file (type png)
 <use logoCinves.png>
-Package luatex.def Info: logoCinves.png  used on input line 313.
+Package luatex.def Info: logoCinves.png  used on input line 245.
 (luatex.def)             Requested size: 212.82567pt x 199.16928pt.
+ [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-<./cinves.png><./logoCinves.png>]
+<./cinves.png><./logoCinves.png><./images/datos.png><./images/uav_planning_drone
+.jpg>]
 \tf@nav=\write6
 
 \openout6 = poster.nav
@@ -1485,25 +1569,25 @@ Package rerunfilecheck Info: File `poster.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40830 strings out of 477785
- 381542,1648299 words of node,token memory allocated
- 87002 words of node memory still in use:
-   486 hlist, 47 vlist, 66 rule, 572 disc, 94 local_par, 26 math, 2109 glue, 988
- kern, 247 penalty, 6335 glyph, 1584 attribute, 83 glue_spec, 1584 attribute_lis
-t, 4 write, 496 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_dest, 1 pdf
-_action, 356 pdf_colorstack, 2 pdf_setmatrix, 2 pdf_save, 2 pdf_restore nodes
-   avail lists: 2:429,3:2281,4:1215,5:3086,6:290,7:25986,8:23,9:1923,10:27,11:17
-48
- 59733 multiletter control sequences out of 65536+600000
+ 40629 strings out of 477785
+ 305223,1648299 words of node,token memory allocated
+ 69832 words of node memory still in use:
+   425 hlist, 45 vlist, 55 rule, 466 disc, 82 local_par, 14 math, 1663 glue, 850
+ kern, 216 penalty, 5122 glyph, 1119 attribute, 86 glue_spec, 1119 attribute_lis
+t, 4 write, 213 pdf_literal, 3 pdf_start_link, 3 pdf_end_link, 3 pdf_dest, 3 pdf
+_action, 316 pdf_colorstack, 4 pdf_setmatrix, 4 pdf_save, 4 pdf_restore nodes
+   avail lists: 1:2,2:429,3:1363,4:1095,5:2672,6:254,7:20973,8:35,9:1701,10:27,1
+1:1430
+ 59509 multiletter control sequences out of 65536+600000
  102 fonts using 17855663 bytes
- 128i,20n,115p,726b,2797s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,20n,115p,726b,1278s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/tex
 live/2022/texmf-dist/fonts/truetype/typoland/lato/Lato-Bold.ttf>{/usr/local/texl
 ive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2022/te
 xmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2022/texmf-dist/fo
 nts/truetype/typoland/lato/Lato-LightItalic.ttf></usr/local/texlive/2022/texmf-d
+ist/fonts/truetype/typoland/lato/Lato-Light.ttf></usr/local/texlive/2022/texmf-d
 ist/fonts/truetype/typoland/lato/Lato-Regular.ttf></usr/local/texlive/2022/texmf
--dist/fonts/truetype/typoland/lato/Lato-Light.ttf></usr/local/texlive/2022/texmf
 -dist/fonts/opentype/impallari/raleway/Raleway-Regular.otf></usr/local/texlive/2
 022/texmf-dist/fonts/opentype/impallari/raleway/Raleway-Bold.otf></usr/local/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
@@ -1512,10 +1596,10 @@ mf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fon
 ts/type1/public/lm/lmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
 lic/lm/lmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msam10.pfb>
-Output written on poster.pdf (1 page, 239418 bytes).
+Output written on poster.pdf (1 page, 1337359 bytes).
 
-PDF statistics: 103 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 131072)
+PDF statistics: 110 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
