@@ -14,12 +14,13 @@
 \usecolortheme{mit}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{bchart}
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.14}
 \usepackage{anyfontsize}
 \usepackage{multicol}
-
+\usepackage{xcolor}
 % ====================
 % Lengths
 % ====================
@@ -72,12 +73,51 @@
 \separatorcolumn
 
 \begin{column}{\colwidth}
-  
-  \begin{alertblock}{Datos VANT}
-    \begin{figure}[t]
-      \includegraphics[width=35cm]{images/datos.png}
-      \centering
+  \begin{block}{\color{teal}\textbf{Datos VANT}}
+    Leer paper https://arxiv.org/pdf/1909.01423.pdf
+    \begin{multicols}{2}
+    \begin{figure}[h]
+      \scalebox{0.9}{
+        \begin{tikzpicture}
+          \begin{axis}[title  = \textbf{Valuación soluciones 2015},
+              xbar,
+              y axis line style = { opacity = 0 },
+              axis x line       = none,
+              tickwidth         = 0pt,
+              ytick             = data,
+              enlarge y limits  = 0.05,
+              enlarge x limits  = 0.02,
+              width=0.3\textwidth,
+              bar width=2mm,
+              symbolic y coords = {Infraestructura, Critic Count, Critic Score, User Score, Platform, Genre, Rating},
+              nodes near coords,
+            ]
+            \addplot coordinates { (100,Infraestructura) (93,Critic Count) (57,Critic Score) (20,User Score) (10.5,Platform) (2.3,Genre) (4.52,Rating) };
+          \end{axis}
+        \end{tikzpicture}
+      }
     \end{figure}
+    
+    \begin{figure}[t]
+      \begin{tikzpicture}
+        \begin{axis}[
+	    x tick label style={
+	      /pgf/number format/1000 sep=},
+	    ylabel=Year,
+	    enlargelimits=0.05,
+	    legend style={at={(0.5,-0.1)},
+	      anchor=north,legend columns=-1},
+	    ybar interval=0.7,
+          ]
+          \addplot 
+	  coordinates {(2012,408184) (2011,408348)
+	    (2010,414870) (2009,412156)};
+          \legend{Articulos}
+        \end{axis}
+      \end{tikzpicture}
+    \end{figure}
+    \end{multicols}
+    
     \begin{multicols}{3}
       \begin{itemize}
       \item \textbf{Fusce dapibus tellus} vel tellus semper finibus. In consequat, nibh sed mattis luctus, augue diam fermentum lectus.\cite{shannon1948communication}\\
@@ -85,9 +125,11 @@
       \item \textbf{Fusce dapibus tellus} vel tellus semper finibus. In consequat, nibh sed mattis luctus, augue diam fermentum lectus.\cite{unomas}\\
       \end{itemize}
     \end{multicols}
-  \end{alertblock}
+  \end{block}
   
-  \begin{block}{Robot Autonomo}
+  \begin{block}{\color{teal}Robot Autonomo}
+    \heading{Another heading inside a block}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies.
     \begin{multicols}{2}
       \begin{itemize}
       \item ¿Como llego ahi?
@@ -97,16 +139,17 @@
       \item ¿Como llego ahi?
         Some block contents, followed by a diagram, followed by a dummy paragraph.
       \end{itemize}
+      \heading{Another heading inside a block}
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies
+    eget libero ac ullamcorper. Integer et euismod ante. Aenean vestibulum
+    lobortis augue, ut lobortis turpis rhoncus sed. Proin feugiat nibh a
+    lacinia dignissim. Proin scelerisque, risus eget tempor fermentum, ex
+    turpis condimentum urna, quis malesuada sapien arcu eu purus.
       
-      \begin{figure}
+    \begin{figure}
       \centering
-      \begin{tikzpicture}[scale=6]
-        \draw[step=0.25cm,color=gray] (-1,-1) grid (1,1);
-        \draw (1,0) -- (0.2,0.2) -- (0,1) -- (-0.2,0.2) -- (-1,0)
-          -- (-0.2,-0.2) -- (0,-1) -- (0.2,-0.2) -- cycle;
-      \end{tikzpicture}
-      \caption{A figure caption.}
-    \end{figure}
+      \includegraphics[width=10cm]{images/drone_vuelo.png}
+      \end{figure}
     \end{multicols}
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies
     eget libero ac ullamcorper. Integer et euismod ante. Aenean vestibulum
@@ -121,21 +164,8 @@
 
 \begin{column}{\colwidth}
   
-  \begin{block}{Taxonomia VANT Multi-rotor}
-
-    Vivamus congue volutpat elit non semper. Praesent molestie nec erat ac
-    interdum. In quis suscipit erat. \textbf{Phasellus mauris felis, molestie
-    ac pharetra quis}, tempus nec ante. Donec finibus ante vel purus mollis
-    fermentum. Sed felis mi, pharetra eget nibh a, feugiat eleifend dolor. Nam
-    mollis condimentum purus quis sodales. Nullam eu felis eu nulla eleifend
-    bibendum nec eu lorem. Vivamus felis velit, volutpat ut facilisis ac,
-    commodo in metus.
-    
-    \begin{figure}[t]
-      \includegraphics[width=38cm]{images/uav_planning_drone.jpg}
-      \centering
-    \end{figure}
-    
+  \begin{block}{\color{teal}Taxonomia VANT Multi-rotor}
+        
     \begin{enumerate}
       \item \textbf{Algo aqui}, egestas at vehicula et, convallis
         accumsan orci. Orci varius natoque penatibus et magnis dis parturient
@@ -147,9 +177,14 @@
         nulla accumsan, non rhoncus lectus condimentum.
     \end{enumerate}
 
+    \begin{figure}[t]
+      \includegraphics[width=38cm]{images/uav_planning_drone.jpg}
+      \centering
+    \end{figure}
+    
   \end{block}
   
-  \begin{block}{Arquitectura Busqueda y Rescate}
+  \begin{block}{\color{teal}Arquitectura Busqueda y Rescate}
     
     Nulla eget sem quam. Ut aliquam volutpat nisi vestibulum convallis. Nunc a
     lectus et eros facilisis hendrerit eu non urna. Interdum et malesuada fames
@@ -185,53 +220,32 @@
 
 \begin{column}{\colwidth}
   
-  \begin{exampleblock}{Aplicaciones}
+  \begin{block}{\color{teal}Aplicaciones}
+
+    \begin{figure}
+      \centering
+      \includegraphics[width=30cm]{images/drone_usos.png}
+      \end{figure}
     
-    A different kind of highlighted block.
-
-    $$
-    \int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}
-    $$
     
-    \heading{A heading inside a block}
+  \end{block}
 
-    Praesent consectetur mi $x^2 + y^2$ metus, nec vestibulum justo viverra
-    nec. Proin eget nulla pretium, egestas magna aliquam, mollis neque. Vivamus
-    dictum $\mathbf{u}^\intercal\mathbf{v}$ sagittis odio, vel porta erat
-    congue sed. Maecenas ut dolor quis arcu auctor porttitor.
+  \begin{block}{\color{teal}Estrategia exploración coordinada}
 
-    \heading{Another heading inside a block}
+    \begin{figure}
+      \centering
+      \includegraphics[width=35cm]{images/arquitectura.png}
+    \end{figure}
 
-    Sed augue erat, scelerisque a purus ultricies, placerat porttitor neque.
-    Donec $P(y \mid x)$ fermentum consectetur $\nabla_x P(y \mid x)$ sapien
-    sagittis egestas. Duis eget leo euismod nunc viverra imperdiet nec id
-    justo.
-
-  \end{exampleblock}
-
-  \begin{block}{Estrategia exploración coordinada}
+    \begin{figure}
+      \centering
+      \includegraphics[width=35cm]{images/problema.png}
+      \end{figure}
     
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-    inceptos himenaeos. Phasellus libero enim, gravida sed erat sit amet,
-    scelerisque congue diam. Fusce dapibus dui ut augue pulvinar iaculis.
-
-    Donec quis posuere ligula. Nunc feugiat elit a mi malesuada consequat. Sed
-    imperdiet augue ac nibh aliquet tristique. Aenean eu tortor vulputate,
-    eleifend lorem in, dictum urna. Proin auctor ante in augue tincidunt
-    tempor. Proin pellentesque vulputate odio, ac gravida nulla posuere
-    efficitur. Aenean at velit vel dolor blandit molestie. Mauris laoreet
-    commodo quam, non luctus nibh ullamcorper in. Class aptent taciti sociosqu
-    ad litora torquent per conubia nostra, per inceptos himenaeos.
-
-    Nulla varius finibus volutpat. Mauris molestie lorem tincidunt, iaculis
-    libero at, gravida ante. Phasellus at felis eu neque suscipit suscipit.
-    Integer ullamcorper, dui nec pretium ornare, urna dolor consequat libero,
-    in feugiat elit lorem euismod lacus. Pellentesque sit amet dolor mollis,
-    auctor urna non, tempus sem.
 
   \end{block}
 
-  \begin{block}{References}
+  \begin{block}{\color{teal}Referencias}
 
     \nocite{*}
     \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
