@@ -1,0 +1,5 @@
+pegar video con texto
+ffmpeg -i video.mp4 -i voz.mp3 -c:v copy -map 0:v -map 1:a -y output.mp4
+
+convertir mov a mp4
+ffmpeg -i input.mov -q:v 0 output.mp4
