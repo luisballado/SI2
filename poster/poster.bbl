@@ -6,6 +6,12 @@ Ashten Akemoto and Frances Zhu.
   surfaces with gaussian processes.
 \newblock In {\em 2022 IEEE Aerospace Conference (AERO)}, pages 1--12, 2022.
 
+\bibitem{C2022}
+Titus Cieslewski, Andreas Ziegler, and Davide Scaramuzza.
+\newblock {\em Exploration Without Global Consistency Using Local Volume
+  Consolidation}, page 559–574.
+\newblock Springer International Publishing, 2022.
+
 \bibitem{unomas}
 Yixin Jiang, Lingyun Zhou, Yijia Tang, Ya~Tu, Chunhong Liu, and Qingjiang Shi.
 \newblock A collaborative jamming algorithm based on multi-uav scheduling,

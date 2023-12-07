@@ -71,15 +71,18 @@
 \begin{frame}[t]
 \begin{columns}[t]
 \separatorcolumn
-
 \begin{column}{\colwidth}
-  \begin{block}{\color{teal}\textbf{Datos VANT}}
-    Leer paper https://arxiv.org/pdf/1909.01423.pdf
+  \begin{block}{\color{teal}\textbf{Vehículos Aéreos No Tripulados Estadísticas}}
+
+    Los Vehículos Aéreos No Tripulados (VANTS), han experimentado un rápido crecimiento en los últimos años. Su versatilidad y capacidad para acceder a áreas de difícil acceso han impulsado su adopción en diferentes sectores.
+    A medida que la tecnología continúa avanzando, se espera que los drones autónomos desempeñen un papel cada vez más importante en áreas como la inteligencia artificial y la integración en la vida cotidiana.\cite{shannon1948communication}\\
+    
     \begin{multicols}{2}
-    \begin{figure}[h]
+      \begin{figure}[h]
+        \hspace*{-2.5cm} 
       \scalebox{0.9}{
         \begin{tikzpicture}
-          \begin{axis}[title  = \textbf{Valuación soluciones 2015},
+          \begin{axis}[title  = \textbf{Valuación Soluciones 2020 Billones-USD},
               xbar,
               y axis line style = { opacity = 0 },
               axis x line       = none,
@@ -87,76 +90,58 @@
               ytick             = data,
               enlarge y limits  = 0.05,
               enlarge x limits  = 0.02,
-              width=0.3\textwidth,
-              bar width=2mm,
-              symbolic y coords = {Infraestructura, Critic Count, Critic Score, User Score, Platform, Genre, Rating},
+              width=0.45\textwidth,
+              bar width=6mm,
+              symbolic y coords = {Infraestructura, Agricultura, Transporte, Seguridad, Entretenimiento, Seguros, Telecomunicaciones, Mineria},
               nodes near coords,
             ]
-            \addplot coordinates { (100,Infraestructura) (93,Critic Count) (57,Critic Score) (20,User Score) (10.5,Platform) (2.3,Genre) (4.52,Rating) };
+            \addplot coordinates { (45.2,Infraestructura) (32.4,Agricultura) (13,Transporte) (10,Seguridad) (8.8,Entretenimiento) (6.8,Seguros) (6.3,Telecomunicaciones) (4.4,Mineria)};
           \end{axis}
         \end{tikzpicture}
       }
     \end{figure}
     
-    \begin{figure}[t]
+      \begin{figure}[t]
+        \hspace*{1cm} 
       \begin{tikzpicture}
-        \begin{axis}[
+        \begin{axis}[title  = \textbf{Artículos VANTS},
 	    x tick label style={
 	      /pgf/number format/1000 sep=},
-	    ylabel=Year,
+	    ylabel=Artículos,
 	    enlargelimits=0.05,
+            width=0.45\textwidth,
 	    legend style={at={(0.5,-0.1)},
 	      anchor=north,legend columns=-1},
 	    ybar interval=0.7,
           ]
           \addplot 
-	  coordinates {(2012,408184) (2011,408348)
-	    (2010,414870) (2009,412156)};
-          \legend{Articulos}
+	  coordinates {(16,110) (17,150) (18,246) (19,392) (20,634) (21,995) (22,1414) (23,1929) (24,2329)};
         \end{axis}
       \end{tikzpicture}
     \end{figure}
     \end{multicols}
-    
-    \begin{multicols}{3}
-      \begin{itemize}
-      \item \textbf{Fusce dapibus tellus} vel tellus semper finibus. In consequat, nibh sed mattis luctus, augue diam fermentum lectus.\cite{shannon1948communication}\\
-      \item \textbf{Fusce dapibus tellus} vel tellus semper finibus. In consequat, nibh sed mattis luctus, augue diam fermentum lectus.\cite{otromas}\\
-      \item \textbf{Fusce dapibus tellus} vel tellus semper finibus. In consequat, nibh sed mattis luctus, augue diam fermentum lectus.\cite{unomas}\\
-      \end{itemize}
-    \end{multicols}
   \end{block}
   
-  \begin{block}{\color{teal}Robot Autonomo}
-    \heading{Another heading inside a block}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies.
-    \begin{multicols}{2}
-      \begin{itemize}
-      \item ¿Como llego ahi?
-        Some block contents, followed by a diagram, followed by a dummy paragraph.
-      \item ¿Como llego ahi?
-        Some block contents, followed by a diagram, followed by a dummy paragraph.
-      \item ¿Como llego ahi?
-        Some block contents, followed by a diagram, followed by a dummy paragraph.
-      \end{itemize}
-      \heading{Another heading inside a block}
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies
-    eget libero ac ullamcorper. Integer et euismod ante. Aenean vestibulum
-    lobortis augue, ut lobortis turpis rhoncus sed. Proin feugiat nibh a
-    lacinia dignissim. Proin scelerisque, risus eget tempor fermentum, ex
-    turpis condimentum urna, quis malesuada sapien arcu eu purus.
-      
+  \begin{block}{\color{teal}Robot Autónomo}
+    %\heading{Another heading inside a block}
+    Los robots autónomos representan una fascinante frontera en la robótica y la inteligencia artificial, ya que deben poseer la capacidad de tomar decisiones y ejecutar tareas de manera independiente.
     \begin{figure}
       \centering
-      \includegraphics[width=10cm]{images/drone_vuelo.png}
-      \end{figure}
-    \end{multicols}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies
-    eget libero ac ullamcorper. Integer et euismod ante. Aenean vestibulum
-    lobortis augue, ut lobortis turpis rhoncus sed. Proin feugiat nibh a
-    lacinia dignissim. Proin scelerisque, risus eget tempor fermentum, ex
-    turpis condimentum urna, quis malesuada sapien arcu eu purus.
+      \includegraphics[width=40cm]{images/auto_dro.png}
+    \end{figure}
 
+    Para que un robot sea considerado autónomo, debe responder las siguientes preguntas:
+    \begin{multicols}{3}
+      \begin{itemize}
+      \item \textbf{¿Dónde estoy?}\\
+        Sensores avanzados como cámaras y lidar, permiten conocer su entorno.\\
+        Esta conciencia espacial les permite adaptarse dinámicamente y ubicarse en su entorno.\vspace{1cm}
+      \item \textbf{¿A dónde voy?}\\
+        Capacidad de determinar una dirección futura se basa en algoritmos de planificación y toma de decisiones, considerando variables como obstáculos y restricciones del entorno.\vspace{1cm}
+      \item \textbf{¿Cómo llego ahí?}\\
+        La percepción, planificación y ejecución de sus movimientos, permite adaptarse a entornos dinámicos y superar obstáculos de manera autónoma.
+      \end{itemize}
+    \end{multicols}
   \end{block}
 \end{column}
 
@@ -164,56 +149,36 @@
 
 \begin{column}{\colwidth}
   
-  \begin{block}{\color{teal}Taxonomia VANT Multi-rotor}
-        
+  \begin{block}{\color{teal}VANT tipo Multi-rotor}
     \begin{enumerate}
-      \item \textbf{Algo aqui}, egestas at vehicula et, convallis
-        accumsan orci. Orci varius natoque penatibus et magnis dis parturient
-        montes, nascetur ridiculus mus.
-      \item \textbf{Cras vehicula blandit urna ut maximus}. Aliquam blandit nec
-        massa ac sollicitudin. Curabitur cursus, metus nec imperdiet bibendum,
-        velit lectus faucibus dolor, quis gravida metus mauris gravida turpis.
-      \item \textbf{Vestibulum et massa diam}. Phasellus fermentum augue non
-        nulla accumsan, non rhoncus lectus condimentum.
+      \item \textbf{Sensores de Percepción}. Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
+      \item \textbf{Sistema de Control}. Contiene el procesador y los algoritmos que permiten al VANT tomar decisiones autónomas basadas en la información recopilada por los sensores.
+      \item \textbf{Sistema de Propulsión}, Los motores y las hélices proporcionan la fuerza necesaria para el vuelo. La configuración de los motores puede variar según su capacidad de maniobra.
     \end{enumerate}
 
     \begin{figure}[t]
-      \includegraphics[width=38cm]{images/uav_planning_drone.jpg}
+      \includegraphics[width=30cm]{images/uav_planning_drone.jpg}
       \centering
     \end{figure}
     
   \end{block}
   
-  \begin{block}{\color{teal}Arquitectura Busqueda y Rescate}
+  \begin{block}{\color{teal}Arquitectura Exploración}
+    Exploración es una tarea fundamental en robots autónomos. El objetivo es crear un mapa de un ambiente desconocido.
+    \begin{figure}[t]
+      \centering
+      \includegraphics[width=32cm]{images/exploracion.png}
+    \end{figure}
     
-    Nulla eget sem quam. Ut aliquam volutpat nisi vestibulum convallis. Nunc a
-    lectus et eros facilisis hendrerit eu non urna. Interdum et malesuada fames
-    ac ante \textit{ipsum primis} in faucibus. Etiam sit amet velit eget sem
-    euismod tristique. Praesent enim erat, porta vel mattis sed, pharetra sed
-    ipsum. Morbi commodo condimentum massa, \textit{tempus venenatis} massa
-    hendrerit quis. Maecenas sed porta est. Praesent mollis interdum lectus,
-    sit amet sollicitudin risus tincidunt non.
-
     \begin{itemize}
-    \item \textbf{Sed consequat} id ante vel efficitur. Praesent congue massa
-      sed est scelerisque, elementum mollis augue iaculis.
-      \begin{itemize}
-      \item In sed est finibus, vulputate
-        nunc gravida, pulvinar lorem. In maximus nunc dolor, sed auctor eros
-        porttitor quis.
-      \item Fusce ornare dignissim nisi. Nam sit amet risus vel lacus
-        tempor tincidunt eu a arcu.
-      \item Donec rhoncus vestibulum erat, quis aliquam leo
-        gravida egestas.
-      \end{itemize}
-    \item \textbf{Sed luctus, elit sit amet} dictum maximus, diam dolor
-      faucibus purus, sed lobortis justo erat id turpis.
-    \item \textbf{Pellentesque facilisis dolor in leo} bibendum congue.
-      Maecenas congue finibus justo, vitae eleifend urna facilisis at.
+    \item \textbf{Sensor} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
+    \item \textbf{Creación Mapa} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
+    \item \textbf{Localización} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
+    \item \textbf{Exploración} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
+    \item \textbf{Planificación trayectoria} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
+    \item \textbf{Control} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
     \end{itemize}
-    
   \end{block}
-
 \end{column}
 
 \separatorcolumn
@@ -224,10 +189,8 @@
 
     \begin{figure}
       \centering
-      \includegraphics[width=30cm]{images/drone_usos.png}
+      \includegraphics[width=30cm]{images/ap_dr.png}
       \end{figure}
-    
-    
   \end{block}
 
   \begin{block}{\color{teal}Estrategia exploración coordinada}
