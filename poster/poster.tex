@@ -125,9 +125,10 @@
   \begin{block}{\color{teal}Robot Autónomo}
     %\heading{Another heading inside a block}
     Los robots autónomos representan una fascinante frontera en la robótica y la inteligencia artificial, ya que deben poseer la capacidad de tomar decisiones y ejecutar tareas de manera independiente.
+    Actualmente el termino UAV (Unmanned aerial vehicle), se ha replanteado a UAS (Unmanned Aircraft System), por los sistemas y soluciones a problemas que su agilidad puedan tomar ventaja.
     \begin{figure}
       \centering
-      \includegraphics[width=40cm]{images/auto_dro.png}
+      \includegraphics[width=35cm]{images/auto_dro.png}
     \end{figure}
 
     Para que un robot sea considerado autónomo, debe responder las siguientes preguntas:
@@ -157,7 +158,7 @@
     \end{enumerate}
 
     \begin{figure}[t]
-      \includegraphics[width=30cm]{images/uav_planning_drone.jpg}
+      \includegraphics[width=30cm]{images/drone_taxo.png}
       \centering
     \end{figure}
     
@@ -167,16 +168,16 @@
     Exploración es una tarea fundamental en robots autónomos. El objetivo es crear un mapa de un ambiente desconocido.
     \begin{figure}[t]
       \centering
-      \includegraphics[width=32cm]{images/exploracion.png}
+      \includegraphics[width=30cm]{images/exploracion.png}
     \end{figure}
-    
+    El ciclo se repite hasta completar la exploración.
     \begin{itemize}
-    \item \textbf{Sensor} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
-    \item \textbf{Creación Mapa} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
-    \item \textbf{Localización} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
-    \item \textbf{Exploración} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
-    \item \textbf{Planificación trayectoria} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
-    \item \textbf{Control} Incluyen cámaras, lidar, entre otros, que permiten al VANT recopilar información sobre su entorno.
+    \item \textbf{Sensor} Incluyen cámaras, lidar, entre otros. Permiten al VANT recopilar información sobre su entorno.
+    \item \textbf{Creación Mapa} Conocer los conjuntos de espacios libres y ocupados, son almacenarlo en una estructura de datos de tipo octree.
+    \item \textbf{Localización} La creación de landmarks ayuda en la ubicación en el ambiente construido.
+    \item \textbf{Exploración} El objetivo es convertir un espacio desconocido a conocido, una estrategia de frontera que divida entre ambos espacios hasta que no existan mas fronteras.
+    \item \textbf{Planificación trayectoria} Crear trajectorias libres de colisiones que ayuden a aumentar el conocimiento y aportación de información en la construcción del mapa.
+    \item \textbf{Control} La ejecución de los movimientos calculados para su trayectoria, control y desplazamiento.
     \end{itemize}
   \end{block}
 \end{column}
@@ -195,24 +196,23 @@
 
   \begin{block}{\color{teal}Estrategia exploración coordinada}
 
+    Repartición de tareas de exploración explotando el conocimiento del ambiente para un conjunto de VANTS, manteniendo la cohesión entre ellos para garantizar la comunicación.
     \begin{figure}
       \centering
-      \includegraphics[width=35cm]{images/arquitectura.png}
+      \includegraphics[width=32cm]{images/problema.png}
     \end{figure}
-
+    El mecanismo de coordinación se alimenta de la información compartida de los demás VANTS en el sistema. El conocimiento se propaga através de un protocolo de comunicación o pase de mensajes al sistema multi-VANT.
     \begin{figure}
       \centering
-      \includegraphics[width=35cm]{images/problema.png}
-      \end{figure}
-    
-
+      \includegraphics[width=32cm]{images/arquitectura.png}
+    \end{figure}
   \end{block}
-
-  \begin{block}{\color{teal}Referencias}
-
+  La estrategia se probará en un simulador aprovechando la dinámica del VANT. \vspace{1cm}
+  \begin{block}{\small{\color{teal}Referencias}}
+    \begin{multicols}{2}
     \nocite{*}
-    \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
-
+    \tiny{\bibliographystyle{plain}\bibliography{poster}}
+    \end{multicols}
   \end{block}
 
 \end{column}
