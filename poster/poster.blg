@@ -3,44 +3,47 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: poster.aux
 The style file: plain.bst
 Database file #1: poster.bib
+Warning--to sort, need author, editor, or key in UAV2020
+Warning--empty author and editor in UAV2020
 You've used 4 entries,
             2118 wiz_defined-function locations,
-            521 strings with 4658 characters,
-and the built_in function-call counts, 1533 in all, are:
-= -- 144
-> -- 71
-< -- 2
-+ -- 30
-- -- 24
-* -- 90
-:= -- 237
+            525 strings with 4580 characters,
+and the built_in function-call counts, 1174 in all, are:
+= -- 115
+> -- 39
+< -- 1
++ -- 17
+- -- 12
+* -- 67
+:= -- 184
 add.period$ -- 11
 call.type$ -- 4
-change.case$ -- 23
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 69
-empty$ -- 121
-format.name$ -- 24
-if$ -- 341
+cite$ -- 6
+duplicate$ -- 65
+empty$ -- 97
+format.name$ -- 12
+if$ -- 259
 int.to.chr$ -- 0
 int.to.str$ -- 4
 missing$ -- 4
 newline$ -- 22
-num.names$ -- 8
-pop$ -- 36
+num.names$ -- 6
+pop$ -- 25
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 14
 quote$ -- 0
-skip$ -- 62
+skip$ -- 52
 stack$ -- 0
-substring$ -- 76
-swap$ -- 29
-text.length$ -- 2
+substring$ -- 48
+swap$ -- 23
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
-warning$ -- 0
-while$ -- 12
+type$ -- 12
+warning$ -- 2
+while$ -- 8
 width$ -- 5
 write$ -- 43
+(There were 2 warnings)

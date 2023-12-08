@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.9.7)  6 DEC 2023 18:12
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.9.7)  7 DEC 2023 13:18
  restricted system commands enabled.
 **poster.tex
 (./poster.tex
@@ -1548,48 +1548,42 @@ Overfull \hbox (64.51546pt too wide) in paragraph at lines 222--222
 Package pgfplots info on input line 222: Using 'lua backend=false' for plot 0 (
 type 'pgfplothandlerybarinterval'): LUA does not support xtick=data (yet).
 
-Overfull \hbox (46.21918pt too wide) in paragraph at lines 222--222
+Overfull \hbox (46.2175pt too wide) in paragraph at lines 222--222
  |  [] 
  []
 
-<images/auto_dro.png, id=18, 652.4375pt x 257.96375pt>
+<images/auto_dro.png, id=19, 652.4375pt x 257.96375pt>
 File: images/auto_dro.png Graphic file (type png)
 <use images/auto_dro.png>
 Package luatex.def Info: images/auto_dro.png  used on input line 222.
-(luatex.def)             Requested size: 1138.11023pt x 450.0302pt.
-
-Overfull \hbox (113.80061pt too wide) in paragraph at lines 222--222
- [] 
- []
-
-<images/uav_planning_drone.jpg, id=19, 4113.3675pt x 2117.9125pt>
-File: images/uav_planning_drone.jpg Graphic file (type jpg)
-<use images/uav_planning_drone.jpg>
-Package luatex.def Info: images/uav_planning_drone.jpg  used on input line 222.
-
-(luatex.def)             Requested size: 853.58267pt x 439.47482pt.
-<images/exploracion.png, id=20, 618.31pt x 211.79124pt>
+(luatex.def)             Requested size: 995.84645pt x 393.7779pt.
+<images/drone_taxo.png, id=20, 620.3175pt x 320.19624pt>
+File: images/drone_taxo.png Graphic file (type png)
+<use images/drone_taxo.png>
+Package luatex.def Info: images/drone_taxo.png  used on input line 222.
+(luatex.def)             Requested size: 853.58267pt x 440.60097pt.
+<images/exploracion.png, id=22, 618.31pt x 211.79124pt>
 File: images/exploracion.png Graphic file (type png)
 <use images/exploracion.png>
 Package luatex.def Info: images/exploracion.png  used on input line 222.
-(luatex.def)             Requested size: 910.48817pt x 311.89816pt.
-<images/ap_dr.png, id=21, 498.86375pt x 122.4575pt>
+(luatex.def)             Requested size: 853.58267pt x 292.40472pt.
+<images/ap_dr.png, id=23, 498.86375pt x 122.4575pt>
 File: images/ap_dr.png Graphic file (type png)
 <use images/ap_dr.png>
 Package luatex.def Info: images/ap_dr.png  used on input line 222.
 (luatex.def)             Requested size: 853.58267pt x 209.55208pt.
-<images/arquitectura.png, id=22, 879.285pt x 462.72874pt>
-File: images/arquitectura.png Graphic file (type png)
-<use images/arquitectura.png>
-Package luatex.def Info: images/arquitectura.png  used on input line 222.
-(luatex.def)             Requested size: 995.84645pt x 524.08476pt.
-<images/problema.png, id=23, 651.43375pt x 221.82875pt>
+<images/problema.png, id=25, 651.43375pt x 221.82875pt>
 File: images/problema.png Graphic file (type png)
 <use images/problema.png>
 Package luatex.def Info: images/problema.png  used on input line 222.
-(luatex.def)             Requested size: 995.84645pt x 339.13622pt.
+(luatex.def)             Requested size: 910.48817pt x 310.06729pt.
+<images/arquitectura.png, id=26, 879.285pt x 462.72874pt>
+File: images/arquitectura.png Graphic file (type png)
+<use images/arquitectura.png>
+Package luatex.def Info: images/arquitectura.png  used on input line 222.
+(luatex.def)             Requested size: 910.48817pt x 479.16483pt.
 (./poster.bbl)
-Overfull \vbox (20.53334pt too high) detected at line 222
+Overfull \vbox (17.53178pt too high) detected at line 222
  []
 
 File: cinves.png Graphic file (type png)
@@ -1602,9 +1596,9 @@ Package luatex.def Info: logoCinves.png  used on input line 222.
 (luatex.def)             Requested size: 212.82567pt x 199.16928pt.
 [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-<./cinves.png><./logoCinves.png><./images/auto_dro.png><./images/uav_planning_dr
-one.jpg><./images/exploracion.png><./images/ap_dr.png><./images/arquitectura.png
-><./images/problema.png>]
+<./cinves.png><./logoCinves.png><./images/auto_dro.png><./images/drone_taxo.png>
+<./images/exploracion.png><./images/ap_dr.png><./images/problema.png><./images/a
+rquitectura.png>]
 \tf@nav=\write6
 
 \openout6 = poster.nav
@@ -1620,17 +1614,17 @@ Package rerunfilecheck Info: File `poster.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41336 strings out of 477785
- 305227,1648299 words of node,token memory allocated
- 70455 words of node memory still in use:
-   728 hlist, 43 vlist, 57 rule, 401 disc, 83 local_par, 64 math, 1994 glue, 685
- kern, 214 penalty, 3675 glyph, 2339 attribute, 86 glue_spec, 2339 attribute_lis
-t, 4 write, 834 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 4 pdf_dest, 1 pdf
-_action, 350 pdf_colorstack, 9 pdf_setmatrix, 9 pdf_save, 9 pdf_restore nodes
-   avail lists: 1:2,2:429,3:3259,4:1197,5:2177,6:257,7:17775,8:32,9:2610,10:15,1
-1:1235
- 60166 multiletter control sequences out of 65536+600000
- 93 fonts using 15903655 bytes
+ 41330 strings out of 477785
+ 305246,1648299 words of node,token memory allocated
+ 75481 words of node memory still in use:
+   692 hlist, 46 vlist, 59 rule, 475 disc, 87 local_par, 50 math, 2027 glue, 773
+ kern, 222 penalty, 4346 glyph, 2184 attribute, 86 glue_spec, 2184 attribute_lis
+t, 4 write, 740 pdf_literal, 4 pdf_start_link, 4 pdf_end_link, 4 pdf_dest, 4 pdf
+_action, 356 pdf_colorstack, 9 pdf_setmatrix, 9 pdf_save, 9 pdf_restore nodes
+   avail lists: 1:1,2:429,3:3010,4:1215,5:2441,6:269,7:19845,8:41,9:2517,10:17,1
+1:1457
+ 60160 multiletter control sequences out of 65536+600000
+ 93 fonts using 15526215 bytes
  128i,20n,115p,726b,3179s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/truetype/typoland/lato/Lato-LightItali
 c.ttf></usr/local/texlive/2022/texmf-dist/fonts/truetype/typoland/lato/Lato-Regu
@@ -1641,10 +1635,10 @@ e/2022/texmf-dist/fonts/opentype/impallari/raleway/Raleway-Regular.otf></usr/loc
 al/texlive/2022/texmf-dist/fonts/opentype/impallari/raleway/Raleway-Bold.otf></u
 sr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
-Output written on poster.pdf (1 page, 1181406 bytes).
+Output written on poster.pdf (1 page, 792036 bytes).
 
-PDF statistics: 93 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+PDF statistics: 97 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
