@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -74,6 +74,15 @@ Sujata Sharma and Ritu Tiwari.
   Information and Communication Technologies ({ICCTICT})}. {IEEE}, March 2016.
 \newblock \doi{10.1109/icctict.2016.7514570}.
 \newblock URL \url{https://doi.org/10.1109/icctict.2016.7514570}.
+
+\bibitem[Prorok et~al.(2021)Prorok, Malencia, Carlone, Sukhatme, Sadler, and
+  Kumar]{Prorok2021BeyondRA}
+Amanda Prorok, Matthew Malencia, Luca Carlone, Gaurav~S. Sukhatme, Brian~M.
+  Sadler, and Vijay~R. Kumar.
+\newblock Beyond robustness: A taxonomy of approaches towards resilient
+  multi-robot systems.
+\newblock \emph{ArXiv}, abs/2109.12343, 2021.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:237941071}.
 
 \bibitem[Xu et~al.(2023)Xu, Cao, Du, and Li]{XU2023110164}
 Liang Xu, Xianbin Cao, Wenbo Du, and Yumeng Li.
@@ -247,24 +256,6 @@ Fan Yang, Chao Cao, Hongbiao Zhu, Jean Oh, and Ji~Zhang.
 \newblock Far planner: Fast, attemptable route planner using dynamic visibility
   update, 2022.
 
-\bibitem[Tranzatto et~al.(2022)Tranzatto, Mascarich, Bernreiter, Godinho,
-  Camurri, Khattak, Dang, Reijgwart, Loeje, Wisth, Zimmermann, Nguyen, Fehr,
-  Solanka, Buchanan, Bjelonic, Khedekar, Valceschini, Jenelten, Dharmadhikari,
-  Homberger, Petris, Wellhausen, Kulkarni, Miki, Hirsch, Montenegro,
-  Papachristos, Tresoldi, Carius, Valsecchi, Lee, Meyer, Wu, Nieto, Smith,
-  Hutter, Siegwart, Mueller, Fallon, and Alexis]{CERBERUS2022}
-Marco Tranzatto, Frank Mascarich, Lukas Bernreiter, Carolina Godinho, Marco
-  Camurri, Shehryar Khattak, Tung Dang, Victor Reijgwart, Johannes Loeje, David
-  Wisth, Samuel Zimmermann, Huan Nguyen, Marius Fehr, Lukas Solanka, Russell
-  Buchanan, Marko Bjelonic, Nikhil Khedekar, Mathieu Valceschini, Fabian
-  Jenelten, Mihir Dharmadhikari, Timon Homberger, Paolo~De Petris, Lorenz
-  Wellhausen, Mihir Kulkarni, Takahiro Miki, Satchel Hirsch, Markus Montenegro,
-  Christos Papachristos, Fabian Tresoldi, Jan Carius, Giorgio Valsecchi, Joonho
-  Lee, Konrad Meyer, Xiangyu Wu, Juan Nieto, Andy Smith, Marco Hutter, Roland
-  Siegwart, Mark Mueller, Maurice Fallon, and Kostas Alexis.
-\newblock Cerberus: Autonomous legged and aerial robotic exploration in the
-  tunnel and urban circuits of the darpa subterranean challenge, 2022.
-
 \bibitem[Chen and Hung(2023)]{10120943}
 Bor-Sen Chen and Ting-Wei Hung.
 \newblock Integrating local motion planning and robust decentralized
@@ -318,24 +309,6 @@ Boyu Zhou, Hao Xu, and Shaojie Shen.
 \newblock \emph{IEEE Transactions on Robotics}, 39\penalty0 (3):\penalty0
   1816--1835, 2023.
 \newblock \doi{10.1109/TRO.2023.3236945}.
-
-\bibitem[Yamauchi(1997)]{YAMAUCHI1997}
-B.~Yamauchi.
-\newblock A frontier-based approach for autonomous exploration.
-\newblock In \emph{Proceedings 1997 IEEE International Symposium on
-  Computational Intelligence in Robotics and Automation CIRA'97. 'Towards New
-  Computational Principles for Robotics and Automation'}, pages 146--151, 1997.
-\newblock \doi{10.1109/CIRA.1997.613851}.
-
-\bibitem[Faria et~al.(2019)Faria, Ferreira, P{\'{e}}rez-Leon, Maza, and
-  Viguria]{Faria2019}
-Margarida Faria, Ant{\'{o}}nio~S{\'{e}}rgio Ferreira, H{\'{e}}ctor
-  P{\'{e}}rez-Leon, Ivan Maza, and Antidio Viguria.
-\newblock Autonomous 3d exploration of large structures using an {UAV} equipped
-  with a 2d {LIDAR}.
-\newblock \emph{Sensors}, 19\penalty0 (22):\penalty0 4849, November 2019.
-\newblock \doi{10.3390/s19224849}.
-\newblock URL \url{https://doi.org/10.3390/s19224849}.
 
 \bibitem[Fraundorfer et~al.(2012)Fraundorfer, Heng, Honegger, Lee, Meier,
   Tanskanen, and Pollefeys]{FRAUNDORFER2012}
@@ -487,13 +460,6 @@ K.~N. McGuire, C.~De Wagter, K.~Tuyls, H.~J. Kappen, and G.~C. H.~E. de~Croon.
 \newblock \doi{10.1126/scirobotics.aaw9710}.
 \newblock URL
   \url{https://www.science.org/doi/abs/10.1126/scirobotics.aaw9710}.
-
-\bibitem[Villanueva-Grijalva(2015)]{CINVES2015}
-Omar~Abraham Villanueva-Grijalva.
-\newblock Control de un veh\'{i}culo a\'{e}reo no tripulado (auv) para
-  reconocimiento en interiores.
-\newblock Master's thesis, CINVESTAV Unidad Guadalajara, Septiembre 2015.
-\newblock URL \url{https://repositorio.cinvestav.mx/handle/cinvestav/405}.
 
 \bibitem[Mar\'{i}n~Mota(2016)]{cinvestav2016}
 Luis~Alfonso Mar\'{i}n~Mota.
