@@ -1,10 +1,8 @@
 \begin{thebibliography}{1}
 
-\bibitem{otromas}
-Ashten Akemoto and Frances Zhu.
-\newblock Informative path planning to explore and map unknown planetary
-  surfaces with gaussian processes.
-\newblock In {\em 2022 IEEE Aerospace Conference (AERO)}, pages 1--12, 2022.
+\bibitem{UAV2020}
+{\em Handbook of Unmanned Aerial Vehicles}.
+\newblock Springer International Publishing, 2020.
 
 \bibitem{C2022}
 Titus Cieslewski, Andreas Ziegler, and Davide Scaramuzza.
@@ -12,14 +10,16 @@ Titus Cieslewski, Andreas Ziegler, and Davide Scaramuzza.
   Consolidation}, page 559–574.
 \newblock Springer International Publishing, 2022.
 
-\bibitem{unomas}
-Yixin Jiang, Lingyun Zhou, Yijia Tang, Ya~Tu, Chunhong Liu, and Qingjiang Shi.
-\newblock A collaborative jamming algorithm based on multi-uav scheduling,
-  2023.
+\bibitem{LEAL2013}
+Juan~Carlos Elizondo~Leal.
+\newblock {\em Estrategia descentralizada para la exploración multi-robot,
+  incluyendo restricciones en rango de comunicación}.
+\newblock PhD thesis, CINVESTAV Unidad Tamaulipas, Junio 2013.
 
-\bibitem{shannon1948communication}
-Claude~E. Shannon.
-\newblock A mathematical theory of communication.
-\newblock {\em Bell System Technical Journal}, 27(3):379--423, 1948.
+\bibitem{Telli2023}
+Khaled Telli and Kraa.
+\newblock A comprehensive review of recent research trends on unmanned aerial
+  vehicles (uavs).
+\newblock {\em Systems}, 11(8):400, August 2023.
 
 \end{thebibliography}
