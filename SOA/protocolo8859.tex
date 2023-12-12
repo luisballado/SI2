@@ -194,7 +194,8 @@
   
   En la \'{u}ltima década se ha tenido un aumento en la investigaci\'{o}n y el desarrollo en el campo de los vehículos a\'{e}reos no tripulados (VANTS), lo que ha dado lugar a importantes avances e innovaciones en esta \'{a}rea. Los sistemas con múltiples vehículos aéreos no tripulados (multi-VANT) permiten la adquisici\'{o}n simult\'{a}nea de datos desde m\'{u}ltiples puntos de vista privilegiados, en comparación con robots terrestres, lo que permite mejorar la generaci\'{o}n de mapas de entornos desconocidos. El uso de algoritmos de coordinaci\'{o}n inteligente y la toma descentralizada de decisiones proporciona una mayor confiabilidad a estos sistemas, ya que cualquier falla o mal funcionamiento de un VANT puede ser compensado por los VANTS restantes. Adem\'{a}s, un buen protocolo de comunicaci\'{o}n permite una colaboraci\'{o}n fluida entre los robots, mejorando su capacidad para moverse de un lugar a otro evitando obstáculos a su paso (navegar), descubrir un entorno desconocido adquiriendo información a su paso (explorar). Asimismo, la integración de sensores de última generación los combierte en herramientas útiles en diversos dominios [\citenum{SHAKHATREH2019,UAVPRACTICAL2023,DRONESHOW2023}]. La mayor parte de las aplicaciones que hacen uso de VANTS suelen carecer de autonom\'{i}a, requiriendo la asistencia y vigilancia constantes de un usuario humano. Para que un robot se considere aut\'{o}nomo deber\'{a} tomar decisiones y realizar tareas sin necesidad de que alguien le diga qu\'{e} hacer o guiarlo paso a paso. Tener la capacidad de percibir su entorno y usar la informaci\'{o}n para decidir c\'{o}mo moverse son considerados altos niveles de autonom\'{i}a. Para llegar a ello, el robot debe resolver primero problemas como su localizaci\'{o}n, construir el mapa de su entorno y posteriormente usarlo para navegar dentro de \'{e}l.\\
     
-  El enfoque de este trabajo es la propuesta de una arquitectura descentralizada de software capaz de coordinar m\'{u}ltiples veh\'{i}culos a\'{e}reos no tripulados con habilidades para la exploraci\'{o}n, generaci\'{o}n de mapas y planificaci\'{o}n de rutas para explorar eficientemente un \'{a}rea de inter\'{e}s. Este problema implica la toma de decisiones complejas, como asignar tareas de exploración a los robots, evitar colisiones y planificar rutas óptimas. Factores como la comunicación entre robots, la incertidumbre del entorno y las limitaciones de recursos de energía forman parte de los criterios considerados en este trabajo.\\
+  El enfoque de este trabajo es la propuesta de una arquitectura descentralizada de software capaz de coordinar m\'{u}ltiples veh\'{i}culos a\'{e}reos no tripulados con habilidades para la exploraci\'{o}n, generaci\'{o}n de mapas y planificaci\'{o}n de rutas para explorar eficientemente un \'{a}rea de inter\'{e}s.\\
+  \vspace{1cm}
   %\medskip \\
   %\st{El objetivo pudiera ser maximizar la cobertura del \'{a}rea minimizando el tiempo requerido para completar la exploraci\'{o}n.}
   
@@ -221,7 +222,7 @@ No se puede subestimar la importancia de utilizar sistemas con múltiples robots 
 
 Un sistema multi-VANT, puede colaborar, intercambiar informaci\'{o}n y minimizar rutas para agilizar el proceso de exploraci\'{o}n. Adem\'{a}s, el uso de m\'{u}ltiples VANTS aseguran que la misión no se vea comprometida, agregando tolerancia en caso de que un VANT encuentre dificultades, otros VANTS pueden continuar la exploraci\'{o}n, asegurando la continuidad de la misi\'{o}n, reduciendo el riesgo de fracaso. Adem\'{a}s, los sistemas multi-VANT permiten la especializaci\'{o}n de tareas, donde diferentes VANTS pueden equiparse con sensores o instrumentos especializados para recopilar datos espec\'{i}ficos.\\
  
-El uso de sistemas multi-robot trae consigo retos inherentes que deben abordarse (Figura \ref{fig:retos} ilustra los retros multi-VANT). La coordinación y colaboración entre m\'{u}ltiples robots presenta desaf\'{i}os en t\'{e}rminos de comunicaci\'{o}n, asignaci\'{o}n de tareas y sincronizaci\'{o}n. Establecer canales de comunicaci\'{o}n efectivos entre los robots es crucial para compartir informaci\'{o}n, coordinar acciones y evitar colisiones. Se requieren algoritmos de asignaci\'{o}n de tareas para distribuir diferentes tareas de exploraci\'{o}n entre los robots, teniendo en cuenta factores como la ubicaci\'{o}n, las capacidades y los niveles de energ\'{i}a para optimizar la divisi\'{o}n del trabajo. Adem\'{a}s, es fundamental garantizar la sincronizaci\'{o}n y evitar colisiones entre los robots en entornos din\'{a}micos. Por otra parte, la integraci\'{o}n y fusi\'{o}n de datos de m\'{u}ltiples sensores plantea desaf\'{i}os en t\'{e}rminos de sincronizaci\'{o}n, confiabilidad y consistencia de datos, para combinar de manera efectiva los datos recopilados por los robots individuales en una representaci\'{o}n coherente del entorno. \\
+El uso de sistemas multi-robot trae consigo retos inherentes que deben abordarse (Figura \ref{fig:retos} ilustra los retros multi-VANT). La coordinación y colaboración entre m\'{u}ltiples robots presenta desaf\'{i}os en t\'{e}rminos de comunicaci\'{o}n, asignaci\'{o}n de tareas y sincronizaci\'{o}n. Establecer canales de comunicaci\'{o}n efectivos entre los robots es crucial para compartir informaci\'{o}n, coordinar acciones y evitar colisiones. Se requieren algoritmos de asignaci\'{o}n de tareas para distribuir diferentes tareas de exploraci\'{o}n entre los robots, teniendo en cuenta factores como la ubicaci\'{o}n, las capacidades y los niveles de energ\'{i}a para optimizar la divisi\'{o}n del trabajo. Adem\'{a}s, es fundamental garantizar la sincronizaci\'{o}n y evitar colisiones entre los robots en entornos din\'{a}micos. Por otra parte, la integraci\'{o}n y fusi\'{o}n de datos de m\'{u}ltiples VANTS plantea desaf\'{i}os en t\'{e}rminos de confiabilidad y consistencia de datos, para combinar de manera efectiva los datos recopilados por los robots individuales en una representaci\'{o}n coherente del entorno.\\
 
 
 %\subsection*{\textquestiondown Qu\'{e} es la autonom\'{i}a?}
@@ -555,7 +556,7 @@ Otros m\'{e}todos que han sido ampliamente trabajados son los Campos de Potencia
 
 Las aplicaciones de la rob\'{o}tica industrial se han centrado en realizar tareas simples y repetitivas. La necesidad de robots con capacidad de identificar cambios en su entorno y reaccionar sin la intervenci\'{o}n humana, da origen a los robots inteligentes. Aunado a ello, si deseamos que el robot se mueva libremente, los cambios en su entorno pueden aumentar r\'{a}pidamente y complicar el problema de desarrollar un robot que muestre un comportamiento inteligente.\\
 
-El despliegue r\'{a}pido de robots en situaciones de riesgo, b\'{u}squeda y rescate ha sido un \'{a}rea ampliamente estudiada en la rob\'{o}tica m\'{o}vil. Recientemente, concursos como el DARPA Subterranean (SubT) Challenge, buscan acelerar la investigación y desarrollo de tecnología en escenarios complejos subterráneos, donde factores como exploraci\'{o}n, planeaci\'{o}n y coordinaci\'{o}n son clave para lograr los objetivos del Reto [\citenum{DARPA2022}], la aplicación de una estategia de exploración es pieza clave para el cumplimiento del reto.\\
+El despliegue r\'{a}pido de robots en situaciones de riesgo, b\'{u}squeda y rescate ha sido un \'{a}rea ampliamente estudiada en la rob\'{o}tica m\'{o}vil. Recientemente, concursos como el DARPA Subterranean (SubT) Challenge, buscan acelerar la investigación y desarrollo de tecnología en escenarios complejos subterráneos, donde factores como exploraci\'{o}n, planeaci\'{o}n y coordinaci\'{o}n son clave para lograr los objetivos del Reto [\citenum{DARPA2022}], la creación de una estategia de exploración es pieza clave para el cumplimiento del reto.\\
 
 %Los comportamientos reactivos son primordiales si pensamos en un agente aut\'{o}nomo. Esa percepci\'{o}n que podemos tener los seres humanos para reaccionar a ciertos retos. Buscar la manera de crear una arquitectura de software tolerante a fallas, capaz de coordinar m\'{u}ltiples v\'{e}hiculos a\'{e}reos no trupulados a medida que incrementa o disminuye la oferta de VANTS.\\
 
@@ -565,13 +566,18 @@ La direcci\'{o}n en que apunta el estado del arte actualmente se puede atribuir 
 
 %El texto destaca el potencial de los veh\'{i}culos a\'{e}reos no tripulados (UAV) para tener un impacto significativo en situaciones donde es demasiado arriesgado o costoso depender del trabajo humano. Los UAV aut\'{o}nomos, que completan tareas colaborativamente mientras gestionan su vuelo b\'{a}sico y tareas relacionadas de forma independiente, presentan oportunidades adicionales junto con desaf\'{i}os de investigaci\'{o}n y regulaci\'{o}n. Las mejoras en la construcci\'{o}n y componentes de los UAV, as\'{i} como en el hardware de computaci\'{o}n embebida, mecanismos de comunicaci\'{o}n y sensores que pueden ser montados a bordo de un UAV, est\'{a}n cerca del punto en el que el despliegue comercial de flotas de UAV aut\'{o}nomos ser\'{i} t\'{e}cnicamente posible. Para alcanzar este potencial, los UAV deber\'{a}n operar de manera segura y confiable en entornos complejos y potencialmente cambiantes, con especial \'{e}nfasis en la planificaci\'{o}n de rutas, la detecci\'{o}n de obst\'{a}culos y la evitaci\'{o}n de colisiones. La encuesta presenta una clasificaci\'{o}n original de la complejidad del entorno y analiza cr\'{i}ticamente el estado actual del arte en cuanto a enfoques de planificaci\'{o}n de rutas para UAV. Adem\'{a}s, resalta los desaf\'{i}os existentes en la modelizaci\'{o}n y representaci\'{o}n de la complejidad del entorno, as\'{i} como en los enfoques de planificaci\'{o}n de rutas, y plantea preguntas abiertas de investigaci\'{o}n junto con futuras direcciones.
 
-Sin embargo, la necesidad de una arquitectura de software descentralizada que engloble todos estos componentes y que sea capaz de coordinar múltiples VANTS, surge como una área de investigación prometedora que garantice el funcionamiento correcto los componentes necesarios para realizar tareas de exploración coordinada multi-VANT.\\
+Sin embargo, la necesidad de una arquitectura de software descentralizada que engloble los retos de exploración, junto con un mecanismo de coordinación para múltiples VANTS, surge como una área de investigación prometedora que garantice el funcionamiento correcto de los componentes necesarios para realizar tareas de exploración coordinada multi-VANT.\\
 %[\citenum{6320878,Karaman2011,TONG2023,Daponte2015,SurveyCollab2019}]\\%\cite{Karaman2011}, recopila algoritmos para encontrar rutas optimas.\\
 
 %Los avances en hardware con mayores capacidades de procesamiento en un espacio reducido, así como sensores que permiten precibir un entorno en 3D, han dado espacio a desarrollos para crear VANTS con autonomia, desplazamientos rápidos y agresivos. 
 
 En esta revisión del estado del arte se citan trabajos relacionados a la coordinación multi-VANT para tareas de exploración, que sirven de guía para la realización de este trabajo.
+
 %Dentro de la rob\'{o}tica m\'{o}vil inteligente se han propuesto estrategias de comportamiento reactivas, algoritmos que imitan el comportamiento de insectos y el c\'{o}mo se desplanzan en un entorno.\\
+
+En exploración, el objetivo es construir un mapa de un espacio desconocido. La exploración es una tarea fundamental en robótica.\\
+
+La \textbf{representación del ambiente (mapa)} es usada para describir el espacio que el robot percibe. Basados en esa descripción, un algoritmo de planificación de trayectorias decidirá donde moverse. Mientras que la representación del ambiente es usada para representar el espacio que el robot percibe.
 
 \subsection*{Planificación de trayectorias}
 
@@ -715,9 +721,20 @@ En lo que respecta a la organización de la arquitectura de control, \citeauthor{
 
 \subsection*{Exploración}
 
-Las bases para la exploraci\'{o}n aut\'{o}noma e innovaciones son heredadas de algoritmos ya empleados en la rob\'{o}tica m\'{o}vil (tabla \ref{pathsummary}). Uno de los primeros trabajos en la exploraci\'{o}n con robots, es la propuesta de fronteras por \citeauthor{YAMAUCHI1997}[\citenum{YAMAUCHI1997}], donde define como una frontera a la l\'{i}nea entre las zonas exploradas y las no exploradas de un \'{a}rea de inter\'{e}s. Durante la navegaci\'{o}n la informaci\'{o}n percibida por el robot crece, moviendo las fronteras hasta que no existan m\'{a}s fronteras. En el trabajo de \citeauthor{Faria2019}[\citenum{Faria2019}], se combina la estrategia basada en fronteras con t\'{e}cnicas de planificaci\'{o}n de trayectorias Lazy Theta* en un VANT.\\  
+Para poder construir una buena representación del ambiente, debemos comprender como realizar una exploración. En una planificación para una exploración, después de una observación, el robot debe decidir donde moverse.\\
 
-\citeauthor{FRAUNDORFER2012}[\citenum{FRAUNDORFER2012}] hacen uso de una exploraci\'{o}n con fronteras a partir de una navegaci\'{o}n aut\'{o}noma aplicando un algoritmo tipo bug para el seguimiento de una pared, empleando campos de potencial artificial para una planificaci\'{o}n local en un mapa de ocupaci\'{o}n tipo grid. Estos trabajos demostraron la navegaci\'{o}n aut\'{o}noma de veh\'{i}culos a\'{e}reos no tripulados y que estos pueden seguir puntos de referencia en el mapa, evitar obst\'{a}culos y llevar a cabo tareas de exploraci\'{o}n en entornos complejos.\\
+Buscando acelerar la exploración, el robot debe percibir el ambiente desconocido lo más rápido posible. Existen dos principales técnicas en la literatura.
+
+\begin{itemize}
+\item Next Best View (NBV) planning - El planificador elige la siguiente posición en base a la percepción y una función de utilidad que maximice la ganancia de información. 
+\item Basado en fronteras - La estrategia es simple y eficiente al asignar rutas al robot en base a la frontera más cercana.
+\end{itemize}
+
+%Las bases para la exploraci\'{o}n aut\'{o}noma e innovaciones son heredadas de algoritmos ya empleados en la rob\'{o}tica m\'{o}vil (tabla \ref{pathsummary}). Uno de los primeros trabajos en la exploraci\'{o}n con robots, es la propuesta de fronteras por \citeauthor{YAMAUCHI1997}[\citenum{YAMAUCHI1997}], donde define como una frontera a la l\'{i}nea entre las zonas exploradas y las no exploradas de un \'{a}rea de inter\'{e}s. Durante la navegaci\'{o}n la informaci\'{o}n percibida por el robot crece, moviendo las fronteras hasta que no existan m\'{a}s fronteras.
+
+%En el trabajo de \citeauthor{Faria2019}[\citenum{Faria2019}], se combina la estrategia basada en fronteras con t\'{e}cnicas de planificaci\'{o}n de trayectorias Lazy Theta* en un VANT.\\  
+
+\cite{FRAUNDORFER2012}[\citenum{FRAUNDORFER2012}] hacen uso de una exploraci\'{o}n con fronteras a partir de una navegaci\'{o}n aut\'{o}noma aplicando un algoritmo tipo bug para el seguimiento de una pared, empleando campos de potencial artificial para una planificaci\'{o}n local en un mapa de ocupaci\'{o}n tipo grid. Estos trabajos demostraron la navegaci\'{o}n aut\'{o}noma de veh\'{i}culos a\'{e}reos no tripulados y que estos pueden seguir puntos de referencia en el mapa, evitar obst\'{a}culos y llevar a cabo tareas de exploraci\'{o}n en entornos complejos.\\
 
 Los trabajos de \citeauthor{PAPACHRISTOS2017}[\citenum{PAPACHRISTOS2017}], \citeauthor{SELIN2019}[\citenum{SELIN2019}], \citeauthor{CIESLEWSKI2017}[\citenum{CIESLEWSKI2017}] se enfocan a la exploración haciendo uso de estrategias basadas en fronteras.
 
@@ -870,15 +887,6 @@ En el trabajo de \citeauthor{MOHTA2017}[\citenum{MOHTA2017}] usan un planificado
         \tiny multi-VANT\\
         \hline
         %--------------------------
-        \tiny \cellcolor{gray!20}\cite{CINVES2015}[\citenum{CINVES2015}]&
-        \tiny \cellcolor{gray!20}N/A&
-        \tiny \cellcolor{gray!20}N/A&
-        \tiny \cellcolor{gray!20}N/A&
-        \tiny \cellcolor{gray!20}Ley de Control&
-        \tiny \cellcolor{gray!20}\ding{55} &
-        \tiny \cellcolor{gray!20}\ding{51} &
-        \tiny \cellcolor{gray!20}\ding{55} \\ \hline
-        %--------------------------
         \tiny \cellcolor{gray!20}\cite{cinvestav2016}[\citenum{cinvestav2016}]&
         \tiny \cellcolor{gray!20}Exploración&
         \tiny \cellcolor{gray!20}Octomap&
@@ -899,12 +907,12 @@ En el trabajo de \citeauthor{MOHTA2017}[\citenum{MOHTA2017}] usan un planificado
         %--------------------------
         \tiny \cite{USENKO2017}[\citenum{USENKO2017}]&
         \tiny Punto Objetivo&
-        \tiny Cuadr\'{i}cula egoc\'{e}ntrica&
+        \tiny Cuadr\'{i}cula egoc\'{e}ntrica Voxel 3D&
         \tiny Offline RRT*&
         \tiny Curvas de Bezier&
+        \tiny \ding{51} &
         \tiny \ding{55} &
-        \tiny \ding{55} &
-        \tiny \ding{51} \\ \hline
+        \tiny \ding{55} \\ \hline
         %--------------------------
         \tiny \cite{MOHTA2017}[\citenum{MOHTA2017}]&
         \tiny Punto Objetivo&
