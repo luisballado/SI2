@@ -1,3 +1,5 @@
+todo lo relacionado esta dentro del repo de la tesis
+
 # SI2
 Seminario de Investigación 2
 
